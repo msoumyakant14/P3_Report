@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {4}Ansible}{5}{section.4}
 \contentsline {subsection}{\numberline {4.1}Installing openssh}{5}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Installing Ansible}{5}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Ansible setup}{5}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Adding repository}{5}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Installing ansible}{5}{subsubsection.4.3.2}
 \contentsline {subsubsection}{\numberline {4.3.3}Checking version}{5}{subsubsection.4.3.3}
@@ -45,13 +45,25 @@
 \contentsline {subsection}{\numberline {5.5}Prerequisites for running kubernetes}{11}{subsection.5.5}
 \contentsline {subsubsection}{\numberline {5.5.1}Disable Swap Space}{11}{subsubsection.5.5.1}
 \contentsline {subsubsection}{\numberline {5.5.2}Make IP static}{11}{subsubsection.5.5.2}
-\contentsline {subsection}{\numberline {5.6}Converting docker-compose file to its Kubernetes equivalent}{11}{subsection.5.6}
-\contentsline {subsubsection}{\numberline {5.6.1}Kompose}{11}{subsubsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.2}Compose on Kubernetes}{11}{subsubsection.5.6.2}
-\contentsline {section}{\numberline {6}Tutor: An alternative}{11}{section.6}
-\contentsline {section}{\numberline {7}Deployment}{12}{section.7}
-\contentsline {section}{\numberline {8}Another Section name}{13}{section.8}
-\contentsline {subsection}{\numberline {8.1}Subsection}{13}{subsection.8.1}
-\contentsline {section}{\numberline {9}Fifth Section name}{13}{section.9}
-\contentsline {subsection}{\numberline {9.1}Subsection}{13}{subsection.9.1}
-\contentsline {subsubsection}{\numberline {9.1.1}Sub-Sub-section}{13}{subsubsection.9.1.1}
+\contentsline {subsection}{\numberline {5.6}Kubernetes setup}{11}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Setting up your Kubernetes cluster}{11}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Setting up a pod network}{12}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard}{12}{subsubsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{13}{subsubsection.5.7.3}
+\contentsline {subsection}{\numberline {5.8}Kubernetes API Server}{14}{subsection.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{14}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}API Management}{15}{subsubsection.5.8.2}
+\contentsline {subsection}{\numberline {5.9}Request Management}{15}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}ETCD}{15}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}Kube-Scheduler}{15}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{15}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.13}Converting docker-compose file to its Kubernetes equivalent}{16}{subsection.5.13}
+\contentsline {subsubsection}{\numberline {5.13.1}Kompose}{16}{subsubsection.5.13.1}
+\contentsline {subsubsection}{\numberline {5.13.2}Compose on Kubernetes}{16}{subsubsection.5.13.2}
+\contentsline {section}{\numberline {6}Tutor: An alternative}{16}{section.6}
+\contentsline {section}{\numberline {7}Deployment}{16}{section.7}
+\contentsline {section}{\numberline {8}Another Section name}{17}{section.8}
+\contentsline {subsection}{\numberline {8.1}Subsection}{17}{subsection.8.1}
+\contentsline {section}{\numberline {9}Fifth Section name}{17}{section.9}
+\contentsline {subsection}{\numberline {9.1}Subsection}{17}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Sub-Sub-section}{17}{subsubsection.9.1.1}

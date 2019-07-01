@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  2 JUL 2019 00:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  2 JUL 2019 03:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,7 +525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--223
  []
 
 [5]
-<pods.png, id=379, 1118.1775pt x 590.205pt>
+<pods.png, id=439, 1118.1775pt x 590.205pt>
 File: pods.png Graphic file (type png)
 <use pods.png>
 Package pdftex.def Info: pods.png  used on input line 247.
@@ -535,7 +535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-<deploy.png, id=385, 341.5962pt x 383.5128pt>
+<deploy.png, id=446, 341.5962pt x 383.5128pt>
 File: deploy.png Graphic file (type png)
 <use deploy.png>
 Package pdftex.def Info: deploy.png  used on input line 251.
@@ -546,7 +546,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
  []
 
 [7 <./pods.png> <./deploy.png>]
-<service.png, id=394, 406.51875pt x 310.15875pt>
+<service.png, id=455, 406.51875pt x 310.15875pt>
 File: service.png Graphic file (type png)
 <use service.png>
 Package pdftex.def Info: service.png  used on input line 256.
@@ -556,7 +556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<ingress.png, id=395, 554.07pt x 430.60875pt>
+<ingress.png, id=456, 554.07pt x 430.60875pt>
 File: ingress.png Graphic file (type png)
 <use ingress.png>
 Package pdftex.def Info: ingress.png  used on input line 261.
@@ -572,66 +572,315 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--267
  []
 
 [8 <./service.png> <./ingress.png>]
-<flannel.png, id=402, 1877.0125pt x 1294.8375pt>
+<flannel.png, id=463, 1877.0125pt x 1294.8375pt>
 File: flannel.png Graphic file (type png)
 <use flannel.png>
 Package pdftex.def Info: flannel.png  used on input line 277.
 (pdftex.def)             Requested size: 452.95532pt x 350.24304pt.
  [9 <./flannel.png>]
-<calico.jpg, id=413, 670.505pt x 600.2425pt>
+<calico.jpg, id=473, 670.505pt x 600.2425pt>
 File: calico.jpg Graphic file (type jpg)
 <use calico.jpg>
 Package pdftex.def Info: calico.jpg  used on input line 282.
 (pdftex.def)             Requested size: 312.9991pt x 280.19846pt.
-<weavenet.png, id=414, 963.6pt x 542.025pt>
+<weavenet.png, id=474, 963.6pt x 542.025pt>
 File: weavenet.png Graphic file (type png)
 <use weavenet.png>
 Package pdftex.def Info: weavenet.png  used on input line 287.
 (pdftex.def)             Requested size: 435.88031pt x 245.18167pt.
  [10 <./calico.jpg> <./weavenet.png (PNG copy)>]
+Overfull \hbox (35.32574pt too wide) in paragraph at lines 299--304
+\OT1/cmr/m/n/12 In or-der to man-u-ally make the IP static add the fol-low-ing 
+lines to the file /etc/network/interfaces: 
+ []
 
-LaTeX Warning: Citation `SimpleCCP-Windows' in file `P3_FRG_REPORT' on page 11 
-undefined on input line 307.
 
-[11] [12] (./P3_FRG_REPORT.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
- [13pdfTeX warning (ext4): destination with the same identifier (name{table.1})
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Overfull \hbox (30.44951pt too wide) in paragraph at lines 319--334
+\OT1/cmr/bx/n/12 $ kubeadm join IP[]OF[]MASTER:6443 --token GEN-ER-ATED[]TOKEN 
+--discovery-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--334
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+
+ []
+
+
+Overfull \hbox (28.94325pt too wide) in paragraph at lines 335--341
+\OT1/cmr/bx/n/12 $ kubectl ap-ply -f https://docs.projectcalico.org/v3.1/gettin
+g-started/kubernetes/ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+
+ []
+
+
+Overfull \hbox (29.79605pt too wide) in paragraph at lines 335--341
+\OT1/cmr/bx/n/12 $ sudo kubectl ap-ply -f https://raw.githubusercontent.com/cor
+eos/flannel/master/ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Overfull \hbox (5.92937pt too wide) in paragraph at lines 342--357
+\OT1/cmr/bx/n/12 $ kubectl cre-ate -f https://raw.githubusercontent.com/kuberne
+tes/dashboard/ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--357
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--366
+
+ []
+
+[13]
+<kubernetesapiserver.png, id=503, 762.85pt x 521.95pt>
+File: kubernetesapiserver.png Graphic file (type png)
+<use kubernetesapiserver.png>
+Package pdftex.def Info: kubernetesapiserver.png  used on input line 369.
+(pdftex.def)             Requested size: 460.71669pt x 315.22594pt.
+
+Overfull \hbox (7.7488pt too wide) in paragraph at lines 369--370
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
+
+ []
+
+[14 <./kubernetesapiserver.png>]
+<kubereqman.png, id=508, 198.0198pt x 35.8941pt>
+File: kubereqman.png Graphic file (type png)
+<use kubereqman.png>
+Package pdftex.def Info: kubereqman.png  used on input line 394.
+(pdftex.def)             Requested size: 386.51173pt x 70.05496pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--404
+
+ []
+
+[15 <./kubereqman.png (PNG copy)>]
+
+LaTeX Warning: Citation `SimpleCCP-Windows' in file `P3_FRG_REPORT' on page 16 
+undefined on input line 417.
+
+[16] (./P3_FRG_REPORT.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{table.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.363 \end{document}
+l.473 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
  (./P3_FRG_REPORT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 473.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
 Package rerunfilecheck Info: File `P3_FRG_REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: 788E0AF3F6B93C5DCDAFC1F9FB6D2B86;4011.
+(rerunfilecheck)             Checksum: 98298EFC88DA102D52DB05BBE46429E3;4930.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 473.
  ) 
 Here is how much of TeX's memory you used:
- 6184 strings out of 494923
- 91171 string characters out of 6180741
- 183843 words of memory out of 5000000
- 9326 multiletter control sequences out of 15000+600000
+ 6228 strings out of 494923
+ 91898 string characters out of 6180741
+ 183905 words of memory out of 5000000
+ 9347 multiletter control sequences out of 15000+600000
  9453 words of font info for 33 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,12n,43p,898b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,12n,43p,898b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on P3_FRG_REPORT.pdf (19 pages, 1010979 bytes).
+Output written on P3_FRG_REPORT.pdf (23 pages, 1058095 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
- 106 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 610 words of extra memory for PDF output out of 10000 (max. 10000000)
 

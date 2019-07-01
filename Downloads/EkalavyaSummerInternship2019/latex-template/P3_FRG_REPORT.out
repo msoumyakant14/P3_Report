@@ -20,7 +20,7 @@
 \BOOKMARK [1][-]{section.4}{Ansible}{}% 20
 \BOOKMARK [2][-]{subsection.4.1}{Installing openssh}{section.4}% 21
 \BOOKMARK [2][-]{subsection.4.2}{Generating key at server and copying in client}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.3}{Installing Ansible}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.3}{Ansible setup}{section.4}% 23
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Adding repository}{subsection.4.3}% 24
 \BOOKMARK [3][-]{subsubsection.4.3.2}{Installing ansible}{subsection.4.3}% 25
 \BOOKMARK [3][-]{subsubsection.4.3.3}{Checking version}{subsection.4.3}% 26
@@ -45,13 +45,25 @@
 \BOOKMARK [2][-]{subsection.5.5}{Prerequisites for running kubernetes}{section.5}% 45
 \BOOKMARK [3][-]{subsubsection.5.5.1}{Disable Swap Space}{subsection.5.5}% 46
 \BOOKMARK [3][-]{subsubsection.5.5.2}{Make IP static}{subsection.5.5}% 47
-\BOOKMARK [2][-]{subsection.5.6}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 48
-\BOOKMARK [3][-]{subsubsection.5.6.1}{Kompose}{subsection.5.6}% 49
-\BOOKMARK [3][-]{subsubsection.5.6.2}{Compose on Kubernetes}{subsection.5.6}% 50
-\BOOKMARK [1][-]{section.6}{Tutor: An alternative}{}% 51
-\BOOKMARK [1][-]{section.7}{Deployment}{}% 52
-\BOOKMARK [1][-]{section.8}{Another Section name}{}% 53
-\BOOKMARK [2][-]{subsection.8.1}{Subsection}{section.8}% 54
-\BOOKMARK [1][-]{section.9}{Fifth Section name}{}% 55
-\BOOKMARK [2][-]{subsection.9.1}{Subsection}{section.9}% 56
-\BOOKMARK [3][-]{subsubsection.9.1.1}{Sub-Sub-section}{subsection.9.1}% 57
+\BOOKMARK [2][-]{subsection.5.6}{Kubernetes setup}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.7}{Setting up your Kubernetes cluster}{section.5}% 49
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Setting up a pod network}{subsection.5.7}% 50
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Setting up and hosting the dashboard}{subsection.5.7}% 51
+\BOOKMARK [3][-]{subsubsection.5.7.3}{Kubernetes commands for getting resource info}{subsection.5.7}% 52
+\BOOKMARK [2][-]{subsection.5.8}{Kubernetes API Server}{section.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.8.1}{Pieces of API Server}{subsection.5.8}% 54
+\BOOKMARK [3][-]{subsubsection.5.8.2}{API Management}{subsection.5.8}% 55
+\BOOKMARK [2][-]{subsection.5.9}{Request Management}{section.5}% 56
+\BOOKMARK [2][-]{subsection.5.10}{ETCD}{section.5}% 57
+\BOOKMARK [2][-]{subsection.5.11}{Kube-Scheduler}{section.5}% 58
+\BOOKMARK [2][-]{subsection.5.12}{Kube-Control-Manager}{section.5}% 59
+\BOOKMARK [2][-]{subsection.5.13}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 60
+\BOOKMARK [3][-]{subsubsection.5.13.1}{Kompose}{subsection.5.13}% 61
+\BOOKMARK [3][-]{subsubsection.5.13.2}{Compose on Kubernetes}{subsection.5.13}% 62
+\BOOKMARK [1][-]{section.6}{Tutor: An alternative}{}% 63
+\BOOKMARK [1][-]{section.7}{Deployment}{}% 64
+\BOOKMARK [1][-]{section.8}{Another Section name}{}% 65
+\BOOKMARK [2][-]{subsection.8.1}{Subsection}{section.8}% 66
+\BOOKMARK [1][-]{section.9}{Fifth Section name}{}% 67
+\BOOKMARK [2][-]{subsection.9.1}{Subsection}{section.9}% 68
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Sub-Sub-section}{subsection.9.1}% 69
