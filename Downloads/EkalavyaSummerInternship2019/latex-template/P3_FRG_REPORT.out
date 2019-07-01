@@ -1,0 +1,57 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Open edX}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Releases}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Installation}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Native installation}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Docker-based installation}{subsection.2.2}% 6
+\BOOKMARK [1][-]{section.3}{Docker}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{About Docker}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Terms related to Docker}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Containerization}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Docker Image}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Docker Container}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Docker Registry}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Docker Engine}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Docker Compose}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Dockerfiles}{subsection.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Docker-Machine}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Docker-Compose}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Docker Swarm}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Ansible}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Installing openssh}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Generating key at server and copying in client}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Installing Ansible}{section.4}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Adding repository}{subsection.4.3}% 24
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Installing ansible}{subsection.4.3}% 25
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Checking version}{subsection.4.3}% 26
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Ansible directories}{subsection.4.3}% 27
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Making a copy a directory for our use}{subsection.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.4}{Some useful commands for ansible}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.4.1}{To see the hostnames of all nodes}{subsection.4.4}% 30
+\BOOKMARK [3][-]{subsubsection.4.4.2}{To see the volumes used by all nodes}{subsection.4.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.4.3}{To run an ansible-playbook}{subsection.4.4}% 32
+\BOOKMARK [1][-]{section.5}{Kubernetes}{}% 33
+\BOOKMARK [2][-]{subsection.5.1}{What is Kubernetes}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.2}{Main Features Of Kubernetes}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.3}{Terminologies in Kubernetes}{section.5}% 36
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Pod}{subsection.5.3}% 37
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Deployment}{subsection.5.3}% 38
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Service}{subsection.5.3}% 39
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Ingress network}{subsection.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.4}{Networking in Kubernetes}{section.5}% 41
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Flannel}{subsection.5.4}% 42
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Calico}{subsection.5.4}% 43
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Weavenet}{subsection.5.4}% 44
+\BOOKMARK [2][-]{subsection.5.5}{Prerequisites for running kubernetes}{section.5}% 45
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Disable Swap Space}{subsection.5.5}% 46
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Make IP static}{subsection.5.5}% 47
+\BOOKMARK [2][-]{subsection.5.6}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 48
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Kompose}{subsection.5.6}% 49
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Compose on Kubernetes}{subsection.5.6}% 50
+\BOOKMARK [1][-]{section.6}{Tutor: An alternative}{}% 51
+\BOOKMARK [1][-]{section.7}{Deployment}{}% 52
+\BOOKMARK [1][-]{section.8}{Another Section name}{}% 53
+\BOOKMARK [2][-]{subsection.8.1}{Subsection}{section.8}% 54
+\BOOKMARK [1][-]{section.9}{Fifth Section name}{}% 55
+\BOOKMARK [2][-]{subsection.9.1}{Subsection}{section.9}% 56
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Sub-Sub-section}{subsection.9.1}% 57

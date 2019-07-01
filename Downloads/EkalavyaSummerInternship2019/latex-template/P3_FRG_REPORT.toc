@@ -1,0 +1,57 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Open edX}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Releases}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Installation}{1}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Native installation}{1}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Docker-based installation}{2}{subsubsection.2.2.2}
+\contentsline {section}{\numberline {3}Docker}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}About Docker}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Terms related to Docker}{4}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Containerization}{4}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Docker Image}{4}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Docker Container}{4}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Docker Registry}{4}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Docker Engine}{4}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Docker Compose}{4}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Dockerfiles}{4}{subsubsection.3.2.7}
+\contentsline {subsection}{\numberline {3.3}Docker-Machine}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Docker-Compose}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Docker Swarm}{5}{subsection.3.5}
+\contentsline {section}{\numberline {4}Ansible}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Installing openssh}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{5}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Installing Ansible}{5}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Adding repository}{5}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Installing ansible}{5}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Checking version}{5}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Ansible directories}{5}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Making a copy a directory for our use}{6}{subsubsection.4.3.5}
+\contentsline {subsection}{\numberline {4.4}Some useful commands for ansible}{6}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}To see the hostnames of all nodes}{6}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}To see the volumes used by all nodes}{6}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}To run an ansible-playbook}{6}{subsubsection.4.4.3}
+\contentsline {section}{\numberline {5}Kubernetes}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}What is Kubernetes}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Main Features Of Kubernetes}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Terminologies in Kubernetes}{7}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Pod}{7}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Deployment}{7}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Service}{8}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Ingress network}{8}{subsubsection.5.3.4}
+\contentsline {subsection}{\numberline {5.4}Networking in Kubernetes}{9}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Flannel}{9}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Calico}{10}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Weavenet}{10}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Prerequisites for running kubernetes}{11}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Disable Swap Space}{11}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Make IP static}{11}{subsubsection.5.5.2}
+\contentsline {subsection}{\numberline {5.6}Converting docker-compose file to its Kubernetes equivalent}{11}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Kompose}{11}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Compose on Kubernetes}{11}{subsubsection.5.6.2}
+\contentsline {section}{\numberline {6}Tutor: An alternative}{11}{section.6}
+\contentsline {section}{\numberline {7}Deployment}{12}{section.7}
+\contentsline {section}{\numberline {8}Another Section name}{13}{section.8}
+\contentsline {subsection}{\numberline {8.1}Subsection}{13}{subsection.8.1}
+\contentsline {section}{\numberline {9}Fifth Section name}{13}{section.9}
+\contentsline {subsection}{\numberline {9.1}Subsection}{13}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Sub-Sub-section}{13}{subsubsection.9.1.1}
