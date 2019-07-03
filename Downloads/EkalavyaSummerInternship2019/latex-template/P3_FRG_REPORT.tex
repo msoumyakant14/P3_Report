@@ -1,16 +1,16 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in, a4paper]{geometry}
 
-\title{Document Template in Latex}
+\title{Ekalavya Summer Internship 2019}
 \author{Ekalavya Interns}
 
- \ifx\pdftexversion\undefined
- \usepackage[dvips]{graphicx}
- \else
- 
- \usepackage[pdftex]{graphicx}
- \DeclareGraphicsRule{*}{mps}{*}{}
- \fi
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
 \usepackage{url}
 \usepackage{chapterbib}
 \usepackage{hyperref}
@@ -20,55 +20,117 @@
 \usepackage{url}
 \usepackage{multicol}
 \usepackage{color}
+\usepackage{textcomp}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{\leftmark}
-\rhead{}
-\lfoot{Amit, Harshit, Mridul, Ritik,\\ Soumyakant}
-\cfoot{\today}
+\rhead{Project: P3}
+\lfoot{Fundamental Research Group, IIT Bombay}
+\cfoot{ }
 \rfoot{\thepage}
 
 \renewcommand{\bibname}{References}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
 \begin{document}
-
-\begin{titlepage}
- \begin{center}
-\Huge
-\textbf{Configurable and Scalable IITBombayX MOOC platform on commodity servers} 
-\vfill
-\LARGE
-\textbf{Amit Kumar Tiwari, Harshit Mogalapalli, Mridul Mahajan, Ritik Kumar,\\ Soumyakant Mohakul\\}
-\textbf{\\}
-Guided by Mr.Nagesh Karmali
-\vfill
-\Large
-Last Updated: \today
-\end{center}
-\end{titlepage}
-
- \pagebreak \textcolor{white}{text} \pagebreak
-\thispagestyle{empty}
-
-\pagebreak
-\setcounter{page}{1}
-\pagenumbering{roman}
-
-\listoffigures
-
-\pagebreak
-
-
-\tableofcontents
-
-\pagebreak
-
-\setcounter{page}{1}
-\pagenumbering{arabic}
+	%***********************
+	%Title page
+	\begin{titlepage}
+		\begin{center}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=8cm]{./iitb-black.pdf}
+			\end{figure}
+			
+			INDIAN INSTITUTE OF TECHNOLOGY, BOMBAY\\
+			EKLAVYA SUMMER INTERNSHIP 2019\\
+			(FUNDAMENTAL RESEARCH GROUP) 
+			\noindent\rule{15cm}{0.4pt}\\
+			\textbf{\huge \\Configurable and Scalable IITBombayX MOOC platform on commodity servers}\\
+			\textbf{}\\
+			\noindent\rule{15cm}{0.4pt}
+			\newline
+			\\Under the guidance of: \textbf{Prof. S. Sudarshan}
+			\begin{multicols}{2}
+				\textbf{\\ \large
+					\textbf{Team:} \\
+					\textbf{Amit Kumar Tiwari}\\
+					\textbf{Harshit Mogalapalli}\\
+					\textbf{Mridul Mahajan}\\
+					\textbf{Ritik Kumar}\\
+					\textbf{Soumyakant Mohakul}\\
+				}
+				\columnbreak
+				\textbf{\\ \large
+					\textbf{Mentors:}\\
+					\textbf{Mr. Nagesh Karmali}
+				}
+			\end{multicols}
+			
+		\end{center}
+	\end{titlepage}
+	%*****************************
+	
+	%certificate area
+	%*************************
+	\pagebreak
+	\newpage
+	\thispagestyle{empty}
+	
+	\begin{center}
+		\huge{Summer Internship 2019 Project}\\[0.5cm]
+		Approval Certificate\\[1.0cm]
+		\huge{Department of Computer Science and Engineering}\\[0.5cm]
+		\normalsize
+		\textsc{Indian Institute of Technology Bombay}\\[2.0cm]
+		
+		\emph{\LARGE Certificate}\\[2.5cm]
+	\end{center}
+	\normalsize The project entitled Configurable and Scalable IITBombayX MOOC platform on commodity servers submitted by Mr. Amit Kumar Tiwari, Mr. Harshit Mogalapalli, Mr. Mridul Mahajan, Mr. Ritik Kumar and Mr. Soumyakant Mohakul is approved for Summer Internship 2019 programme from 19th May 2019 to 9th July 2019, at Department of Computer Science
+	and Engineering, IIT Bombay.\\[1.0cm]
+	
+	\begin{multicols}{2}
+		\noindent\rule{5cm}{0.4pt}\\
+		\textbf{\\DR. S. SUDARSHAN} \\
+		Dept. of CSE, IITB \\
+		Principle Investigator \\
+		\columnbreak
+		
+		\noindent\rule{5cm}{0.4pt}\\
+		\textbf{\\MR. NAGESH KARMALI} \\
+		Dept. of CSE, IITB \\
+		Project-In-Charge \\
+		\textbf{\\\\}
+	\end{multicols}
+	
+	\begin{flushleft}
+		Date:\today \\
+		Place:
+	\end{flushleft}
+	\pagebreak
+	%*************************
+	
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+	
+	\listoffigures
+	
+	\pagebreak
+	
+	\listoftables
+	
+	\pagebreak
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
 
 \section{Introduction}
 
@@ -222,7 +284,7 @@ The Provision Log for the tasks executed are: \href{https://drive.google.com/ope
 
 \section{Docker \cite{Docker}}
 \subsection{About Docker}
-Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. The use of Linux containers to deploy applications is called containerization. A Container allows us to package an application with all of the parts needed to run an application (code, system tools, logs, libraries, configuration settings and other dependencies) and sends it out as a single standalone package deployable via \href{https://goo.gl/f77a2v}{Ubuntu} (in this case 16.04 LTS). Docker can be installed on \href{https://goo.gl/iTES81}{other platforms} as well. Currently, the Docker software is maintained by the Docker community and Docker Inc. Check out the \href{https://docs.docker.com/}{official documentation} to find more specifics on Docker. Docker Terms and Concepts. 
+Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. Using application running as a docker conatiner removes the system dependency of the application. No changes has to be made in applications to run them in different environments or machines. Docker based application provides liberty to the developer,tester and deployer to run the same application which any changes specific to their environment. 
 \subsection{Terms related to Docker}
 \subsubsection{Containerization}
 Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application within a container with its own operating environment. Essentially, containers share the kernel space with the host OS, but have a separate user space. This makes them lightweight.
@@ -436,7 +498,7 @@ Weavenet is a simple network for kubernetes and its hosted applications. Weave N
 \subsubsection{Disable Swap Space}
 In order to set up a kubernetes cluster, all nodes including the master must have swap space disabled.
 \begin{itemize}
-	\item To disable swap space for current session, run: \\
+	\item To disable swap space for currenThere are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\\\t session, run: \\
 	\textbf{\$ sudo swapoff -a}
 	\item To permanently disable swap space, go to /etc/fstab and comment the swap space line.
 \end{itemize}
@@ -477,11 +539,12 @@ Once the cluster has been successfully initialised, run the following commands :
 	\$ sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
 }
 \subsubsection{Setting up a pod network}
+There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\
+Once the network is set up, we need to install and host the dashboard on localhost.Flannel is a overlay network whereas calico is an L3 network. The advantages in detail can be read from this  \href{https://medium.com/@jain.sm/flannel-vs-calico-a-battle-of-l2-vs-l3-based-networking-5a30cd0a3ebd}{medium Blog}.\\\\
 i) To install and set up a calico pod network, run the command :\\\\
 \textbf{\$ kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/\\installation/hosted/kubeadm/1.7/calico.yaml}\\\\
 ii) To install and set up flannel pod network, run the command :\\\\
 \textbf{\$ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/\\Documentation/kube-flannel.yml}\\\\
-There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\\\
 Run \textbf{kubectl get pods -o wide --all-namespaces} to view all the running pods:\\\\
 In case you face a CrashLoopBackOff error in running the coredns pods. Resolve the issue using the stackoverflow link \href{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041#53414041}{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041\#53414041}\cite{Coredns} \\\\
 Once the network is set up, we need to install and host the dashboard on localhost.

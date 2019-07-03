@@ -17,17 +17,17 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{27}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces Pods running before deleting a node}}{27}{figure.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{28}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{32}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{32}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{33}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{34}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{35}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{36}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces SAR CPU Metrics}}{38}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces SAR Memory Metrics}}{38}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{39}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{40}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{41}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{42}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces JMeter Summary Report for Open edX Native.}}{43}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{43}{figure.33}
+\contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{33}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{33}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{34}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{35}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{36}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{37}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces SAR CPU Metrics}}{39}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces SAR Memory Metrics}}{39}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{40}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{41}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{42}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{43}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces JMeter Summary Report for Open edX Native.}}{44}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{44}{figure.33}
