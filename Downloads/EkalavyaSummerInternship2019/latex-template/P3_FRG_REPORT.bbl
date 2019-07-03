@@ -55,14 +55,6 @@
   "\url{https://vocon-it.com/wp-content/uploads/2018/12/2018-12-02-23_05_06-Minikube-and-Kubeadm-Google-Pr%C3%A4sentationen-1024x478.png}".
   Accessed on July 2019}.''
 
-\bibitem{Docker}
-``{Official website of Docker "\url{https://docs.docker.com/}". Accessed on
-  July 2019}.''
-
-\bibitem{Kubernetes}
-``{Official website of Kubernetes "\url{https://kubernetes.io/docs/home/}".
-  Accessed on July 2019}.''
-
 \bibitem{Prereq}
 ``{Prerequisites for installing Kubernetes
   "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}". Accessed on
@@ -76,6 +68,68 @@
 \bibitem{KubernetesManagement}
 ``{Kubernetes management
   "\url{https://www.oreilly.com/library/view/managing-kubernetes/9781492033905/ch04.html}".
+  Accessed on July 2019}.''
+
+\bibitem{Docker}
+``{Official website of Docker "\url{https://docs.docker.com/}". Accessed on
+  July 2019}.''
+
+\bibitem{Dockerhub}
+``{Docker Hub website "\url{https://hub.docker.com/}". Accessed on July
+  2019}.''
+
+\bibitem{Ansiblevaults}
+``{Ansible multiple vault passwords
+  "\url{https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html#multiple-vault-passwords}".
+  Accessed on July 2019}.''
+
+\bibitem{Kubernetes}
+``{Official website of Kubernetes "\url{https://kubernetes.io/docs/home/}".
+  Accessed on July 2019}.''
+
+\bibitem{Kservice}
+``{Service discovery and load balancing
+  "\url{https://kubernetes.io/docs/concepts/services-networking/service/}".
+  Accessed on July 2019}.''
+
+\bibitem{Kstorch}
+``{Storage orchestration
+  "\url{https://kubernetes.io/docs/concepts/storage/persistent-volumes/}".
+  Accessed on July 2019}.''
+
+\bibitem{Kmanage}
+``{Automatic bin packing
+  "\url{https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/}".
+  Accessed on July 2019}.''
+
+\bibitem{Kcontrol}
+``{Self-healing
+  "\url{https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#how-a-replicationcontroller-works}".
+  Accessed on July 2019}.''
+
+\bibitem{Krollout}
+``{Automated rollouts and rollbacks
+  "\url{https://kubernetes.io/docs/concepts/workloads/controllers/deployment/}".
+  Accessed on July 2019}.''
+
+\bibitem{Kscmanage}
+``{Secret and configuration management
+  "\url{https://kubernetes.io/docs/concepts/configuration/secret/}". Accessed
+  on July 2019}.''
+
+\bibitem{Kbe}
+``{Batch execution
+  "\url{https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/}".
+  Accessed on July 2019}.''
+
+\bibitem{Khs}
+``{Horizontal scaling
+  "\url{https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/}".
+  Accessed on July 2019}.''
+
+\bibitem{Knet}
+``{Networking in Kubernetes
+  "\url{https://kubernetes.io/docs/concepts/cluster-administration/networking/}".
   Accessed on July 2019}.''
 
 \bibitem{Coredns}
@@ -96,6 +150,11 @@
 \bibitem{DNS}
 ``{Pods are unable to access internet
   "\url{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}".
+  Accessed on July 2019}.''
+
+\bibitem{Configmap}
+``{Kubernetes ConfigMap Documentation
+  "\url{https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/}".
   Accessed on July 2019}.''
 
 \bibitem{Performance}

@@ -174,7 +174,7 @@ I declare that this written submission represents my ideas in my own words and w
 \end{multicols}
 \pagebreak
 \chapter{Introduction}
-\section{Introduction}
+\section{Aim of the project}
 
 The aim of this project is to deploy an instance of Open edX MOOC platform on a multi-node cluster using Kubernetes as the container orchestrator and Docker as the container runtime environment. \\
 
@@ -324,13 +324,12 @@ The Provision Log for the tasks executed are: \href{https://drive.google.com/ope
 \end{enumerate}
 
 \chapter{Docker}
-\section{Docker \cite{Docker}}
-\subsection{About Docker}
-Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. Using application running as a docker conatiner removes the system dependency of the application. No changes has to be made in applications to run them in different environments or machines. Docker based application provides liberty to the developer,tester and deployer to run the same application which any changes specific to their environment. 
-\subsection{Terms related to Docker}
-\subsubsection{Containerization}
+\section{About Docker}
+Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. Using application running as a docker conatiner removes the system dependency of the application. No changes has to be made in applications to run them in different environments or machines. Docker based application provides liberty to the developer,tester and deployer to run the same application which any changes specific to their environment. \cite{Docker}
+\section{Terms related to Docker}
+\subsection{Containerization}
 Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application within a container with its own operating environment. Essentially, containers share the kernel space with the host OS, but have a separate user space. This makes them lightweight.
-\subsubsection{Docker Image}
+\subsection{Docker Image}
 A \textit{Docker Image} is the basic unit for deploying a Docker container. A Docker image is essentially a static snapshot of a container, incorporating all of the objects needed to run a container.\\\\
 \textbf{TLS handshake timeout error in pulling Docker image :}\\\\
 In case there is a TLS handshake timeout error while pulling a Docker image from an online repository, try running the command again and again and eventually the image will be pulled:
@@ -340,41 +339,41 @@ In case there is a TLS handshake timeout error while pulling a Docker image from
 		\caption{TLS handshake timeout error}
 	\end{center}
 \end{figure} 
-\subsubsection{Docker Container}
+\subsection{Docker Container}
 A \textit{Docker Container} encapsulates a Docker image and when live and running, is considered a container. Each container runs in an isolated environment on the host machine.
-\subsubsection{Docker Registry}
-The \textit{Docker Registry} is a stateless, highly scalable server-side application that stores and distributes Docker images. This registry holds Docker images, along with their versions and, it can provide both public and private storage location. There is a public Docker registry called \href{https://hub.docker.com/}{Docker Hub} which provides a free-to-use, hosted Registry, plus additional features like organization accounts, automated builds, and more. Users interact with a registry by using Docker push or pull commands.
-\subsubsection{Docker Engine}
+\subsection{Docker Registry}
+The \textit{Docker Registry} is a stateless, highly scalable server-side application that stores and distributes Docker images. This registry holds Docker images, along with their versions and, it can provide both public and private storage location. There is a public Docker registry called \href{https://hub.docker.com/}{Docker Hub}\cite{Dockerhub} which provides a free-to-use, hosted Registry, plus additional features like organization accounts, automated builds, and more. Users interact with a registry by using Docker push or pull commands.
+\subsection{Docker Engine}
 The \textit{Docker Engine} is a layer which exists between containers and the Linux kernel and runs the containers. It is also known as the Docker daemon. Any Docker container can run on any server that has the Docker-daemon enabled, regardless of the underlying operating system.
-\subsubsection{Docker Compose}
+\subsection{Docker Compose}
 \textit{Docker Compose} is a tool that defines, manages and controls multi-container Docker applications. With Compose, a single configuration file is used to set up all of your application’s services. Then, using a single command, you can create and start all the services from that file.
-\subsubsection{Dockerfiles}
+\subsection{Dockerfiles}
 Dockerfiles are merely YAML configuration files that contains all of the configuration information and commands needed to assemble a container image. With a Dockerfile, the Docker daemon can automatically build the container image.
-\subsection{Docker-Machine}
+\section{Docker-Machine}
 Docker Machine can be used to :
 \begin{itemize}
 	\item Manage and provision multiple remote Docker hosts.
 	\item Provision Swarm clusters.
 \end{itemize}
 Docker Machine is a tool that lets you install Docker Engine on virtual hosts, and manage hosts with docker-machine commands. Using docker-machine command you can start, inspect, stop and restart a managed host, upgrade the Docker client and daemon, and configure a Docker client to talk to your host.
-\subsubsection{Install Docker Machine:}
+\subsection{Install Docker Machine:}
 \begin{itemize}
 	\item For Linux systems, execute the following command:\\\\
 	\textbf{\$ base=https://githubcom/docker/machine/releases/download/v0.16 \&\& curl -L \$base/docker-machine-\$(uname -s)-\$(uname -m) $>$/usr/local/bin/docker-machine \&\& chmod +x /usr/local/bin/docker-machine}
 	\item Check the installation by displaying the Machine version:\\\\
 	\textbf{\$ docker-machine version}
 \end{itemize}
-\subsubsection{Use Docker Machine to run Docker Containers:}
+\subsection{Use Docker Machine to run Docker Containers:}
 \begin{itemize}
 	\item Create a new docker virtual machine.
 	\item Switch your environment to your new VM.
 	\item Use the docker client to create, load and manage containers.
 \end{itemize}
-\subsubsection{Create a Machine}
+\subsection{Create a Machine}
 \textbf{\$ docker-machine create --driver virtualbox default}
-\subsubsection{Connect your shell to the new machine}
+\subsection{Connect your shell to the new machine}
 \textbf{\$eval “\$(docker-machine env default)”}
-\subsubsection{Run containers and experiment with machine commands}
+\subsection{Run containers and experiment with machine commands}
 \begin{itemize}
 	\item Use \textbf{docker-run} to download and run images
 	\item Run \textbf{docker-machine ip default} to get the host IP address.
@@ -382,9 +381,9 @@ Docker Machine is a tool that lets you install Docker Engine on virtual hosts, a
 	\item Run \textbf{docker-machine start default} to start the host default.
 	\item Run \textbf{docker-machine env -u} to see which Docker variables we need to unset to switch to the current shell.
 \end{itemize}
-\subsection{Docker Swarm}
+\section{Docker Swarm}
 Docker swarm is used to create a cluster of nodes. Multi-container, multi-machine applications are made possible by joining multiple machines into a “Dockerized” cluster called a swarm. Docker swarm is a group of machines running docker and are connected to each other by means of an overlay network. There can be one or multiple nodes that can manage the swarm, these nodes are called manager nodes. The rest of the nodes only provide capacity to run the containers and are called worker nodes. 
-\subsubsection{Types of networks in docker}
+\subsection{Types of networks in docker}
 \begin{itemize}
 	\item \textbf{Bridge Network : }This is the type of network that allows the docker containers to communicate within a single host system. This type of network is not feasible to communicate between multiple host systems.\\\\
 	A bridge network can be created by :\\
@@ -405,70 +404,72 @@ Docker swarm is used to create a cluster of nodes. Multi-container, multi-machin
 	\item \textbf{Host Network : }For standalone containers, remove network isolation between the container and the Docker host, and use the host’s networking directly.\\\\
 	We can use the host’s system network to at a particular port to allow the container to share data. Host networks are best when the network stack should not be isolated from the Docker host, but you want other aspects of the container to be isolated.
 \end{itemize}
-\subsubsection{Initialising a Swarm Node as Manager}
+\subsection{Initialising a Swarm Node as Manager}
 In order to initialize a swarm node a manager we need to find the IP address of the node using the command \textbf{ifconfig}. Then run the command:\\\\
 \textbf{\$ docker swarm init --advertise-addr IP\_OF\_THE\_MANAGER}\\\\
 The join token for another node as a manager can be found by :\\\\
 \textbf{\$ docker swarm join-token manager\\\\}
 The join token of another node as a worker can be found by :\\\\
 \textbf{\$ docker swarm join-token worker}
-\subsubsection{Docker Stack}
+\subsection{Docker Stack}
 For multiple services that are dependent on each other to communicate with each other on a swarm network, we may use the Docker Stack command. Docker stack deployment is used to deploy a list of interdependent services on a swarm network.\\\\
 To deploy a stack we create a docker-compose file with an additional feature in each service as deploy.\\\\
 \textbf{\$ docker stack deploy -c docker-compose.yml myapp}\\\\
 The -c flag is used to execute the docker compose file and create multiple interdependent services which can communicate with each other via the swarm network.\\\\
-An example of docker-compose file for stack deployment: \href{https://drive.google.com/file/d/1t3MwMzXrjDNgrXTeLmwiEe5Hj0q6pueq/view?usp=sharing}{example-voting-app.yml}
 \chapter{Ansible}
-\section{Ansible}
 Installing docker, kubernetes, and all the other components in each node in a multi-node cluster, which contains many nodes, can be a tedious task. To overcome this issue, Ansible can be used for configuration management. Furthermore, Ansible can be used to configure the nodes too. By default Ansible uses a native openSSH connection and runs commands simultaneously on multiple nodes. We have created Ansible Playbooks for all the needed configurations.
-\subsection{Installing openssh}
+\section{Installing openssh}
 \$ sudo apt-get install openssh-server\\
 \$ sudo apt-get install openssh-client
-\subsection{Generating key at server and copying in client}
+\section{Generating key at server and copying in client}
 \$ ssh-keygen (generate ssh-key)\\
 Copy this key to all nodes to avoid the need to enter a password each time while connecting to the node.\\
 To copy ssh-key type command:\\
-\$ ssh-copy-id $username@IP\_address$
-\subsection{Ansible setup}
-\subsubsection{Adding repository}
+\$ ssh-copy-id $username@IP\_address$\\\\
+\textbf{E.g.:} ssh-copy-id node1@10.130.154.3
+\section{Ansible setup}
+\subsection{Adding repository}
 \$ sudo apt-add-repository ppa:ansible/ansible\\
 \$ sudo apt-get update
-\subsubsection{Installing ansible}
+\subsection{Installing ansible}
 \$ sudo apt-get install ansible
-\subsubsection{Checking version}
+\subsection{Checking version}
 \$ ansible  --version
-\subsubsection{Ansible directories}
+\subsection{Ansible directories}
 \$ ls -lha /etc/ansible/
-\subsubsection{Making a copy a directory for our use}
-\$ cp -R /etc/ansible/ myplatform\\
-vi ansible.cfg (uncomment the inventory =  hosts)\\
-vi hosts (remove all and write all nodes in new line)\\\\
+\subsection{Making a copy a directory for our use}
+\$ cp -R /etc/ansible/ myplatform\\\\
+Uncomment the 'inventory = hosts' line in the file ansible.cfg\\\\
+\$ vi ansible.cfg \\\\
+remove all and write all nodes in new line\\\\
+\$ vi hosts \\\\
+Add the IP addresses of all the nodes in your cluster on which you want to run the playbooks. Password for each node in the cluster should be the same in order to run commands requiring sudo priviledges.\\\\
+\textbf{NOTE :} In case you are running an Ansible playbook for a cluster of nodes having different passwords, you can use multiple vaults. For more details visit \href{https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html#multiple-vault-passwords}{https://docs.ansible.com/\\ansible/latest/user\_guide/playbooks\_vault.html\#multiple-vault-passwords}\cite{Ansiblevaults}\\\\ 
 \textbf{You can check if all the nodes working by running:}\\
 \$ ansible -m ping all
-\subsection{Some useful commands for ansible}
-\subsubsection{To see the hostnames of all nodes}
+\section{Some useful commands for ansible}
+\subsection{To see the hostnames of all nodes}
 \$ ansible -m shell -a 'hostname' all
-\subsubsection{To see the volumes used by all nodes}
+\subsection{To see the volumes used by all nodes}
 \$ ansible -m shell -a 'df -h' all
-\subsubsection{To run an ansible-playbook}
+\subsection{To run an ansible-playbook}
 \$ ansible-playbook  -K playbook-docker.yml
 \chapter{Kubernetes}
-\section{Kubernetes\cite{Kubernetes}}
-\subsection{What is Kubernetes}
-Kubernetes is a container-orchestration tool developed by Google in 2015 and later donated to CNCF (Cloud Native Computing Foundation). Kubernetes provides a smart way for orchestration in setting a multi-node cluster. Kubernetes comes with a lot of functionalities such as load balancing, pod scaling, process scheduling and process management.
-\subsection{Main Features Of Kubernetes}
+\section{What is Kubernetes}
+Kubernetes is a container-orchestration tool developed by Google in 2015 and later donated to CNCF (Cloud Native Computing Foundation). Kubernetes provides a smart way for orchestration in setting a multi-node cluster. Kubernetes comes with a lot of functionalities such as load balancing, pod scaling, process scheduling and process management.\cite{Kubernetes}
+\section{Main Features Of Kubernetes}
 \begin{itemize}
-	\item \href{https://kubernetes.io/docs/concepts/services-networking/service/}{Service discovery and load balancing}
-	\item \href{https://kubernetes.io/docs/concepts/storage/persistent-volumes/}{Storage orchestration}
-	\item \href{https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/}{Automatic bin packing}
-	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#how-a-replicationcontroller-works}{Self-healing}
-	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/deployment/}{Automated rollouts and rollbacks}
-	\item \href{https://kubernetes.io/docs/concepts/configuration/secret/}{Secret and configuration management}
-	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/}{Batch execution}
-	\item \href{https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/}{Horizontal scaling}
+	\item \href{https://kubernetes.io/docs/concepts/services-networking/service/}{Service discovery and load balancing}\cite{Kservice}
+	\item \href{https://kubernetes.io/docs/concepts/storage/persistent-volumes/}{Storage orchestration}\cite{Kstorch}
+	\item \href{https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/}{Automatic bin packing}\cite{Kmanage}
+	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#how-a-replicationcontroller-works}{Self-healing}\cite{Kcontrol}
+	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/deployment/}{Automated rollouts and rollbacks}\cite{Krollout}
+	\item \href{https://kubernetes.io/docs/concepts/configuration/secret/}{Secret and configuration management}\cite{Kscmanage}
+	\item \href{https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/}{Batch execution}\cite{Kbe}
+	\item \href{https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/}{Horizontal scaling}\cite{Khs}
 \end{itemize}
-\subsection{Terminologies in Kubernetes}
-\subsubsection{Pod}
+\section{Terminologies in Kubernetes}
+\subsection{Pod}
 The most fundamental unit in a kubernetes cluster is a pod. A pod is a collection of container and volumes. Each pod is assigned an IP address.\\
 \begin{figure}[h!]
 	\begin{center}
@@ -476,7 +477,7 @@ The most fundamental unit in a kubernetes cluster is a pod. A pod is a collectio
 		\caption{Kubernetes pods \cite{Pods}}
 	\end{center}
 \end{figure}
-\subsubsection{Deployment}
+\subsection{Deployment}
 A deployment can be seen as a stateless state of the pod. A deployment is used to provide pod definition and rolling updates to the pod. A deployment contains information such as number of replicas, image, volume mount, hostname and restart policy.\\
 \begin{figure}[h!]
 	\begin{center}
@@ -484,7 +485,7 @@ A deployment can be seen as a stateless state of the pod. A deployment is used t
 		\caption{Kubernetes deployment \cite{Deployments}}
 	\end{center}
 \end{figure}
-\subsubsection{Service}
+\subsection{Service}
 A service exposes a deployment as a network service. A deployment is stateless whereas a service can be considered as a stateful definition. The three types of services in kubernetes are: ClusterIP, NodePort and LoadBalancer.\\
 \begin{figure}[h!]
 	\begin{center}
@@ -492,7 +493,7 @@ A service exposes a deployment as a network service. A deployment is stateless w
 		\caption{Kubernetes service \cite{Service}}
 	\end{center}
 \end{figure}
-\subsubsection{Ingress network}
+\subsection{Ingress network}
 An ingress network exposes the services in the cluster to the outside network i.e. to the clients. An ingress helps us in handling the outside traffic and routing it based on the context.\\
 \begin{figure}[h!]
 	\begin{center}
@@ -500,7 +501,7 @@ An ingress network exposes the services in the cluster to the outside network i.
 		\caption{Ingress network \cite{Ingress}}
 	\end{center}
 \end{figure}
-\subsection{Networking in Kubernetes}
+\section{Networking in Kubernetes}
 Kubernetes supports a large number of network plugins using different protocols. The type of networking to be used completely depends on the type of cluster you want to set up and your cluster requirements.\\\\
 In a kubernetes network, each pod is assigned its own IP address. Pods can communicate with pods, nodes and services in a node without NAT. \\\\
 The networking in kubernetes can be primarily broken down into 4 parts :
@@ -511,7 +512,7 @@ The networking in kubernetes can be primarily broken down into 4 parts :
 	\item Service to external Communication
 \end{enumerate}
 The major plugins used for achieving these communications are :
-\subsubsection{Flannel}
+\subsection{Flannel}
 Flannel is the simplest kubernetes network  which satisfies all kubernetes requirements. Flannel is basically an overlay network.
 \begin{figure}[h!]
 	\begin{center}
@@ -519,7 +520,7 @@ Flannel is the simplest kubernetes network  which satisfies all kubernetes requi
 		\caption{Flannel network \cite{Flannel}}
 	\end{center}
 \end{figure}
-\subsubsection{Calico}
+\subsection{Calico}
 Calico provides a highly scalable networking and network policy solution for connecting Kubernetes pods based on the same IP networking principles as the internet, for both Linux and Windows. Calico can be deployed without encapsulation or overlays to provide high-performance, high-scale data center networking.\\
 \begin{figure}[h!]
 	\begin{center}
@@ -528,7 +529,7 @@ Calico provides a highly scalable networking and network policy solution for con
 	\end{center}
 \end{figure}
 
-\subsubsection{Weavenet}
+\subsection{Weavenet}
 Weavenet is a simple network for kubernetes and its hosted applications. Weave Net runs as a CNI plug-in or stand-alone.
 \begin{figure}[h!]
 	\begin{center}
@@ -537,22 +538,22 @@ Weavenet is a simple network for kubernetes and its hosted applications. Weave N
 	\end{center}
 \end{figure}
 \\\\\\\\\\\\\\\\\\\\\\\\
-\\In addition to these, kubernetes supports many other plugins too. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
-\subsection{Prerequisites for running kubernetes \cite{Prereq}}
-\subsubsection{Disable Swap Space}
+\\In addition to these, kubernetes supports many other plugins too. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes})\cite{Knet}.
+\section{Prerequisites for running kubernetes \cite{Prereq}}
+\subsection{Disable Swap Space}
 In order to set up a kubernetes cluster, all nodes including the master must have swap space disabled.
 \begin{itemize}
 	\item To disable swap space for currenThere are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\\\t session, run: \\
 	\textbf{\$ sudo swapoff -a}
 	\item To permanently disable swap space, go to /etc/fstab and comment the swap space line.
 \end{itemize}
-\subsubsection{Make IP static}
+\subsection{Make IP static}
 All nodes in cluster including master must have a static IP address.\\
 In order to manually make the IP static add the following lines to the file /etc/network/interfaces:\\\\
 auto wlo1\\
 iface wlo1 inet static\\
 address  YOUR\_IP\_ADDRESS
-\subsection{Kubernetes setup}
+\section{Kubernetes setup}
 \begin{enumerate}
 	\item Install docker (follow the steps given \hyperref[sec:dockerinstall]{here} to successfully install docker).
 	\item Enable docker to run automatically on startup:\\
@@ -566,7 +567,7 @@ address  YOUR\_IP\_ADDRESS
 	\textbf{\$ sudo apt-get install kubectl}\\
 	\textbf{\$ sudo apt-get install kubelet}
 \end{enumerate}
-\subsection{Setting up your Kubernetes cluster}
+\section{Setting up your Kubernetes cluster}
 In order to set up your cluster first, initialise your master with kubeadm:\\\\
 \textbf{\$ kubeadm init  -{}-apiserver-advertise-address=YOUR\_IP\_ADDRESS    -{}-pod-network-cidr=40.196.0.0/16}\\\\
 On successful execution of the command, we get a join command for the worker nodes to join the cluster. Preserve this command to bring nodes into the cluster once the dashboard is created.\\\\
@@ -582,7 +583,7 @@ Once the cluster has been successfully initialised, run the following commands :
 	\$ sudo cp -i /etc/kubernetes/admin.conf \$HOME/.kube/config\\
 	\$ sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
 }
-\subsubsection{Setting up a pod network}
+\subsection{Setting up a pod network}
 There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\
 Once the network is set up, we need to install and host the dashboard on localhost.Flannel is a overlay network whereas calico is an L3 network. The advantages in detail can be read from this  \href{https://medium.com/@jain.sm/flannel-vs-calico-a-battle-of-l2-vs-l3-based-networking-5a30cd0a3ebd}{medium Blog}.\\\\
 i) To install and set up a calico pod network, run the command :\\\\
@@ -592,7 +593,7 @@ ii) To install and set up flannel pod network, run the command :\\\\
 Run \textbf{kubectl get pods -o wide --all-namespaces} to view all the running pods:\\\\
 In case you face a CrashLoopBackOff error in running the coredns pods. Resolve the issue using the stackoverflow link \href{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041#53414041}{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041\#53414041}\cite{Coredns} \\\\
 Once the network is set up, we need to install and host the dashboard on localhost.
-\subsubsection{Setting up and hosting the dashboard \cite{Dashboard}}
+\subsection{Setting up and hosting the dashboard \cite{Dashboard}}
 i) For installation and hosting in localhost : \\\\
 \textbf{\$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/\\v1.8.3/src/deploy/recommended/kubernetes-dashboard.yaml}\\\\
 ii) For Creating service account:\\\\
@@ -608,7 +609,7 @@ After the token is generated you can run the dashboard on localhost on port 8001
 Now you can visit the dashboard on the localhost:8001 at url:\\\\
 \href{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/}{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-\\dashboard:/proxy/}\\\\
 The dashboard can be accessed by entering the token generated. We can see the pods running, deployments, services and volumes created. We can also scale up and scale down the number of replicas.
-\subsubsection{Kubernetes commands for getting resource info}
+\subsection{Kubernetes commands for getting resource info}
 In order to get the complete details of  the pods via command line run the command :\\\\
 \textbf{\$ kubectl get pods -o wide -{}-all-namespaces}\\\\
 For viewing pods in default namespace run the command:\\\\
@@ -617,7 +618,7 @@ Similarly for viewing deployments and services run the corresponding commands:\\
 \textbf{\$ kubectl get deployments}\\
 \textbf{\$ kubectl get services}\\\\
 Once the cluster is set up, we can create deployments for the running in the cluster. We can expose these deployments to endpoints via services and to external traffic by creating an ingress network.
-\subsection{Kubernetes API Server}
+\section{Kubernetes API Server}
 The Gateway to the Kubernetes cluster is the Kubernetes API server. It is a centralized system that is accessed by all users, automation, and components in the Kubernetes cluster. The API server implements a RESTful API over HTTP, performs all API operations, and is responsible for storing API objects into a tent storage backend.
 \begin{figure}[h!]
 	\begin{center}
@@ -625,7 +626,8 @@ The Gateway to the Kubernetes cluster is the Kubernetes API server. It is a cent
 		\caption{Kubernetes architecture \cite{KArc}}
 	\end{center}
 \end{figure}
-\subsubsection{Pieces of API Server}
+\\\\
+\subsection{Pieces of API Server}
 Kubernetes API server has three core functions:
 \begin{itemize}
 	\item \textbf{API management:}\\\\
@@ -635,7 +637,7 @@ Kubernetes API server has three core functions:
 	\item \textbf{Internal control loops:}\\\\
 	Internal control loops has internals responsibilities for background operations necessary to the successful operation of the API server.
 \end{itemize}
-\subsubsection{API Management \cite{KubernetesManagement}}
+\subsection{API Management \cite{KubernetesManagement}}
 The API server is an HTTP server—thus, every API request is an HTTP request. But the characteristics of those HTTP requests must be described so that the client and server know how to communicate. For the purposes of exploration, it’s great to have an API server actually up and running so that you can poke at it. You can either use an existing Kubernetes cluster that you have access to, or you can use the minikube tool for a local Kubernetes cluster. To make it easy to use the curl tool to explore the API server, run the kubectl tool in proxy mode to expose an unauthenticated API server on localhost:8001 using the following command:\\\\
 \textbf{\$ kubectl proxy}
 \subsection{Request Management}
@@ -653,11 +655,11 @@ Type of request performed by the API server are as follows:
 		\caption{Request management \cite{Request}}
 	\end{center}
 \end{figure}
-\subsection{ETCD}
+\section{ETCD}
 A key-value storage for kubernetes backing store for all cluster data.
-\subsection{Kube-Scheduler}
+\section{Kube-Scheduler}
 If there is a newly created pod which is not allocated any node then Kube-Scheduler select a node for them to run.
-\subsection{Kube-Control-Manager}
+\section{Kube-Control-Manager}
 Kube-Control-Manager is a component on master that runs controllers.
 Each controller is a separate process but they are all merged.\\\\
 These controllers include:
@@ -667,9 +669,9 @@ These controllers include:
 	\item \textbf{Endpoints controller:} Populates the Endpoints object (that is, joins Services \& Pods).
 	\item \textbf{Service Account \& Token Controllers:} Create default accounts and API access tokens for new namespaces.
 \end{itemize}
-\subsection{Converting docker-compose file to its Kubernetes equivalent}
+\section{Converting docker-compose file to its Kubernetes equivalent}
 As we have docker-compose in docker we similarly have a kompose file with kubernetes. We can deploy a docker-compose created stack on a docker-swarm cluster. 
-\subsubsection{Kompose}
+\subsection{Kompose}
 Kompose is tool provided by kubernetes which converts a docker-compose file into kompose files for providers like kubernetes and openshift. For each service in a compose file we have a deployment, service and persistent volume claim file in kompose. We can also create our persistent volume file is we require a persistent volume for our services.\\\\
 \textbf{Installing Kompose on Linux :}
 \begin{enumerate}
@@ -684,13 +686,13 @@ In order to convert the compose file into kompose run the command :\\\\
 In order to run yaml file in kubernetes we use the command :\\\\
 \textbf{\$ kubectl apply -f FILE\_NAME.yaml}\\\\
 Kompose provides an easy solution for  converting a docker-compose file into kompose. Docker-compose is an easy to write file whereas kompose files are a bit lengthy and it get a bit tedious to code. So kompose provides an easy alternative. The files provided by kompose does not have a 100\% conversion rate but we can change files as per our requirements.\\\\
-We have converted the docker-compose.yml and docker-compose-host.yml file in devstack to kompose file. We have created a PersistentVolume.yml for each service which creates a pool of space from where a persistentvolumeclaim can claim a volume for the pod. The kompose converts the file in kompose objects and then into kuebernetes objects and then into yaml or json output as per out requirements.
+We have converted the docker-compose.yml and docker-compose-host.yml file in devstack to kompose file. We have created a PersistentVolume.yml for each service which creates a pool of space from where a persistentvolumeclaim can claim a volume for the pod. The kompose converts the file in kompose objects and then into kuebernetes objects and then into yaml or json output as per our requirements.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.38\textheight]{kompose}
 		\caption{Kompose \cite{Kompose}}
 	\end{center}
-\end{figure}
+\end{figure}\\\\\\\\\\
 \\The persistent volumes present are created by admin so that a developer can attach a claim and use the volume for the pod.
 \begin{figure}[h!]
 	\begin{center}
@@ -698,13 +700,12 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 		\caption{Persistent volumes \cite{Persistent}}
 	\end{center}
 \end{figure}
-\\\\\\\\\\
-\subsubsection{Compose on Kubernetes}
-We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})
+\subsection{Compose on Kubernetes}
+We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})\\\\
+In order to deploy services on a stack using Kubernetes as an orchestrator, we can use Compose on Kubernetes. In order to install Compose on Kubernetes on a global Kubernetes engine, follow the link \url{https://github.com/docker/compose-on-kubernetes/blob/master/docs/install-on-gke.md}
 \chapter{Our progress}
-\section{Our progress}
 In this project, our aim was to deploy an instance of Open edX on a Kubernetes cluster.
-\subsection{Kubernetes cluster}
+\section{Kubernetes cluster}
 At first, we set up a Kubernetes cluster as mentioned above with one master and three nodes.
 \begin{figure}[h!]
 	\begin{center}
@@ -712,11 +713,11 @@ At first, we set up a Kubernetes cluster as mentioned above with one master and 
 		\caption{Nodes connected in a Kuberentes cluster}
 	\end{center}
 \end{figure}
-\\\\\\\\\\\\\\\\\\\\
-\subsection{Kompose}
+\\\\\\
+\section{Kompose}
 We converted the docker-compose.yaml file for Open edX containers to multiple Kubernetes deployment files (YAML). But, since the conversion rate was not 100\%, we had to create persistent volumes and claims for those volumes on our own.\\\\
 The converted files can be found in the github repository : \\ \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kompose_files}{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kompose\_files} \cite{Komposefiles}
-\subsection{Persistent volumes and Persistent volume claims}
+\section{Persistent volumes and Persistent volume claims}
 We made YAML files to create persistent volumes and then attached each volume to a claim using its corresponding persistent-volume-claim.yaml file.\\\\
 The persistent volume and claim files can be found in the github repository :\\\\ \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/host_volumes}{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/host\_volumes} \cite{Hostvolumes}. \\\\You need not create all the persistent volume and claim files manually, we have created a bash script \textbf{volumes.sh} in the same directory that does the job. 
 \begin{figure}[h!]
@@ -731,7 +732,7 @@ The persistent volume and claim files can be found in the github repository :\\\
 		\caption{Persistent Volume Claims}
 	\end{center}
 \end{figure}
-\subsection{Kubernetes deployment}
+\section{Kubernetes deployment}
 We then deployed all the 15 containers on the cluster. Kubernetes assigned the appropriate node (one among the two) for each container to run.
 \begin{figure}[h!]
 	\begin{center}
@@ -746,7 +747,7 @@ We then deployed all the 15 containers on the cluster. Kubernetes assigned the a
 		\caption{Kubernetes deployments after removing gradebook and forum}
 	\end{center}
 \end{figure}
-\subsection{Fault handling}
+\section{Fault handling}
 We removed one node from the cluster and found out that Kubernetes deployed all the containers running on that node to the node that was still a part of the cluster.\\\\
 \textbf{The pods running in the cluster:}
 \begin{itemize}
@@ -766,14 +767,16 @@ We removed one node from the cluster and found out that Kubernetes deployed all 
 		\end{figure}
 \end{itemize}
 As we can see, the pods which were earlier running on the node epsy, now run on the remaining nodes after, their host node is deleted. This rescheduling of the pods is done automatically by Kubernetes once a node goes down. The reshudiling takes very less time as is clear from the image (15-16 seconds in this case). 
-\subsection{Provisioning}
+\\\\\\\\\\
+\section{Provisioning}
 The file provision.sh in the devstack directory has the commands and links to the files that are to be executed for provisioning and migration of databases. Those are simply docker commands. Since, our containers are running on a Kubernetes cluster, we used the \textbf{kubectl exec} in place of \textbf{docker exec} to run commands inside the containers. But we faced an internet connectivity issue for the pods: \\\\
 \textbf{The containers running inside the Kubernetes cluster were not able to connect to the internet}\\\\
 Commands those were to be executed inside a container and required internet access failed, as containers were not able to connect to the internet.\\\\
 \textbf{Suggested resolutions:\\\\}These are some methods that may solve this issue (due to lack of time, we were not able to try them properly and anyone taking up this project from here on can try these methods):
 \begin{itemize}
 	\item On further research, we found out that the internet connectivity problem of the containers was probably due to some issue in the DNS resolution. This can be further looked up using this link: \href{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}\cite{DNS}
-	\item We can mention the commands that are to be executed inside a containere inside its deployment file itself. This is probably a better way than the above one as here the commands will be executed inside any new container that is created through that deployment file. This can be done by using \textbf{command} and \textbf{args} fields in the deployment file.
+	\item We can mention the commands that are to be executed inside a containere inside its deployment file itself. This is probably a better way than the above one as here the commands will be executed inside any new container that is created through that deployment file. This can be done by using \textbf{command} and \textbf{args} fields in the deployment file.\\\\
+	We can create a ConfigMap containing all the arguments to be passed to the commands that are to be run inside the container. So, whenever a new pod is created, the containers are configured accordingly.\cite{Configmap}
 	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
 \end{itemize}
 \pagebreak
@@ -875,7 +878,9 @@ The application under test could handle 100 users for the specified server confi
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S2.png}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S2.png}\begin{center}
+		\textbf{\Large{Performance Testing Open edX Ironwood Release}}
+	\end{center}
 	\caption{A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }
 \end{figure}
 \begin{figure}[h!]
