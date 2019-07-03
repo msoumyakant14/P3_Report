@@ -4,7 +4,7 @@
 \BOOKMARK [2][-]{subsection.2.2}{Installation}{section.2}% 4
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Native installation}{subsection.2.2}% 5
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Docker-based installation}{subsection.2.2}% 6
-\BOOKMARK [1][-]{section.3}{Docker}{}% 7
+\BOOKMARK [1][-]{section.3}{Docker Docker}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{About Docker}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Terms related to Docker}{section.3}% 9
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Containerization}{subsection.3.2}% 10
@@ -15,59 +15,57 @@
 \BOOKMARK [3][-]{subsubsection.3.2.6}{Docker Compose}{subsection.3.2}% 15
 \BOOKMARK [3][-]{subsubsection.3.2.7}{Dockerfiles}{subsection.3.2}% 16
 \BOOKMARK [2][-]{subsection.3.3}{Docker-Machine}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{Docker Swarm}{section.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Types of networks in docker}{subsection.3.4}% 19
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Initialising with docker swarm as Manager}{subsection.3.4}% 20
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Docker Stack}{subsection.3.4}% 21
-\BOOKMARK [1][-]{section.4}{Ansible}{}% 22
-\BOOKMARK [2][-]{subsection.4.1}{Installing openssh}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.2}{Generating key at server and copying in client}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.3}{Ansible setup}{section.4}% 25
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Adding repository}{subsection.4.3}% 26
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Installing ansible}{subsection.4.3}% 27
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Checking version}{subsection.4.3}% 28
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Ansible directories}{subsection.4.3}% 29
-\BOOKMARK [3][-]{subsubsection.4.3.5}{Making a copy a directory for our use}{subsection.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.4}{Some useful commands for ansible}{section.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.4.1}{To see the hostnames of all nodes}{subsection.4.4}% 32
-\BOOKMARK [3][-]{subsubsection.4.4.2}{To see the volumes used by all nodes}{subsection.4.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.4.3}{To run an ansible-playbook}{subsection.4.4}% 34
-\BOOKMARK [1][-]{section.5}{Kubernetes}{}% 35
-\BOOKMARK [2][-]{subsection.5.1}{What is Kubernetes}{section.5}% 36
-\BOOKMARK [2][-]{subsection.5.2}{Main Features Of Kubernetes}{section.5}% 37
-\BOOKMARK [2][-]{subsection.5.3}{Terminologies in Kubernetes}{section.5}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Pod}{subsection.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Deployment}{subsection.5.3}% 40
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Service}{subsection.5.3}% 41
-\BOOKMARK [3][-]{subsubsection.5.3.4}{Ingress network}{subsection.5.3}% 42
-\BOOKMARK [2][-]{subsection.5.4}{Networking in Kubernetes}{section.5}% 43
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Flannel}{subsection.5.4}% 44
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Calico}{subsection.5.4}% 45
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Weavenet}{subsection.5.4}% 46
-\BOOKMARK [2][-]{subsection.5.5}{Prerequisites for running kubernetes}{section.5}% 47
-\BOOKMARK [3][-]{subsubsection.5.5.1}{Disable Swap Space}{subsection.5.5}% 48
-\BOOKMARK [3][-]{subsubsection.5.5.2}{Make IP static}{subsection.5.5}% 49
-\BOOKMARK [2][-]{subsection.5.6}{Kubernetes setup}{section.5}% 50
-\BOOKMARK [2][-]{subsection.5.7}{Setting up your Kubernetes cluster}{section.5}% 51
-\BOOKMARK [3][-]{subsubsection.5.7.1}{Setting up a pod network}{subsection.5.7}% 52
-\BOOKMARK [3][-]{subsubsection.5.7.2}{Setting up and hosting the dashboard}{subsection.5.7}% 53
-\BOOKMARK [3][-]{subsubsection.5.7.3}{Kubernetes commands for getting resource info}{subsection.5.7}% 54
-\BOOKMARK [2][-]{subsection.5.8}{Kubernetes API Server}{section.5}% 55
-\BOOKMARK [3][-]{subsubsection.5.8.1}{Pieces of API Server}{subsection.5.8}% 56
-\BOOKMARK [3][-]{subsubsection.5.8.2}{API Management}{subsection.5.8}% 57
-\BOOKMARK [2][-]{subsection.5.9}{Request Management}{section.5}% 58
-\BOOKMARK [2][-]{subsection.5.10}{ETCD}{section.5}% 59
-\BOOKMARK [2][-]{subsection.5.11}{Kube-Scheduler}{section.5}% 60
-\BOOKMARK [2][-]{subsection.5.12}{Kube-Control-Manager}{section.5}% 61
-\BOOKMARK [2][-]{subsection.5.13}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 62
-\BOOKMARK [3][-]{subsubsection.5.13.1}{Kompose}{subsection.5.13}% 63
-\BOOKMARK [3][-]{subsubsection.5.13.2}{Compose on Kubernetes}{subsection.5.13}% 64
-\BOOKMARK [1][-]{section.6}{Tutor: An alternative}{}% 65
-\BOOKMARK [1][-]{section.7}{Deployment}{}% 66
-\BOOKMARK [2][-]{subsection.7.1}{System Configurations}{section.7}% 67
-\BOOKMARK [2][-]{subsection.7.2}{System Configurations}{section.7}% 68
-\BOOKMARK [1][-]{section.8}{Another Section name}{}% 69
-\BOOKMARK [2][-]{subsection.8.1}{Subsection}{section.8}% 70
-\BOOKMARK [1][-]{section.9}{Fifth Section name}{}% 71
-\BOOKMARK [2][-]{subsection.9.1}{Subsection}{section.9}% 72
-\BOOKMARK [3][-]{subsubsection.9.1.1}{Sub-Sub-section}{subsection.9.1}% 73
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Install Docker Machine:}{subsection.3.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Use Docker Machine to run Docker Containers:}{subsection.3.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Create a Machine}{subsection.3.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Connect your shell to the new machine}{subsection.3.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Run containers and experiment with machine commands}{subsection.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.4}{Docker Swarm}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Types of networks in docker}{subsection.3.4}% 24
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Initialising with docker swarm as Manager}{subsection.3.4}% 25
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Docker Stack}{subsection.3.4}% 26
+\BOOKMARK [1][-]{section.4}{Ansible}{}% 27
+\BOOKMARK [2][-]{subsection.4.1}{Installing openssh}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.2}{Generating key at server and copying in client}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.3}{Ansible setup}{section.4}% 30
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Adding repository}{subsection.4.3}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Installing ansible}{subsection.4.3}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Checking version}{subsection.4.3}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Ansible directories}{subsection.4.3}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Making a copy a directory for our use}{subsection.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.4}{Some useful commands for ansible}{section.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.4.1}{To see the hostnames of all nodes}{subsection.4.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.4.2}{To see the volumes used by all nodes}{subsection.4.4}% 38
+\BOOKMARK [3][-]{subsubsection.4.4.3}{To run an ansible-playbook}{subsection.4.4}% 39
+\BOOKMARK [1][-]{section.5}{KubernetesKubernetes}{}% 40
+\BOOKMARK [2][-]{subsection.5.1}{What is Kubernetes}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.2}{Main Features Of Kubernetes}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.3}{Terminologies in Kubernetes}{section.5}% 43
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Pod}{subsection.5.3}% 44
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Deployment}{subsection.5.3}% 45
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Service}{subsection.5.3}% 46
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Ingress network}{subsection.5.3}% 47
+\BOOKMARK [2][-]{subsection.5.4}{Networking in Kubernetes}{section.5}% 48
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Flannel}{subsection.5.4}% 49
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Calico}{subsection.5.4}% 50
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Weavenet}{subsection.5.4}% 51
+\BOOKMARK [2][-]{subsection.5.5}{Prerequisites for running kubernetes Prereq}{section.5}% 52
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Disable Swap Space}{subsection.5.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Make IP static}{subsection.5.5}% 54
+\BOOKMARK [2][-]{subsection.5.6}{Kubernetes setup}{section.5}% 55
+\BOOKMARK [2][-]{subsection.5.7}{Setting up your Kubernetes cluster}{section.5}% 56
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Setting up a pod network}{subsection.5.7}% 57
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Setting up and hosting the dashboard Dashboard}{subsection.5.7}% 58
+\BOOKMARK [3][-]{subsubsection.5.7.3}{Kubernetes commands for getting resource info}{subsection.5.7}% 59
+\BOOKMARK [2][-]{subsection.5.8}{Kubernetes API Server}{section.5}% 60
+\BOOKMARK [3][-]{subsubsection.5.8.1}{Pieces of API Server}{subsection.5.8}% 61
+\BOOKMARK [3][-]{subsubsection.5.8.2}{API Management KubernetesManagement}{subsection.5.8}% 62
+\BOOKMARK [2][-]{subsection.5.9}{Request Management}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.10}{ETCD}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.11}{Kube-Scheduler}{section.5}% 65
+\BOOKMARK [2][-]{subsection.5.12}{Kube-Control-Manager}{section.5}% 66
+\BOOKMARK [2][-]{subsection.5.13}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 67
+\BOOKMARK [3][-]{subsubsection.5.13.1}{Kompose}{subsection.5.13}% 68
+\BOOKMARK [3][-]{subsubsection.5.13.2}{Compose on Kubernetes}{subsection.5.13}% 69
+\BOOKMARK [2][-]{subsection.5.14}{System Configurations}{section.5}% 70
+\BOOKMARK [2][-]{subsection.5.15}{System Configurations}{section.5}% 71

@@ -2,7 +2,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 
 \title{Document Template in Latex}
-\author{Firuza Aibara}
+\author{Ekalavya Interns}
 
  \ifx\pdftexversion\undefined
  \usepackage[dvips]{graphicx}
@@ -39,10 +39,12 @@
 \begin{titlepage}
  \begin{center}
 \Huge
-\textbf{Configurable and Scalable IITBombayX MOOC platform on commodity servers} \\
+\textbf{Configurable and Scalable IITBombayX MOOC platform on commodity servers} 
 \vfill
 \LARGE
-\textbf{Amit Kumar Tiwari, Harshit Mogalapalli, Mridul Mahajan, Ritik Kumar,\\ Soumyakant Mohakul}\\
+\textbf{Amit Kumar Tiwari, Harshit Mogalapalli, Mridul Mahajan, Ritik Kumar,\\ Soumyakant Mohakul\\}
+\textbf{\\}
+Guided by Mr.Nagesh Karmali
 \vfill
 \Large
 Last Updated: \today
@@ -60,9 +62,6 @@ Last Updated: \today
 
 \pagebreak
 
-\listoftables
-
-\pagebreak
 
 \tableofcontents
 
@@ -221,7 +220,7 @@ Ubuntu package sources need to be updated:\\\\
 	\end{enumerate}
 	 
 	
-\section{Docker}
+\section{Docker \cite{Docker}}
 \subsection{About Docker}
 Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. The use of Linux containers to deploy applications is called containerization. A Container allows us to package an application with all of the parts needed to run an application (code, system tools, logs, libraries, configuration settings and other dependencies) and sends it out as a single standalone package deployable via \href{https://goo.gl/f77a2v}{Ubuntu} (in this case 16.04 LTS). Docker can be installed on \href{https://goo.gl/iTES81}{other platforms} as well. Currently, the Docker software is maintained by the Docker community and Docker Inc. Check out the \href{https://docs.docker.com/}{official documentation} to find more specifics on Docker. Docker Terms and Concepts. 
 \subsection{Terms related to Docker}
@@ -242,7 +241,34 @@ Dockerfiles are merely text documents (.yaml files) that contains all of the con
 \subsection{Docker-Machine}
 Docker Machine can be used to :
 \begin{itemize}
-	\item Manage and manage multiple remote Docker hosts.
+	\item Manage and provision multiple remote Docker hosts.
+	\item Provision Swarm clusters.
+\end{itemize}
+Docker Machine is a tool that lets you install Docker Engine on virtual hosts, and manage hosts with docker-machine commands. Using docker-machine command you can start, inspect, stop and restart a managed host, upgarde the Docker client and daemon, and configure a Docker client to talk to your host.
+\subsubsection{Install Docker Machine:}
+\begin{itemize}
+	\item For Linux systems, execute the following command:\\\\
+	\textbf{\$ base=https://githubcom/docker/machine/releases/download/v0.16 \&\& curl -L \$base/docker-machine-\$(uname -s)-\$(uname -m) $>$/usr/local/bin/docker-machine \&\& chmod +x /usr/local/bin/docker-machine}
+	\item Check the installation by displaying the Machine version:\\\\
+	\textbf{\$ docker-machine version}
+\end{itemize}
+\subsubsection{Use Docker Machine to run Docker Containers:}
+\begin{itemize}
+	\item Create a new docker virtual machine
+	\item Switch your environment to your new VM
+	\item Use the docker client to create, load and manage containers
+\end{itemize}
+\subsubsection{Create a Machine}
+\textbf{\$ docker-machine create --driver virtualbox default}
+\subsubsection{Connect your shell to the new machine}
+\textbf{\$eval “\$(docker-machine env default)”}
+\subsubsection{Run containers and experiment with machine commands}
+\begin{itemize}
+	\item Use \textbf{docker-run} to download and run images
+	\item Run \textbf{docker-machine ip default} to get the host IP address.
+	\item Run \textbf{docker-machine stop default} to stop the host default.
+	\item Run \textbf{docker-machine start default} to start the host default.
+	\item Run \textbf{docker-machine env -u} to see which Docker variables we need to unset to switch to the current shell.
 \end{itemize}
 \subsection{Docker Swarm}
 Docker swarm is used to create a cluster of nodes. Multi-container, multi-machine applications are made possible by joining multiple machines into a “Dockerized” cluster called a swarm. Docker swarm is a group of machines running docker and are connected to each other by means of an overlay network. There can be one or multiple nodes that can manage the swarm, these nodes are called manager nodes. The rest of the nodes only provide capacity to run the containers and are called worker nodes. 
@@ -281,6 +307,7 @@ To deploy a stack we create a docker-compose file with an additional feature in 
 The -c flag is used to execute the docker compose file and create multiple interdependent services which can communicate with each other via the swarm network.\\\\
 An example of docker-compose file for stack deployment: \href{https://drive.google.com/file/d/1t3MwMzXrjDNgrXTeLmwiEe5Hj0q6pueq/view?usp=sharing}{example-voting-app.yml}
 \section{Ansible}
+Installing docker, kubernetes and all other components in each node of multinode cluster containing 100 nodes can be a tedious task. To overcome this issue we need ansible for configuration management. By default ansible uses native openSSH connection and runs commands simultaneously on multiple nodes. We have created ansible playbooks for all needed configurations.
 \subsection{Installing openssh}
 \$ sudo apt-get install openssh-server\\
 \$ sudo apt-get install openssh-client
@@ -312,7 +339,7 @@ vi hosts (remove all and write all nodes in new line)\\\\
 \$ ansible -m shell -a 'df -h' all
 \subsubsection{To run an ansible-playbook}
 \$ ansible-playbook  -K playbook-docker.yml
-\section{Kubernetes}
+\section{Kubernetes\cite{Kubernetes}}
 \subsection{What is Kubernetes}
 Kubernetes is a container-orchestration tool developed by Google in 2015 and later donated to CNCF (Cloud Native Computing Foundation). Kubernetes provides a smart way for orchestration in setting a multi-node cluster. Kubernetes comes with a lot of functionalities such as load balancing, pod scaling, process scheduling and process management.
 \subsection{Main Features Of Kubernetes}
@@ -343,14 +370,15 @@ A deployment can be seen as a stateless state of the pod. A deployment is used t
 		\caption{Kubernetes deployment}
 	\end{center}
 \end{figure}
+\\\\\\\\\\
 \subsubsection{Service}
 A service exposes a deployment as a network service. A deployment is stateless whereas a service can be considered as a stateful definition. The three types of services in kubernetes are: ClusterIP, NodePort and LoadBalancer.\\
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[totalheight=0.4\textheight]{service}
+		\includegraphics[totalheight=0.25\textheight]{service}
 		\caption{Kubernetes service}
 	\end{center}
-\end{figure}\\\\\\\\\\\\
+\end{figure}
 \subsubsection{Ingress network}
 An ingress network exposes the services in the cluster to the outside network i.e. the clients. An ingress helps us in handling the outside traffic and directing them to the various services.\\
 \begin{figure}[h!]
@@ -386,17 +414,17 @@ Calico provides a highly scalable networking and network policy solution for con
 		\caption{Calico network}
 	\end{center}
 \end{figure}
-\clearpage
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \subsubsection{Weavenet}
 Weavenet is a simple network for kubernetes and its hosted applications. Weave Net runs as a CNI plug in or stand-alone.
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[totalheight=0.35\textheight]{weavenet}
+		\includegraphics[totalheight=0.3\textheight]{weavenet}
 		\caption{Weavenet}
 	\end{center}
 \end{figure}
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\In addition to these we have a lot of network plugins supported by kubernetes. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
-\subsection{Prerequisites for running kubernetes}
+\\In addition to these we have a lot of network plugins supported by kubernetes. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
+\subsection{Prerequisites for running kubernetes \cite{Prereq}}
 \subsubsection{Disable Swap Space}
 In order to set up a kubernetes cluster all nodes including master must have swap space disabled.
 \begin{itemize}
@@ -447,7 +475,7 @@ On successful execution of the command we get a join command for the worker node
 	\textbf{\$ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/\\Documentation/kube-flannel.yml}\\\\
 	There are a lot of plugins available that can be used as per the requirements. In this project we have used a calico pod network as CNI.\\
 	Once the network is set up we need to install and host the dashboard on localhost.
-\subsubsection{Setting up and hosting the dashboard}
+\subsubsection{Setting up and hosting the dashboard \cite{Dashboard}}
 	i) For installation and hosting in localhost : \\\\
 	\textbf{\$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/\\v1.8.3/src/deploy/recommended/kubernetes-dashboard.yaml}\\\\
 	ii) For Creating service account:\\\\
@@ -473,7 +501,7 @@ On successful execution of the command we get a join command for the worker node
 	\textbf{\$ kubectl get services}\\\\
 	So now the cluster is set up and we can create deployments for the running in the cluster. We can expose these deployments to endpoints via services and to external traffic by creating an ingress network.
 	\subsection{Kubernetes API Server}
-	Gateway to the Kubernetes cluster is Api server. It is a centralized system that is accessed by all users, automation, and components in the Kubernetes cluster. The API server implements a RESTful API over HTTP, performs all API operations, and is responsible for storing API objects into a persistent storage backend. This chapter covers the details of this operation.
+	Gateway to the Kubernetes cluster is Api server. It is a centralized system that is accessed by all users, automation, and components in the Kubernetes cluster. The API server implements a RESTful API over HTTP, performs all API operations, and is responsible for storing API objects into a tent storage backend. This chapter covers the details of this operation.
 	\begin{figure}[h!]
 		\begin{center}
 			\includegraphics[totalheight=0.32\textheight]{kubernetesapiserver}
@@ -490,7 +518,7 @@ On successful execution of the command we get a join command for the worker node
 		\item \textbf{Internal control loops:}\\\\
 		Internal control loops has internals responsibilities for background operations necessary to the successful operation of the API server.
 	\end{itemize}
-\subsubsection{API Management}
+\subsubsection{API Management \cite{KubernetesManagement}}
 The API server is an HTTP server—thus, every API request is an HTTP request. But the characteristics of those HTTP requests must be described so that the client and server know how to communicate. For the purposes of exploration, it’s great to have an API server actually up and running so that you can poke at it. You can either use an existing Kubernetes cluster that you have access to, or you can use the minikube tool for a local Kubernetes cluster. To make it easy to use the curl tool to explore the API server, run the kubectl tool in proxy mode to expose an unauthenticated API server on localhost:8001 using the following command:\\\\
 \textbf{\$ kubectl proxy}
 \subsection{Request Management}
@@ -546,7 +574,7 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 		\caption{Kompose}
 	\end{center}
 \end{figure}
-The persistent volumes present are created by admin so that a developer can attach a claim and use the volume for the pod.
+\\The persistent volumes present are created by admin so that a developer can attach a claim and use the volume for the pod.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.33\textheight]{persistentvolumes}
@@ -555,13 +583,7 @@ The persistent volumes present are created by admin so that a developer can atta
 \end{figure}
 \subsubsection{Compose on Kubernetes}
 We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})
-
-\section{Tutor: An alternative}
-Write text here
-
-\section{Deployment}
 \pagebreak
-
 \begin{center}
 	\textbf{\Large{Performance Testing Open edX Ironwood Release}}
 \end{center}
@@ -647,7 +669,7 @@ The application under test could handle 100 users for the specified server confi
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_mridul.png}
 	\caption{SAR CPU Metrics}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/mem_mridul.png}
 	\caption{SAR Memory Metrics}
@@ -748,7 +770,8 @@ The application under test could handle 10 users for the specified server config
 \clearpage
 \section*{Test Results} 
 \begin{itemize}
-	\item Under the current test setup and server configurations, it is evident that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of connections that could be handled by Open edX Devstack.
+	\item Under the current test setup and server configurations, it is evident that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of virtual connections that could be handled by Open edX Devstack.
+	\item In $1$ hour, the total number of transation completed by Open edX Native was $8174$, much more than that of Open edX Devstack, which amounted to $1030$.
 	\item Furthermore, the average response time of Open edX Native is $24.316$ seconds, which outperforms Open edX Devstack, whose average response time is $33.313$ seconds.
 	\item Along with that, the throughput, which has been measured in requests/sec, for Open edX Native is $4.01$, whereas it is $0.28$ for Open edX Devstack.
 	\item As for the CPU Utilization, Open edX Native consumes around 85-95\% of CPU Resources, which is much more than the CPU Utilization of Open edX Devstack (40-50\%).
@@ -759,52 +782,6 @@ The application under test could handle 10 users for the specified server config
 \par
 The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figure $enter the numbers$.
 
-\section{Another Section name}
-\begin{itemize}
-	\item write point 1 here \cite{SRS1998}\cite{SimpleCCP-Windows}
-	\item write point 2 here
-	\item write point 3 here
-\end{itemize}
-
-Example of Numbered list
-\begin{enumerate}
-	\item Write point 1 here
-	\item Write point 2 here
-	\item write point 3 here
-\end{enumerate}
-
-Write text here. Example of table.
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{|c|c|p{4cm}|}
- \hline
- \textbf{No.} & \textbf{Company} & \textbf{Operating System} \\
- \hline
- 1 & Nokia & Symbian (S60, S40) \\
- \hline
- 2 & Microsoft & Windows \\
- \hline
- 3 & Apple Inc. & IOS \\
- \hline
- 4 & Blackberry & Blackberry \\
- \hline
-\end{tabular}
- \caption{Mobile Operating Systems}
- \end{center}
-\end{table}
-
-\subsection{Subsection}
-Write text here
-
-
-\section{Fifth Section name}
-Write text here
-
-\subsection{Subsection}
-Write text here
-
-\subsubsection{Sub-Sub-section}
-Write text here
 
 \bibliographystyle{ieeetr}
 \bibliography{biblio}

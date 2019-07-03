@@ -1,7 +1,24 @@
 \begin{thebibliography}{1}
 
-\bibitem{SRS1998}
-``{IEEE Recommended Practice for Software Requirements Specifications. IEEE Std
-  830-1998},'' {\em IEEE Computer Society}, October 1998.
+\bibitem{Docker}
+``{Official website of Docker "\url{https://docs.docker.com/}".}.''
+
+\bibitem{Kubernetes}
+``{Official website of Kubernetes "\url{https://kubernetes.io/docs/home/}".
+  }.''
+
+\bibitem{Prereq}
+``{Prereq "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}".
+  }.''
+
+\bibitem{Dashboard}
+``{Dashboard
+  "\url{https://www.vikki.in/kubernetes-on-ubuntu-18-04-with-dashbaoard/}".
+  }.''
+
+\bibitem{KubernetesManagement}
+``{Kubernetes management
+  "\url{https://www.oreilly.com/library/view/managing-kubernetes/9781492033905/ch04.html}".
+  }.''
 
 \end{thebibliography}
