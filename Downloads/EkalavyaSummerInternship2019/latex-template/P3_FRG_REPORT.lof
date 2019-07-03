@@ -1,33 +1,39 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces TLS handshake timeout error}}{6}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Kubernetes pods \cite {Pods}}}{12}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Kubernetes deployment \cite {Deployments}}}{12}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Kubernetes service \cite {Service}}}{13}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Ingress network \cite {Ingress}}}{13}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Flannel network \cite {Flannel}}}{14}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Calico network \cite {Calico}}}{15}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Weavenet \cite {Weavenet}}}{16}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Kubernetes architecture \cite {KArc}}}{20}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Request management \cite {Request}}}{21}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Kompose \cite {Kompose}}}{23}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Persistent volumes \cite {Persistent}}}{23}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Nodes connected in a Kuberentes cluster}}{24}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Persistent Volumes}}{25}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Persistent Volume Claims}}{26}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Kubernetes deployments}}{26}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{27}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Pods running before deleting a node}}{27}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{28}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{33}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{33}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{34}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{35}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{36}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{37}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces SAR CPU Metrics}}{39}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces SAR Memory Metrics}}{39}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{40}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{41}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{42}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{43}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces JMeter Summary Report for Open edX Native.}}{44}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{44}{figure.33}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces TLS handshake timeout error}}{9}{figure.2.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Kubernetes pods \cite {Pods}}}{16}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Kubernetes deployment \cite {Deployments}}}{16}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kubernetes service \cite {Service}}}{17}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ingress network \cite {Ingress}}}{17}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Flannel network \cite {Flannel}}}{18}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Calico network \cite {Calico}}}{19}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Weavenet \cite {Weavenet}}}{20}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Kubernetes architecture \cite {KArc}}}{24}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Request management \cite {Request}}}{25}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Kompose \cite {Kompose}}}{27}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Persistent volumes \cite {Persistent}}}{27}{figure.4.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Nodes connected in a Kuberentes cluster}}{28}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Persistent Volumes}}{30}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Persistent Volume Claims}}{30}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Kubernetes deployments}}{31}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{31}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Pods running before deleting a node}}{32}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Pods running after deleting the node}}{32}{figure.5.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces SAR CPU Metrics}}{38}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces SAR Memory Metrics}}{38}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{39}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{40}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{41}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{42}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces SAR CPU Metrics}}{44}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces SAR Memory Metrics}}{44}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{45}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{46}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{47}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{48}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces JMeter Summary Report for Open edX Native.}}{49}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{49}{figure.6.14}

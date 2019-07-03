@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{report}
 \usepackage[margin=1in, a4paper]{geometry}
 
 \title{Ekalavya Summer Internship 2019}
@@ -131,7 +131,49 @@
 	
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
+\section{Acknowledgement}
+We have spent a lot of effort on this project. However, it would not have been possible without the kind support of various individuals and organizations, we would like to extend our sincere thanks to all of them.
+\\
+\\
+We would like to express our sincere thanks and regards to Prof S. Sudarshan and Indian Institute of Technology, Bombay for providing us this unparalleled opportunity to work on this esteemed project. We would also like to extend our sincere thanks to Mr. Nagesh Karmali for supervising our project. Our sincere thanks to Mrs. K. Revathi, Mr. Gaurav Ojha \& Mr. Gaurav Patil without whom the project would not be this refined and successful.
+\\ 
+\\
 
+\pagebreak
+
+%***************************************
+%Declaration Page
+%***************************************
+\section{Declaration}
+\textbf{\\}
+I declare that this written submission represents my ideas in my own words and where others’ ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the institute.
+\textbf{\\\\\\\\}
+\begin{multicols}{2}
+	\noindent\rule{5cm}{0.4pt}\\
+	\textbf{\\AMIT KUMAR TIWARI} \\
+	MMMUT GORAKHPUR\\
+	\textbf{\\\\\\}
+	\noindent\rule{5cm}{0.4pt}\\
+	\textbf{\\HARSHIT MOGALAPALLI} \\
+	NIT TIRUCHIRAPPALLI\\
+	\textbf{\\\\\\}
+	\noindent\rule{5cm}{0.4pt}\\
+	\textbf{\\MRIDUL MAHAJAN} \\
+	IIIT ALLAHABAD\\
+	\textbf{\\\\\\}
+	\columnbreak
+	
+	\noindent\rule{5cm}{0.4pt}\\
+	\textbf{\\RITIK KUMAR} \\
+	NIT AGARTALA\\
+	\textbf{\\\\\\}
+	\noindent\rule{5cm}{0.4pt}\\
+	\textbf{\\SOUMYAKANT MOHAKUL} \\
+	IIT BHILAI\\
+	\textbf{\\\\}
+\end{multicols}
+\pagebreak
+\chapter{Introduction}
 \section{Introduction}
 
 The aim of this project is to deploy an instance of Open edX MOOC platform on a multi-node cluster using Kubernetes as the container orchestrator and Docker as the container runtime environment. \\
@@ -281,7 +323,7 @@ The Provision Log for the tasks executed are: \href{https://drive.google.com/ope
 	\end{enumerate}
 \end{enumerate}
 
-
+\chapter{Docker}
 \section{Docker \cite{Docker}}
 \subsection{About Docker}
 Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. Using application running as a docker conatiner removes the system dependency of the application. No changes has to be made in applications to run them in different environments or machines. Docker based application provides liberty to the developer,tester and deployer to run the same application which any changes specific to their environment. 
@@ -376,6 +418,7 @@ To deploy a stack we create a docker-compose file with an additional feature in 
 \textbf{\$ docker stack deploy -c docker-compose.yml myapp}\\\\
 The -c flag is used to execute the docker compose file and create multiple interdependent services which can communicate with each other via the swarm network.\\\\
 An example of docker-compose file for stack deployment: \href{https://drive.google.com/file/d/1t3MwMzXrjDNgrXTeLmwiEe5Hj0q6pueq/view?usp=sharing}{example-voting-app.yml}
+\chapter{Ansible}
 \section{Ansible}
 Installing docker, kubernetes, and all the other components in each node in a multi-node cluster, which contains many nodes, can be a tedious task. To overcome this issue, Ansible can be used for configuration management. Furthermore, Ansible can be used to configure the nodes too. By default Ansible uses a native openSSH connection and runs commands simultaneously on multiple nodes. We have created Ansible Playbooks for all the needed configurations.
 \subsection{Installing openssh}
@@ -409,6 +452,7 @@ vi hosts (remove all and write all nodes in new line)\\\\
 \$ ansible -m shell -a 'df -h' all
 \subsubsection{To run an ansible-playbook}
 \$ ansible-playbook  -K playbook-docker.yml
+\chapter{Kubernetes}
 \section{Kubernetes\cite{Kubernetes}}
 \subsection{What is Kubernetes}
 Kubernetes is a container-orchestration tool developed by Google in 2015 and later donated to CNCF (Cloud Native Computing Foundation). Kubernetes provides a smart way for orchestration in setting a multi-node cluster. Kubernetes comes with a lot of functionalities such as load balancing, pod scaling, process scheduling and process management.
@@ -605,7 +649,7 @@ Type of request performed by the API server are as follows:
 \end{itemize}
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics*[totalheight=0.1\textheight]{kubereqman}
+		\includegraphics[totalheight=0.1\textheight]{kubereqman}
 		\caption{Request management \cite{Request}}
 	\end{center}
 \end{figure}
@@ -657,6 +701,7 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 \\\\\\\\\\
 \subsubsection{Compose on Kubernetes}
 We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})
+\chapter{Our progress}
 \section{Our progress}
 In this project, our aim was to deploy an instance of Open edX on a Kubernetes cluster.
 \subsection{Kubernetes cluster}
@@ -732,19 +777,17 @@ Commands those were to be executed inside a container and required internet acce
 	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
 \end{itemize}
 \pagebreak
-\begin{center}
-	\textbf{\Large{Performance Testing Open edX Ironwood Release}}
-\end{center}
+\chapter{Performance Testing Open edX Ironwood Release}
 Given a certain load, Performance Testing allows us to determine and examine non-functional parameters like speed and stability of an application.
 \par
-\section*{Tools used for Performance Testing}
+\section{Tools used for Performance Testing}
 JMeter is a popular tool used for performance testing. Apart from being an open-source software, JMeter is purely written in Java and hence, is platform independent. Also, it provides a GUI to easily set up a test plan. This, combined with the support for a full multithreading framework and the ability to test a wide range of protocols and applications, makes it a very good tool for performance testing.
 \par
 One can install JMeter by downloading the required binaries from
 \\
 \url{https://jmeter.apache.org/download_jmeter.cgi}.
 \par
-\section*{JMeter Test Scripts}
+\section{JMeter Test Scripts}
 A JMeter test script is a collection of user activities that have been pre-recorded using a proxy. These scripts are stored in the XML format with $.jmx$ extension.
 \par
 The test script can be recorded as follows:\cite{Performance}
@@ -765,7 +808,7 @@ The test script can be recorded as follows:\cite{Performance}
 	\item Thereafter, click on the Stop button in the Transaction Controller to stop the recording.
 \end{enumerate}
 \par
-\section*{Viewing JMeter Test Results using Listeners}
+\section{Viewing JMeter Test Results using Listeners}
 JMeter listeners enable us to view and analyze the test results in graphical or tabular form. Some of these are:
 \begin{itemize}
 	\item View Result Tree: This listener allows us to view a tree of samples' responses with their response codes. Furthermore, the response of each sample is shown separately.
@@ -775,7 +818,7 @@ JMeter listeners enable us to view and analyze the test results in graphical or 
 Due to insufficient Java Heap Space, a test plan execution may result in JMeter giving an Out of Memory error. To resolve this, edit the jmeter.bat (for Windows) or jmeter.sh (for Linux) files and update the JVM\_ARGS parameter accordingly.
 \\
 \par
-\section*{Test Scenario}
+\section{Test Scenario}
 Our test scenario is as follows:
 \begin{enumerate}
 	\item The user registers on the website.
@@ -789,29 +832,30 @@ Our test scenario is as follows:
 \end{enumerate}
 We had used this scenario since it involves all the activities that can be performed by a user on a course page.
 \par
-\section*{Testing Open edX Native Installation}
+\section{Testing Open edX Native Installation}
 \subsection{System Configurations}
 Here are the details of the hardware and software configuration of the application under test and the client machine that has been used to generate load.
-\subsection*{Load Generator System Details}
+\subsection{Load Generator System Details}
 \begin{itemize}
 	\item Operating System: Windows 10 Home 64-bit
 	\item RAM: 8GB
 	\item Processor: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz x 2 Cores
 \end{itemize}
-\subsection*{Server Configuration}
+\subsection{Server Configuration}
 \begin{itemize}
 	\item Operating System: Ubuntu 16.04.6 LTS
 	\item RAM: 7.61 GB
 	\item Processor: Intel Common KVM Processor @ 2.095 MHz x 2
 \end{itemize}
-\subsection*{Test Details}
+\subsection{Test Details}
 \begin{itemize}
 	\item Duration: $1$ Hour
 	\item Virtual Connections: 100
 \end{itemize}
 
-\subsection*{Test Results}
+\subsection{Test Results}
 The application under test could handle 100 users for the specified server configuration under the current test setup. Furthermore, the test fails for around 120-130 users.
+\\\\\\\\\\\\\\\\\\\\\\
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_mridul.png}
@@ -846,27 +890,27 @@ The application under test could handle 100 users for the specified server confi
 	\caption{A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}
 \end{figure}
 \clearpage
-\section*{Testing Open edX Developer Stack (Devstack)}
+\section{Testing Open edX Developer Stack (Devstack)}
 \subsection{System Configurations}
 Here are the details of the hardware and software configuration of the application under test and the client machine that has been used to generate load.
-\subsection*{Load Generator System Details}
+\subsection{Load Generator System Details}
 \begin{itemize}
 	\item Operating System: Windows 10 Home 64-bit
 	\item RAM: 8GB
 	\item Processor: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz x 2 Cores
 \end{itemize}
-\subsection*{Server Configuration}
+\subsection{Server Configuration}
 \begin{itemize}
 	\item Operating System: Ubuntu 16.04.4 LTS
 	\item RAM: 7.61 GB
 	\item Processor: Intel Common KVM Processor @ 2.095 MHz x 2
 \end{itemize}
-\subsection*{Test Details}
+\subsection{Test Details}
 \begin{itemize}
 	\item Duration: $1$ Hour
 	\item Virtual Connections: 10
 \end{itemize}
-\subsection*{Test Results}
+\subsection{Test Results}
 The application under test could handle 10 users for the specified server configuration under the current test setup. Furthermore, the test fails for around 15-20 users.
 \clearpage
 \begin{figure}[h!]
@@ -916,7 +960,7 @@ The application under test could handle 10 users for the specified server config
 	\caption{JMeter Summary Report for Open edX Devstack.}
 \end{figure}
 \clearpage
-\section*{Test Results} 
+\section{Test Results} 
 \begin{itemize}
 	\item Under the current test setup and server configurations, it is evident that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of virtual connections that could be handled by Open edX Devstack.
 	\item In $1$ hour, the total number of transation completed by Open edX Native was $8174$, much more than that of Open edX Devstack, which amounted to $1030$.
