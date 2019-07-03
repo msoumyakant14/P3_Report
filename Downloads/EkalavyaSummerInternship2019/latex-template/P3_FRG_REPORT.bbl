@@ -6,26 +6,27 @@
 
 \bibitem{Kubernetes}
 ``{Official website of Kubernetes "\url{https://kubernetes.io/docs/home/}".
-  }.''
+  Accessed on July 2019}.''
 
 \bibitem{Prereq}
 ``{Prerequisites for installing Kubernetes
-  "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}". }.''
+  "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}". Accessed on
+  July 2019}.''
 
 \bibitem{Dashboard}
 ``{Setting up and hosting the dashboard
   "\url{https://www.vikki.in/kubernetes-on-ubuntu-18-04-with-dashbaoard/}".
-  }.''
+  Accessed on July 2019}.''
 
 \bibitem{KubernetesManagement}
 ``{Kubernetes management
   "\url{https://www.oreilly.com/library/view/managing-kubernetes/9781492033905/ch04.html}".
-  }.''
+  Accessed on July 2019}.''
 
 \bibitem{DNS}
 ``{Pods are unable to access internet
   "\url{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}".
-  }.''
+  Accessed on July 2019}.''
 
 \bibitem{Performance}
 B.~Erinle, {\em JMeter cookbook}.
