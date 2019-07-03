@@ -58,21 +58,21 @@
 \contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard \cite {Dashboard}}{18}{subsubsection.5.7.2}
 \contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{19}{subsubsection.5.7.3}
 \contentsline {subsection}{\numberline {5.8}Kubernetes API Server}{19}{subsection.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{20}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{19}{subsubsection.5.8.1}
 \contentsline {subsubsection}{\numberline {5.8.2}API Management \cite {KubernetesManagement}}{20}{subsubsection.5.8.2}
 \contentsline {subsection}{\numberline {5.9}Request Management}{20}{subsection.5.9}
-\contentsline {subsection}{\numberline {5.10}ETCD}{20}{subsection.5.10}
-\contentsline {subsection}{\numberline {5.11}Kube-Scheduler}{20}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.10}ETCD}{21}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}Kube-Scheduler}{21}{subsection.5.11}
 \contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{21}{subsection.5.12}
 \contentsline {subsection}{\numberline {5.13}Converting docker-compose file to its Kubernetes equivalent}{21}{subsection.5.13}
 \contentsline {subsubsection}{\numberline {5.13.1}Kompose}{21}{subsubsection.5.13.1}
-\contentsline {subsubsection}{\numberline {5.13.2}Compose on Kubernetes}{23}{subsubsection.5.13.2}
-\contentsline {section}{\numberline {6}Our progress}{23}{section.6}
+\contentsline {subsubsection}{\numberline {5.13.2}Compose on Kubernetes}{22}{subsubsection.5.13.2}
+\contentsline {section}{\numberline {6}Our progress}{22}{section.6}
 \contentsline {subsection}{\numberline {6.1}Kubernetes cluster}{23}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Kompose}{24}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Persistent volumes and Persistent volume claims}{24}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Kubernetes deployment}{26}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Fault handling}{27}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Provisioning}{28}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.4}Kubernetes deployment}{25}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Fault handling}{25}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Provisioning}{27}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}System Configurations}{31}{subsection.6.7}
 \contentsline {subsection}{\numberline {6.8}System Configurations}{37}{subsection.6.8}

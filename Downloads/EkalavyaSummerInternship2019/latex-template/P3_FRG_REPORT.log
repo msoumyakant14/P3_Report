@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  4 JUL 2019 00:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  4 JUL 2019 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,153 +1007,160 @@ Underfull \hbox (badness 10000) in paragraph at lines 464--479
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--486
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
 
  []
 
 
-Overfull \hbox (28.94325pt too wide) in paragraph at lines 480--486
+Overfull \hbox (28.94325pt too wide) in paragraph at lines 480--488
 \OT1/cmr/bx/n/12 $ kubectl ap-ply -f https://docs.projectcalico.org/v3.1/gettin
 g-started/kubernetes/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--486
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--486
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
 
  []
 
 
-Overfull \hbox (29.79605pt too wide) in paragraph at lines 480--486
+Overfull \hbox (29.79605pt too wide) in paragraph at lines 480--488
 \OT1/cmr/bx/n/12 $ sudo kubectl ap-ply -f https://raw.githubusercontent.com/cor
 eos/flannel/master/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--486
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--488
 
  []
 
 [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 486.
+(hyperref)                removing `\@ifnextchar' on input line 488.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Overfull \hbox (5.92937pt too wide) in paragraph at lines 487--502
+Overfull \hbox (5.92937pt too wide) in paragraph at lines 489--504
 \OT1/cmr/bx/n/12 $ kubectl cre-ate -f https://raw.githubusercontent.com/kuberne
 tes/dashboard/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--504
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--511
+Underfull \hbox (badness 10000) in paragraph at lines 505--513
 
  []
 
-<kubernetesapiserver.png, id=700, 762.85pt x 521.95pt>
+<kubernetesapiserver.png, id=703, 762.85pt x 521.95pt>
 File: kubernetesapiserver.png Graphic file (type png)
 <use kubernetesapiserver.png>
-Package pdftex.def Info: kubernetesapiserver.png  used on input line 515.
+Package pdftex.def Info: kubernetesapiserver.png  used on input line 517.
 (pdftex.def)             Requested size: 327.63498pt x 224.16733pt.
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.522 	\item \textbf
-                    {API management:}\\\\ <./kubernetesapiserver.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 522--524
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 524--526
@@ -1166,8 +1173,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--528
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
+
+ []
+
+[19]
+
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 529.
+(hyperref)                removing `\@ifnextchar' on input line 531.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -1176,100 +1189,36 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
+Underfull \hbox (badness 10000) in paragraph at lines 532--534
 
  []
 
-<kubereqman.png, id=707, 198.0198pt x 35.8941pt>
+<kubereqman.png, id=711, 198.0198pt x 35.8941pt>
 File: kubereqman.png Graphic file (type png)
 <use kubereqman.png>
-Package pdftex.def Info: kubereqman.png  used on input line 543.
+Package pdftex.def Info: kubereqman.png  used on input line 545.
 (pdftex.def)             Requested size: 386.51173pt x 70.05496pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--555
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 564--566
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--569
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.551 \subsection
+                 {Kube-Scheduler} <./kubernetesapiserver.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 554--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--572
-
- []
-
-<kompose.png, id=715, 637.38126pt x 380.42125pt>
-File: kompose.png Graphic file (type png)
-<use kompose.png>
-Package pdftex.def Info: kompose.png  used on input line 581.
-(pdftex.def)             Requested size: 446.00822pt x 266.19603pt.
-<persistentvolumes.png, id=717, 1027.84pt x 479.7925pt>
-File: persistentvolumes.png Graphic file (type png)
-<use persistentvolumes.png>
-Package pdftex.def Info: persistentvolumes.png  used on input line 588.
-(pdftex.def)             Requested size: 495.22394pt x 231.16855pt.
-
-Overfull \hbox (42.25604pt too wide) in paragraph at lines 588--589
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
+Underfull \hbox (badness 10000) in paragraph at lines 566--568
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 573--593
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
@@ -1278,295 +1227,372 @@ Underfull \hbox (badness 10000) in paragraph at lines 573--593
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.593 \subsubsection
-                    {Compose on Kubernetes} <./kubereqman.png (PNG copy)>]
+l.571 	\item G
+              ive executable permission and move the directory:\\\\ <./kubereqm
+an.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 571--574
+
+ []
+
+<kompose.png, id=724, 637.38126pt x 380.42125pt>
+File: kompose.png Graphic file (type png)
+<use kompose.png>
+Package pdftex.def Info: kompose.png  used on input line 583.
+(pdftex.def)             Requested size: 446.00822pt x 266.19603pt.
+<persistentvolumes.png, id=726, 1027.84pt x 479.7925pt>
+File: persistentvolumes.png Graphic file (type png)
+<use persistentvolumes.png>
+Package pdftex.def Info: persistentvolumes.png  used on input line 590.
+(pdftex.def)             Requested size: 495.22394pt x 231.16855pt.
+
+Overfull \hbox (42.25604pt too wide) in paragraph at lines 590--591
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--595
+
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.593 \subsubsection
-                    {Compose on Kubernetes} <./kompose.png>]
-<cluster.png, id=731, 1371.1225pt x 770.88pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cluster.png, id=729, 1371.1225pt x 770.88pt>
 File: cluster.png Graphic file (type png)
 <use cluster.png>
-Package pdftex.def Info: cluster.png  used on input line 601.
+Package pdftex.def Info: cluster.png  used on input line 603.
 (pdftex.def)             Requested size: 498.37386pt x 280.19846pt.
 
-Overfull \hbox (45.40596pt too wide) in paragraph at lines 601--602
+Overfull \hbox (45.40596pt too wide) in paragraph at lines 603--604
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
+[22]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
-
- []
-
-
-Overfull \hbox (31.01042pt too wide) in paragraph at lines 607--609
-[]\OT1/cmr/m/n/12 https://github.com/fresearchgroup/Configurable-and-Scalable-I
-ITBombayX-MOOC-platform-
- []
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.609 \subsection
-                 {Persistent volumes and Persistent volume claims} <./persisten
-tvolumes.png>]
-<PersistentVolume.png, id=741, 1371.1225pt x 770.88pt>
+l.608 \subsection
+                 {Kompose}pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.608 \subsection
+                 {Kompose} <./kompose.png> <./persistentvolumes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
+
+ []
+
+
+Overfull \hbox (31.01042pt too wide) in paragraph at lines 609--611
+[]\OT1/cmr/m/n/12 https://github.com/fresearchgroup/Configurable-and-Scalable-I
+ITBombayX-MOOC-platform-
+ []
+
+<PersistentVolume.png, id=745, 1371.1225pt x 770.88pt>
 File: PersistentVolume.png Graphic file (type png)
 <use PersistentVolume.png>
-Package pdftex.def Info: PersistentVolume.png  used on input line 614.
+Package pdftex.def Info: PersistentVolume.png  used on input line 616.
 (pdftex.def)             Requested size: 485.90457pt x 273.19724pt.
 
-Overfull \hbox (32.93668pt too wide) in paragraph at lines 614--615
+Overfull \hbox (32.93668pt too wide) in paragraph at lines 616--617
  [] 
  []
 
-<PersistentVolumeClaim.png, id=742, 1371.1225pt x 770.88pt>
+<PersistentVolumeClaim.png, id=746, 1371.1225pt x 770.88pt>
 File: PersistentVolumeClaim.png Graphic file (type png)
 <use PersistentVolumeClaim.png>
-Package pdftex.def Info: PersistentVolumeClaim.png  used on input line 620.
+Package pdftex.def Info: PersistentVolumeClaim.png  used on input line 622.
 (pdftex.def)             Requested size: 485.90457pt x 273.19724pt.
 
-Overfull \hbox (32.93668pt too wide) in paragraph at lines 620--621
+Overfull \hbox (32.93668pt too wide) in paragraph at lines 622--623
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--624
+Underfull \hbox (badness 10000) in paragraph at lines 612--626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--624
+Underfull \hbox (badness 10000) in paragraph at lines 612--626
 
  []
 
 
-Overfull \hbox (31.01042pt too wide) in paragraph at lines 610--624
+Overfull \hbox (31.01042pt too wide) in paragraph at lines 612--626
 []\OT1/cmr/m/n/12 https://github.com/fresearchgroup/Configurable-and-Scalable-I
 ITBombayX-MOOC-platform-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--624
+Underfull \hbox (badness 10000) in paragraph at lines 612--626
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fgcrash.png, id=743, 1371.1225pt x 770.88pt>
-File: fgcrash.png Graphic file (type png)
-<use fgcrash.png>
-Package pdftex.def Info: fgcrash.png  used on input line 628.
-(pdftex.def)             Requested size: 423.62091pt x 238.16975pt.
-<dep100.png, id=744, 1371.1225pt x 770.88pt>
-File: dep100.png Graphic file (type png)
-<use dep100.png>
-Package pdftex.def Info: dep100.png  used on input line 635.
-(pdftex.def)             Requested size: 423.62091pt x 238.16975pt.
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.639 \subsection
-                 {Fault handling} <./cluster.png>]
+l.626 \subsection
+                 {Kubernetes deployment} <./cluster.png>]
 
-LaTeX Warning: Text page 25 contains only floats.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<fgcrash.png, id=754, 1371.1225pt x 770.88pt>
+File: fgcrash.png Graphic file (type png)
+<use fgcrash.png>
+Package pdftex.def Info: fgcrash.png  used on input line 630.
+(pdftex.def)             Requested size: 423.62091pt x 238.16975pt.
+<dep100.png, id=755, 1371.1225pt x 770.88pt>
+File: dep100.png Graphic file (type png)
+<use dep100.png>
+Package pdftex.def Info: dep100.png  used on input line 637.
+(pdftex.def)             Requested size: 423.62091pt x 238.16975pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--644
+
+ []
+
+<podswithepsy.png, id=756, 1371.1225pt x 770.88pt>
+File: podswithepsy.png Graphic file (type png)
+<use podswithepsy.png>
+Package pdftex.def Info: podswithepsy.png  used on input line 648.
+(pdftex.def)             Requested size: 398.70326pt x 224.16733pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<podswithoutepsy.png, id=757, 1371.1225pt x 770.88pt>
+File: podswithoutepsy.png Graphic file (type png)
+<use podswithoutepsy.png>
+Package pdftex.def Info: podswithoutepsy.png  used on input line 655.
+(pdftex.def)             Requested size: 398.70326pt x 224.16733pt.
 [25pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.639 \subsection
-                 {Fault handling}pdfTeX warning (ext4): destination with the sa
-me identifier (name{figure.15}) has been already used, duplicate ignored
+l.659 \end{itemize}
+                    <./PersistentVolume.png>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.639 \subsection
-                 {Fault handling} <./PersistentVolume.png> <./PersistentVolumeC
-laim.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 640--642
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
-
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.642 \begin{itemize}
-                     pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.642 \begin{itemize}
-                      <./fgcrash.png> <./dep100.png>]
-<podswithepsy.png, id=767, 1371.1225pt x 770.88pt>
-File: podswithepsy.png Graphic file (type png)
-<use podswithepsy.png>
-Package pdftex.def Info: podswithepsy.png  used on input line 646.
-(pdftex.def)             Requested size: 398.70326pt x 224.16733pt.
-<podswithoutepsy.png, id=768, 1371.1225pt x 770.88pt>
-File: podswithoutepsy.png Graphic file (type png)
-<use podswithoutepsy.png>
-Package pdftex.def Info: podswithoutepsy.png  used on input line 653.
-(pdftex.def)             Requested size: 398.70326pt x 224.16733pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.18
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.659 \subsection
+l.661 \subsection
                  {Provisioning}pdfTeX warning (ext4): destination with the same
- identifier (name{figure.19}) has been already used, duplicate ignored
+ identifier (name{figure.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.659 \subsection
-                 {Provisioning} <./podswithepsy.png> <./podswithoutepsy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 660--664
+l.661 \subsection
+                 {Provisioning} <./PersistentVolumeClaim.png> <./fgcrash.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 662--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--666
 
  []
 
-[28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 710--712
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.666 \begin{itemize}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.666 \begin{itemize}
+                      <./dep100.png> <./podswithepsy.png>] [28pdfTeX warning (e
+xt4): destination with the same identifier (name{figure.19}) has been already u
+sed, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.672 \begin
+            {center} <./podswithoutepsy.png>] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 712--714
 
  []
 
 [30]
-<intro/cpu_mridul.png, id=813, 1131.22626pt x 639.38875pt>
+<intro/cpu_mridul.png, id=817, 1131.22626pt x 639.38875pt>
 File: intro/cpu_mridul.png Graphic file (type png)
 <use intro/cpu_mridul.png>
-Package pdftex.def Info: intro/cpu_mridul.png  used on input line 752.
+Package pdftex.def Info: intro/cpu_mridul.png  used on input line 754.
 (pdftex.def)             Requested size: 452.96579pt x 256.02414pt.
-<intro/mem_mridul.png, id=814, 1131.22626pt x 604.2575pt>
+<intro/mem_mridul.png, id=818, 1131.22626pt x 604.2575pt>
 File: intro/mem_mridul.png Graphic file (type png)
 <use intro/mem_mridul.png>
-Package pdftex.def Info: intro/mem_mridul.png  used on input line 757.
+Package pdftex.def Info: intro/mem_mridul.png  used on input line 759.
 (pdftex.def)             Requested size: 452.96579pt x 241.95688pt.
  [31] [32pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.761 \newpage
+l.763 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.761 \newpage
+l.763 \newpage
                <./intro/cpu_mridul.png> <./intro/mem_mridul.png>]
-<intro/S1.png, id=840, 481.04718pt x 381.67593pt>
+<intro/S1.png, id=844, 481.04718pt x 381.67593pt>
 File: intro/S1.png Graphic file (type png)
 <use intro/S1.png>
-Package pdftex.def Info: intro/S1.png  used on input line 764.
+Package pdftex.def Info: intro/S1.png  used on input line 766.
 (pdftex.def)             Requested size: 452.97716pt x 359.4044pt.
-<intro/S2.png, id=841, 484.81125pt x 431.36156pt>
+<intro/S2.png, id=845, 484.81125pt x 431.36156pt>
 File: intro/S2.png Graphic file (type png)
 <use intro/S2.png>
-Package pdftex.def Info: intro/S2.png  used on input line 769.
+Package pdftex.def Info: intro/S2.png  used on input line 771.
 (pdftex.def)             Requested size: 452.9929pt x 403.05115pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S3.png, id=842, 505.89pt x 428.35031pt>
+<intro/S3.png, id=846, 505.89pt x 428.35031pt>
 File: intro/S3.png Graphic file (type png)
 <use intro/S3.png>
-Package pdftex.def Info: intro/S3.png  used on input line 774.
+Package pdftex.def Info: intro/S3.png  used on input line 776.
 (pdftex.def)             Requested size: 452.97328pt x 383.54434pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S4.png, id=843, 491.58656pt x 434.37282pt>
+<intro/S4.png, id=847, 491.58656pt x 434.37282pt>
 File: intro/S4.png Graphic file (type png)
 <use intro/S4.png>
-Package pdftex.def Info: intro/S4.png  used on input line 780.
+Package pdftex.def Info: intro/S4.png  used on input line 782.
 (pdftex.def)             Requested size: 452.98521pt x 400.26411pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1576,37 +1602,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.783 \clearpage
+l.785 \clearpage
                  <./intro/S1.png>] [34pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.783 \clearpage
+l.785 \clearpage
                  <./intro/S2.png>] [35pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.783 \clearpage
+l.785 \clearpage
                  <./intro/S3.png>] [36pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.783 \clearpage
+l.785 \clearpage
                  <./intro/S4.png>] [37
 
 ]
-<intro/cpu_harshit.png, id=873, 1131.22626pt x 639.38875pt>
+<intro/cpu_harshit.png, id=877, 1131.22626pt x 639.38875pt>
 File: intro/cpu_harshit.png Graphic file (type png)
 <use intro/cpu_harshit.png>
-Package pdftex.def Info: intro/cpu_harshit.png  used on input line 809.
+Package pdftex.def Info: intro/cpu_harshit.png  used on input line 811.
 (pdftex.def)             Requested size: 452.96579pt x 256.02414pt.
-<intro/mem_harshit.png, id=874, 1131.22626pt x 604.2575pt>
+<intro/mem_harshit.png, id=878, 1131.22626pt x 604.2575pt>
 File: intro/mem_harshit.png Graphic file (type png)
 <use intro/mem_harshit.png>
-Package pdftex.def Info: intro/mem_harshit.png  used on input line 814.
+Package pdftex.def Info: intro/mem_harshit.png  used on input line 816.
 (pdftex.def)             Requested size: 452.96579pt x 241.95688pt.
  [38
 
@@ -1615,56 +1641,56 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.818 \newpage
+l.820 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.27}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.818 \newpage
+l.820 \newpage
                <./intro/cpu_harshit.png> <./intro/mem_harshit.png>]
-<intro/S1_harshit.png, id=882, 609.77812pt x 746.03719pt>
+<intro/S1_harshit.png, id=886, 609.77812pt x 746.03719pt>
 File: intro/S1_harshit.png Graphic file (type png)
 <use intro/S1_harshit.png>
-Package pdftex.def Info: intro/S1_harshit.png  used on input line 821.
+Package pdftex.def Info: intro/S1_harshit.png  used on input line 823.
 (pdftex.def)             Requested size: 452.98729pt x 554.21037pt.
-<intro/S2_harshit.png, id=883, 504.6855pt x 614.295pt>
+<intro/S2_harshit.png, id=887, 504.6855pt x 614.295pt>
 File: intro/S2_harshit.png Graphic file (type png)
 <use intro/S2_harshit.png>
-Package pdftex.def Info: intro/S2_harshit.png  used on input line 826.
+Package pdftex.def Info: intro/S2_harshit.png  used on input line 828.
 (pdftex.def)             Requested size: 452.98831pt x 551.37001pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S3_harshit.png, id=884, 486.618pt x 612.48825pt>
+<intro/S3_harshit.png, id=888, 486.618pt x 612.48825pt>
 File: intro/S3_harshit.png Graphic file (type png)
 <use intro/S3_harshit.png>
-Package pdftex.def Info: intro/S3_harshit.png  used on input line 832.
+Package pdftex.def Info: intro/S3_harshit.png  used on input line 834.
 (pdftex.def)             Requested size: 452.98814pt x 570.15959pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S4_harshit.png, id=885, 508.90125pt x 616.704pt>
+<intro/S4_harshit.png, id=889, 508.90125pt x 616.704pt>
 File: intro/S4_harshit.png Graphic file (type png)
 <use intro/S4_harshit.png>
-Package pdftex.def Info: intro/S4_harshit.png  used on input line 838.
+Package pdftex.def Info: intro/S4_harshit.png  used on input line 840.
 (pdftex.def)             Requested size: 452.98282pt x 548.94011pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/3.png, id=886, 806.26219pt x 450.9347pt>
+<intro/3.png, id=890, 806.26219pt x 450.9347pt>
 File: intro/3.png Graphic file (type png)
 <use intro/3.png>
-Package pdftex.def Info: intro/3.png  used on input line 844.
+Package pdftex.def Info: intro/3.png  used on input line 846.
 (pdftex.def)             Requested size: 452.96776pt x 253.3405pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/4.png, id=887, 1046.91125pt x 565.11125pt>
+<intro/4.png, id=891, 1046.91125pt x 565.11125pt>
 File: intro/4.png Graphic file (type png)
 <use intro/4.png>
-Package pdftex.def Info: intro/4.png  used on input line 850.
+Package pdftex.def Info: intro/4.png  used on input line 852.
 (pdftex.def)             Requested size: 452.95862pt x 244.5021pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1674,41 +1700,41 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                  <./intro/S1_harshit.png>] [40pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.29}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                  <./intro/S2_harshit.png>] [41pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.30}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                  <./intro/S3_harshit.png>] [42pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.31}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                  <./intro/S4_harshit.png>] [43pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.32}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{figure.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.853 \clearpage
+l.855 \clearpage
                  <./intro/3.png> <./intro/4.png>] (./P3_FRG_REPORT.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\OT1/cmr/m/n/12 ``Kubernetes Pods im-ages "[]$\OT1/cmtt/m/n/12 https : / / 2 
@@ -1809,20 +1835,26 @@ w . oreilly . com / library / view /
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
-[]\OT1/cmr/m/n/12 ``github link to kom-pose files "[]$\OT1/cmtt/m/n/12 https : 
-/ / github . com / fresearchgroup /
+[]\OT1/cmr/m/n/12 ``stackoverflow so-lu-tion for CrashLoop-Back-Off er-ror in c
+oredns
  []
 
 
-Overfull \hbox (19.78485pt too wide) in paragraph at lines 82--85
-\OT1/cmtt/m/n/12 Configurable-[]and-[]Scalable-[]IITBombayX-[]MOOC-[]platform-[
-]on-[]Commodity-[]Servers /
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+\OT1/cmr/m/n/12 pods "[]$\OT1/cmtt/m/n/12 https : / / stackoverflow . com / que
+stions / 53075796 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+\OT1/cmtt/m/n/12 coredns-[]pods-[]have-[]crashloopbackoff-[]or-[]error-[]state 
+/ 53414041 # 53414041$[]\OT1/cmr/m/n/12 ".
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--90
-[]\OT1/cmr/m/n/12 ``github link to host vol-umes "[]$\OT1/cmtt/m/n/12 https : /
- / github . com / fresearchgroup /
+[]\OT1/cmr/m/n/12 ``github link to kom-pose files "[]$\OT1/cmtt/m/n/12 https : 
+/ / github . com / fresearchgroup /
  []
 
 
@@ -1833,32 +1865,44 @@ Overfull \hbox (19.78485pt too wide) in paragraph at lines 87--90
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
+[]\OT1/cmr/m/n/12 ``github link to host vol-umes "[]$\OT1/cmtt/m/n/12 https : /
+ / github . com / fresearchgroup /
+ []
+
+
+Overfull \hbox (19.78485pt too wide) in paragraph at lines 92--95
+\OT1/cmtt/m/n/12 Configurable-[]and-[]Scalable-[]IITBombayX-[]MOOC-[]platform-[
+]on-[]Commodity-[]Servers /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 []\OT1/cmr/m/n/12 ``Pods are un-able to ac-cess in-ter-net "[]$\OT1/cmtt/m/n/12
  https : / / blog . yaakov . online /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 \OT1/cmtt/m/n/12 kubernetes-[]getting-[]pods-[]to-[]talk-[]to-[]the-[]internet/
 $[]\OT1/cmr/m/n/12 ". Ac-cessed on July
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 873.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 875.
  [45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 873.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 875.
  (./P3_FRG_REPORT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 873.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 873.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 875.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 875.
 Package rerunfilecheck Info: File `P3_FRG_REPORT.out' has not changed.
 (rerunfilecheck)             Checksum: 4B0C60AE524C6FADFFEEE239AB3DBB5D;5848.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 873.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 875.
  ) 
 Here is how much of TeX's memory you used:
- 6515 strings out of 494923
- 95921 string characters out of 6180741
- 186496 words of memory out of 5000000
- 9475 multiletter control sequences out of 15000+600000
+ 6517 strings out of 494923
+ 95942 string characters out of 6180741
+ 186526 words of memory out of 5000000
+ 9476 multiletter control sequences out of 15000+600000
  9877 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  28i,12n,43p,898b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1870,10 +1914,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt12.pfb>
-Output written on P3_FRG_REPORT.pdf (50 pages, 2816008 bytes).
+Output written on P3_FRG_REPORT.pdf (50 pages, 2817758 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 922 compressed objects within 10 object streams
- 262 named destinations out of 1000 (max. 500000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 928 compressed objects within 10 object streams
+ 263 named destinations out of 1000 (max. 500000)
  802 words of extra memory for PDF output out of 10000 (max. 10000000)
 

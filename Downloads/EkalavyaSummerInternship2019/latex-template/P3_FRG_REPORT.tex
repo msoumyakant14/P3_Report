@@ -481,7 +481,9 @@ i) To install and set up a calico pod network, run the command :\\\\
 \textbf{\$ kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/\\installation/hosted/kubeadm/1.7/calico.yaml}\\\\
 ii) To install and set up flannel pod network, run the command :\\\\
 \textbf{\$ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/\\Documentation/kube-flannel.yml}\\\\
-There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\
+There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\\\
+Run \textbf{kubectl get pods -o wide --all-namespaces} to view all the running pods:\\\\
+In case you face a CrashLoopBackOff error in running the coredns pods. Resolve the issue using the stackoverflow link \href{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041#53414041}{https://stackoverflow.com/questions/53075796/coredns-pods-have-crashloopbackoff-or-error-state/53414041\#53414041}\cite{Coredns} \\\\
 Once the network is set up, we need to install and host the dashboard on localhost.
 \subsubsection{Setting up and hosting the dashboard \cite{Dashboard}}
 i) For installation and hosting in localhost : \\\\

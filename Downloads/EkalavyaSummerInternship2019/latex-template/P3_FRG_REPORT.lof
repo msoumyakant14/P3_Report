@@ -6,17 +6,17 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Flannel network \cite {Flannel}}}{14}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Calico network \cite {Calico}}}{15}{figure.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Weavenet \cite {Weavenet}}}{16}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Kubernetes architecture \cite {KArc}}}{19}{figure.9}
+\contentsline {figure}{\numberline {9}{\ignorespaces Kubernetes architecture \cite {KArc}}}{20}{figure.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Request management \cite {Request}}}{21}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Kompose \cite {Kompose}}}{22}{figure.11}
+\contentsline {figure}{\numberline {11}{\ignorespaces Kompose \cite {Kompose}}}{23}{figure.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Persistent volumes \cite {Persistent}}}{23}{figure.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Nodes connected in a Kuberentes cluster}}{24}{figure.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Persistent Volumes}}{25}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Persistent Volume Claims}}{25}{figure.15}
+\contentsline {figure}{\numberline {15}{\ignorespaces Persistent Volume Claims}}{26}{figure.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces Kubernetes deployments}}{26}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{26}{figure.17}
+\contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{27}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces Pods running before deleting a node}}{27}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{27}{figure.19}
+\contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{28}{figure.19}
 \contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{32}{figure.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{32}{figure.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{33}{figure.22}
