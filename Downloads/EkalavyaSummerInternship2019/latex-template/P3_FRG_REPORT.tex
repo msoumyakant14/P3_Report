@@ -72,7 +72,7 @@ Last Updated: \today
 
 \section{Introduction}
 
-The aim of this project is to deploy an instance of Open edX MOOC platform on a multi-node cluster using Kubernetes as a container orchestrator. \\
+The aim of this project is to deploy an instance of Open edX MOOC platform on a multi-node cluster using Kubernetes as the container orchestrator and Docker as the container runtime environment. \\
 
 \textbf{Technologies used:}
 \begin{itemize}
@@ -88,25 +88,25 @@ The aim of this project is to deploy an instance of Open edX MOOC platform on a 
 %The following is an example of inserting an image which is shown in Figure ~\ref{fig:Image1} 
 
 %\begin{figure}[hb]
- %\centering
- %\includegraphics[width=12cm]{./Image1.jpg}
- %\caption{Name of the Figure\label{fig:Image1}}
+%\centering
+%\includegraphics[width=12cm]{./Image1.jpg}
+%\caption{Name of the Figure\label{fig:Image1}}
 %\end{figure}
 
 \section{Open edX}
-Open edX is an open source online MOOC provider. It provides both web and mobile platforms to clone the basic template of e-learning platform. In this project, we are working on the web platform.
+Open edX is an open source online MOOC platform to create and deliver online courses. It provides both web and mobile platforms to clone the basic template of e-learning platform. In this project, we have worked on the web platform.
 
 \subsection{Releases}
-Open edX has multiple releases. Some of the prominent ones are:
+Open edX has multiple releases. Some of the most recent ones are:
 \begin{itemize}
 	\item Ironwood
 	\item Hawthorn
 	\item Ginkgo
 \end{itemize}
-We are using the Ironwood.1 release in this project.
+We have used the Ironwood.1 release in this project.
 
 \subsection{Installation}
-There are two ways to install Open edX:
+Open edX can be installed in two ways:
 \begin{itemize}
 	\item Native installation
 	\item Docker-based installation
@@ -140,111 +140,111 @@ Ubuntu package sources need to be updated:\\\\
 	
 \end{enumerate}
 \subsubsection{Docker-based installation}
-	\label{sec:dockerinstall}
-	\textbf{i) Installing docker engine, docker machine and docker compose:}
-	\\ \\
-	The docker based installing allows the resources of your system to be utilized in an optimal way. Docker is based on the principle of containerization. For proper working of the devstack we need the Docker engine, docker machine and docker compose. We shall install each of them one after another.\\ \\
-	For installing the docker engine the following commands need to be run:
+\label{sec:dockerinstall}
+\textbf{i) Installing docker engine, docker machine and docker compose:}
+\\ \\
+The docker based installation allows the resources of our system to be utilized in an optimal way. Docker is based on the principle of containerization. For Open edX Devstack to work properly, we would need the Docker engine, Docker Machine and Docker Compose tools.\\ \\
+For installing the docker engine, the following commands need to be run:
+\begin{enumerate}
+	\item \$ sudo apt-get update
+	\item \$ sudo apt-get install \textbackslash \\
+	apt-transport-https \textbackslash \\
+	ca-certificates \textbackslash \\
+	curl \textbackslash \\
+	gnupg-agent \textbackslash \\
+	software-properties-common
+	\item \$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	\item \$ sudo apt-key fingerprint 0EBFCD88
+	\item \$ sudo add-apt-repository \textbackslash \\
+	"deb [arch=amd64] https://download.docker.com/linux/ubuntu \textbackslash \\
+	\$(lsb\_release -cs) \textbackslash \\
+	stable"
+	\item \$ sudo apt-get update
+	\item \$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+	\item \$ apt-cache madison docker-ce
+	\item \$ sudo apt-get install docker-ce=$<VERSION\_STRING>$\\docker-ce-cli=$<VERSION\_STRING>$ containerd.io
+\end{enumerate}
+\textbf{In order to test if Docker has been installed properly, one can run the following \\command:\\}
+\$ sudo docker run hello-world\\\\
+For installing docker machine, run the following commands:\\ \\
+base=https://github.com/docker/machine/releases/download/v0.16.0 \ \&\& \\
+curl -L \$base/docker-machine-\$(uname -s)-\$(uname -m)$>$/tmp/docker-machine \ \&\& \\
+sudo install /tmp/docker-machine /usr/local/bin/docker-machine\\ \\
+For installing docker compose, run the following commands:
+\begin{enumerate}
+	\item \$ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-\$(uname -s)-\$(uname -m)" -o /usr/local/bin/docker-compose
+	\item \$ sudo chmod +x /usr/local/bin/docker-compose
+\end{enumerate}
+For checking if the tools mentioned above have been installed properly, you can use the \ -\ -version flag with the corresponding command to check the installed version.\\\\
+\textbf{ii) Installing Ironwood Devstack:} \\ \\
+The three most recent versions of the Open edX Devstack are Ginkgo, Hawthorn and Ironwood. \\\\
+The following commands perform the Ironwood-release installation of Devstack:
+\begin{enumerate}
+	\item git clone https://github.com/edx/devstack
+	\item cd devstack
+	\item git checkout open-release/ironwood.master
+	\item export OPENEDX\_RELEASE=ironwood.master
+	\item make dev.checkout
+	\item make dev.clone
+	\item make dev.provision
+\end{enumerate}
+On successfully running dev.provision, you will have 15 docker-containers running. The list of them can be obtained using the command:  docker ps
+\\\\
+The list of docker-containers are: \href{https://drive.google.com/open?id=0B168SrnPp4BpZ1RCQ1VncU81VEZYanl2SUNWN2dtRUg1bGRv}{Docker-containers List}
+\\\\
+The Provision Log for the tasks executed are: \href{https://drive.google.com/open?id=0B168SrnPp4BpclQ3d3gwbDNWLWtrUzduYUt6Vko4S2h6bzBz}{provision.log}\\\\
+\textbf{iii) Errors:}
+\begin{enumerate}
+	\item  ./provision.sh: line 21: /usr/local/bin/docker-compose: Permission denied
+	Makefile:59: recipe for target 'dev.provision.run' failed
+	make: *** [dev.provision.run] Error 126\\\\
+	\textbf{Solution :}\\\\
+	\$ sudo -i\\
+	\$ curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose\\
+	\$ chmod 755 /usr/local/bin/docker-compose\\
+	\$ exit
+	\item TASK [common : Update expired apt keys] **************
+	fatal: [127.0.0.1]: FAILED! => {"changed": true, "cmd": "apt-key adv -{}-recv-keys --keyserver keyserver.ubuntu.com 69464050", "delta": "0:02:00.744139", "end": "2019-05-24 07:49:07.605347", "failed": true, "rc": 2, "start": "2019-05-24 07:47:06.861208", "stderr": "gpg: requesting key 69464050 from hkp server keyserver.ubuntu.com\textbackslash ngpg: keyserver timed out\textbackslash ngpg: keyserver receive failed: keyserver error", "stdout": "Executing: /tmp/tmp.NmWIivV5Jo/gpg.1.sh -{}-recv-keys\textbackslash n-{}-keyserver\textbackslash nkeyserver.ubuntu.com\textbackslash n69464050", "stdout\_lines": ["Executing: /tmp/tmp.NmWIivV5Jo/gpg.1.sh -{}-recv-keys", "-{}-keyserver", "keyserver.ubuntu.com", "69464050"], "warnings": []}
+	to retry, use: -{}-limit @/edx/app/edx\_ansible/edx\_ansible/playbooks/demo.retry\\\\
+	\textbf{Solution :}\\\\
+	This error occurs due to the fetching to apt-keys from an expired link.\\
+	To resolve follow the following steps :
 	\begin{enumerate}
-		\item \$ sudo apt-get update
-		\item \$ sudo apt-get install \textbackslash \\
-		apt-transport-https \textbackslash \\
-		ca-certificates \textbackslash \\
-		curl \textbackslash \\
-		gnupg-agent \textbackslash \\
-		software-properties-common
-		\item \$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-		\item \$ sudo apt-key fingerprint 0EBFCD88
-		\item \$ sudo add-apt-repository \textbackslash \\
-		"deb [arch=amd64] https://download.docker.com/linux/ubuntu \textbackslash \\
-		\$(lsb\_release -cs) \textbackslash \\
-		stable"
-		\item \$ sudo apt-get update
-		\item \$ sudo apt-get install docker-ce docker-ce-cli containerd.io
-		\item \$ apt-cache madison docker-ce
-		\item \$ sudo apt-get install docker-ce=$<VERSION\_STRING>$\\docker-ce-cli=$<VERSION\_STRING>$ containerd.io
+		\item sudo exec -it edx.devstack.lms bash
+		\item cd app/edx\_ansible/edx\_ansible/playbooks/roles/common\_vars/defaults/
+		\item vi main.yml
+		\item On entering the main.yml file in vim editor change the link for the keyword 
+		COMMON\_EDX\_PPA\_KEY from keyserver.ubuntu.com to  hkp://keyserver.ubuntu.com:80
+		\item exit
 	\end{enumerate}
-	\textbf{In order to test the successfull installation of Docker, run the following \\command:\\}
-	\$ sudo docker run hello-world\\\\
-	For installing the docker machine the following command needs to be run:\\ \\
-	base=https://github.com/docker/machine/releases/download/v0.16.0 \ \&\& \\
-	curl -L \$base/docker-machine-\$(uname -s)-\$(uname -m)$>$/tmp/docker-machine \ \&\& \\
-	sudo install /tmp/docker-machine /usr/local/bin/docker-machine\\ \\
-	For installing docker compose the following commands need to be followed:
-	\begin{enumerate}
-		\item \$ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-\$(uname -s)-\$(uname -m)" -o /usr/local/bin/docker-compose
-		\item \$ sudo chmod +x /usr/local/bin/docker-compose
-	\end{enumerate}
-	For checking the successful installation of all the above you can use the \ -\ -version flag with the corresponding command to check the installed version.\\\\
-	\textbf{ii) Installing Ironwood Devstack:} \\ \\
-	Devstack comes with different variations as per the different versions. The three popular versions of the devstack are Ginkgo, Hawthron and Ironwood. \\\\
-	The following commands perform the Ironwood-release installation of the devstack:
-	\begin{enumerate}
-		\item git clone https://github.com/edx/devstack
-		\item cd devstack
-		\item git checkout open-release/ironwood.master
-		\item export OPENEDX\_RELEASE=ironwood.master
-		\item make dev.checkout
-		\item make dev.clone
-		\item make dev.provision
-	\end{enumerate}
-	On successfully running dev.provision you will have 15 docker-containers running. The list of them can be obtained using command:  docker ps
-	\\\\
-	The list of docker-containers are: \href{https://drive.google.com/open?id=0B168SrnPp4BpZ1RCQ1VncU81VEZYanl2SUNWN2dtRUg1bGRv}{Docker-containers List}
-	\\\\
-	The Provision Log for the tasks executed are: \href{https://drive.google.com/open?id=0B168SrnPp4BpclQ3d3gwbDNWLWtrUzduYUt6Vko4S2h6bzBz}{provision.log}\\\\
-	\textbf{iii) Errors:}
-	\begin{enumerate}
-		\item  ./provision.sh: line 21: /usr/local/bin/docker-compose: Permission denied
-		Makefile:59: recipe for target 'dev.provision.run' failed
-		make: *** [dev.provision.run] Error 126\\\\
-		\textbf{Solution :}\\\\
-		\$ sudo -i\\
-		\$ curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose\\
-		\$ chmod 755 /usr/local/bin/docker-compose\\
-		\$ exit
-		\item TASK [common : Update expired apt keys] **************
-		fatal: [127.0.0.1]: FAILED! => {"changed": true, "cmd": "apt-key adv -{}-recv-keys --keyserver keyserver.ubuntu.com 69464050", "delta": "0:02:00.744139", "end": "2019-05-24 07:49:07.605347", "failed": true, "rc": 2, "start": "2019-05-24 07:47:06.861208", "stderr": "gpg: requesting key 69464050 from hkp server keyserver.ubuntu.com\textbackslash ngpg: keyserver timed out\textbackslash ngpg: keyserver receive failed: keyserver error", "stdout": "Executing: /tmp/tmp.NmWIivV5Jo/gpg.1.sh -{}-recv-keys\textbackslash n-{}-keyserver\textbackslash nkeyserver.ubuntu.com\textbackslash n69464050", "stdout\_lines": ["Executing: /tmp/tmp.NmWIivV5Jo/gpg.1.sh -{}-recv-keys", "-{}-keyserver", "keyserver.ubuntu.com", "69464050"], "warnings": []}
-		to retry, use: -{}-limit @/edx/app/edx\_ansible/edx\_ansible/playbooks/demo.retry\\\\
-		\textbf{Solution :}\\\\
-		This error occurs due to the fetching to apt-keys from an expired link.\\
-		To resolve follow the following steps :
-		\begin{enumerate}
-			\item sudo exec -it edx.devstack.lms bash
-			\item cd app/edx\_ansible/edx\_ansible/playbooks/roles/common\_vars/defaults/
-			\item vi main.yml
-			\item On entering the main.yml file in vim editor change the link for the keyword 
-			COMMON\_EDX\_PPA\_KEY from keyserver.ubuntu.com to  hkp://keyserver.ubuntu.com:80
-			\item exit
-		\end{enumerate}
-	\end{enumerate}
-	 
-	
+\end{enumerate}
+
+
 \section{Docker \cite{Docker}}
 \subsection{About Docker}
 Docker is an open-source software tool designed to automate and ease the process of creating, packaging, and deploying applications using an environment called a container. The use of Linux containers to deploy applications is called containerization. A Container allows us to package an application with all of the parts needed to run an application (code, system tools, logs, libraries, configuration settings and other dependencies) and sends it out as a single standalone package deployable via \href{https://goo.gl/f77a2v}{Ubuntu} (in this case 16.04 LTS). Docker can be installed on \href{https://goo.gl/iTES81}{other platforms} as well. Currently, the Docker software is maintained by the Docker community and Docker Inc. Check out the \href{https://docs.docker.com/}{official documentation} to find more specifics on Docker. Docker Terms and Concepts. 
 \subsection{Terms related to Docker}
 \subsubsection{Containerization}
-Containerization is a lightweight alternative to full machine virtualization (like VMWare) that involves encapsulating an application within a container with its own operating environment.
+Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application within a container with its own operating environment. Essentially, containers share the kernel space with the host OS, but have a separate user space. This makes them lightweight.
 \subsubsection{Docker Image}
 A \textit{Docker Image} is the basic unit for deploying a Docker container. A Docker image is essentially a static snapshot of a container, incorporating all of the objects needed to run a container.
 \subsubsection{Docker Container}
-A \textit{Docker Container} encapsulates a Docker image and when live and running, is considered a container. Each container runs isolated in the host machine.
+A \textit{Docker Container} encapsulates a Docker image and when live and running, is considered a container. Each container runs in an isolated environment on the host machine.
 \subsubsection{Docker Registry}
 The \textit{Docker Registry} is a stateless, highly scalable server-side application that stores and distributes Docker images. This registry holds Docker images, along with their versions and, it can provide both public and private storage location. There is a public Docker registry called \href{https://hub.docker.com/}{Docker Hub} which provides a free-to-use, hosted Registry, plus additional features like organization accounts, automated builds, and more. Users interact with a registry by using Docker push or pull commands.
 \subsubsection{Docker Engine}
 The \textit{Docker Engine} is a layer which exists between containers and the Linux kernel and runs the containers. It is also known as the Docker daemon. Any Docker container can run on any server that has the Docker-daemon enabled, regardless of the underlying operating system.
 \subsubsection{Docker Compose}
-\textit{Docker Compose} is a tool that defines, manages and controls multi-container Docker applications. With Compose, a single configuration file is used to set up all of your application’s services. Then, using a single command, you can create and start all the services from that file
+\textit{Docker Compose} is a tool that defines, manages and controls multi-container Docker applications. With Compose, a single configuration file is used to set up all of your application’s services. Then, using a single command, you can create and start all the services from that file.
 \subsubsection{Dockerfiles}
-Dockerfiles are merely text documents (.yaml files) that contains all of the configuration information and commands needed to assemble a container image. With a Dockerfile, the Docker daemon can automatically build the container image.
+Dockerfiles are merely YAML configuration files that contains all of the configuration information and commands needed to assemble a container image. With a Dockerfile, the Docker daemon can automatically build the container image.
 \subsection{Docker-Machine}
 Docker Machine can be used to :
 \begin{itemize}
 	\item Manage and provision multiple remote Docker hosts.
 	\item Provision Swarm clusters.
 \end{itemize}
-Docker Machine is a tool that lets you install Docker Engine on virtual hosts, and manage hosts with docker-machine commands. Using docker-machine command you can start, inspect, stop and restart a managed host, upgarde the Docker client and daemon, and configure a Docker client to talk to your host.
+Docker Machine is a tool that lets you install Docker Engine on virtual hosts, and manage hosts with docker-machine commands. Using docker-machine command you can start, inspect, stop and restart a managed host, upgrade the Docker client and daemon, and configure a Docker client to talk to your host.
 \subsubsection{Install Docker Machine:}
 \begin{itemize}
 	\item For Linux systems, execute the following command:\\\\
@@ -254,9 +254,9 @@ Docker Machine is a tool that lets you install Docker Engine on virtual hosts, a
 \end{itemize}
 \subsubsection{Use Docker Machine to run Docker Containers:}
 \begin{itemize}
-	\item Create a new docker virtual machine
-	\item Switch your environment to your new VM
-	\item Use the docker client to create, load and manage containers
+	\item Create a new docker virtual machine.
+	\item Switch your environment to your new VM.
+	\item Use the docker client to create, load and manage containers.
 \end{itemize}
 \subsubsection{Create a Machine}
 \textbf{\$ docker-machine create --driver virtualbox default}
@@ -285,35 +285,35 @@ Docker swarm is used to create a cluster of nodes. Multi-container, multi-machin
 	\item \textbf{Macvlan Network : }Macvlan networks allow you to assign a MAC address to a container, making it appear as a physical device on your network. The Docker daemon routes traffic to containers by their MAC addresses.\\\\
 	A Macvlan Network can be created by :\\
 	\textbf{\$ docker network create -d macvlan \textbackslash \\
-			-{}-subnet=192.168.40.0/24 \textbackslash \\
-			-{}-gateway=192.168.40.1 \textbackslash \\
-			-o parent=eth0 my-macvlan-net\\\\
-		}
+		-{}-subnet=192.168.40.0/24 \textbackslash \\
+		-{}-gateway=192.168.40.1 \textbackslash \\
+		-o parent=eth0 my-macvlan-net\\\\
+	}
 	Macvlan networks are best when you are migrating from a VM setup or need your containers to look like physical hosts on your network, each with a unique MAC address.
 	\item \textbf{Host Network : }For standalone containers, remove network isolation between the container and the Docker host, and use the host’s networking directly.\\\\
 	We can use the host’s system network to at a particular port to allow the container to share data. Host networks are best when the network stack should not be isolated from the Docker host, but you want other aspects of the container to be isolated.
 \end{itemize}
-\subsubsection{Initialising with docker swarm as Manager}
-In order to initialize a swarm node a manager we need to find the IP address of  the node using the command \textbf{ifconfig}. Then run the command:\\\\
+\subsubsection{Initialising a Swarm Node as Manager}
+In order to initialize a swarm node a manager we need to find the IP address of the node using the command \textbf{ifconfig}. Then run the command:\\\\
 \textbf{\$ docker swarm init --advertise-addr IP\_OF\_THE\_MANAGER}\\\\
 The join token for another node as a manager can be found by :\\\\
 \textbf{\$ docker swarm join-token manager\\\\}
 The join token of another node as a worker can be found by :\\\\
 \textbf{\$ docker swarm join-token worker}
 \subsubsection{Docker Stack}
-When we want multiple services that are dependent on each other to communicate with each other on a swarm network. Docker stack deployment is used to deploy a list of interdependent services on a swarm network.\\\\
+For multiple services that are dependent on each other to communicate with each other on a swarm network, we may use the Docker Stack command. Docker stack deployment is used to deploy a list of interdependent services on a swarm network.\\\\
 To deploy a stack we create a docker-compose file with an additional feature in each service as deploy.\\\\
 \textbf{\$ docker stack deploy -c docker-compose.yml myapp}\\\\
 The -c flag is used to execute the docker compose file and create multiple interdependent services which can communicate with each other via the swarm network.\\\\
 An example of docker-compose file for stack deployment: \href{https://drive.google.com/file/d/1t3MwMzXrjDNgrXTeLmwiEe5Hj0q6pueq/view?usp=sharing}{example-voting-app.yml}
 \section{Ansible}
-Installing docker, kubernetes and all other components in each node of multinode cluster containing 100 nodes can be a tedious task. To overcome this issue we need ansible for configuration management. By default ansible uses native openSSH connection and runs commands simultaneously on multiple nodes. We have created ansible playbooks for all needed configurations.
+Installing docker, kubernetes, and all the other components in each node in a multi-node cluster, which contains many nodes, can be a tedious task. To overcome this issue, Ansible can be used for configuration management. Furthermore, Ansible can be used to configure the nodes too. By default Ansible uses a native openSSH connection and runs commands simultaneously on multiple nodes. We have created Ansible Playbooks for all the needed configurations.
 \subsection{Installing openssh}
 \$ sudo apt-get install openssh-server\\
 \$ sudo apt-get install openssh-client
 \subsection{Generating key at server and copying in client}
 \$ ssh-keygen (generate ssh-key)\\
-Copy this key to all nodes so that you don’t have to enter a password each time while connecting to the node.\\
+Copy this key to all nodes to avoid the need to enter a password each time while connecting to the node.\\
 To copy ssh-key type command:\\
 \$ ssh-copy-id $username@IP\_address$
 \subsection{Ansible setup}
@@ -355,7 +355,7 @@ Kubernetes is a container-orchestration tool developed by Google in 2015 and lat
 \end{itemize}
 \subsection{Terminologies in Kubernetes}
 \subsubsection{Pod}
-The most fundamental unit in a kubernetes cluster is a pod. A pod is a collection of container and volumes. Each pod has an IP address.\\
+The most fundamental unit in a kubernetes cluster is a pod. A pod is a collection of container and volumes. Each pod is assigned an IP address.\\
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width=\textwidth, trim= 0 0 0 7cm, clip=true]{pods}
@@ -380,7 +380,7 @@ A service exposes a deployment as a network service. A deployment is stateless w
 	\end{center}
 \end{figure}
 \subsubsection{Ingress network}
-An ingress network exposes the services in the cluster to the outside network i.e. the clients. An ingress helps us in handling the outside traffic and directing them to the various services.\\
+An ingress network exposes the services in the cluster to the outside network i.e. to the clients. An ingress helps us in handling the outside traffic and routing it based on the context.\\
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.31\textheight]{ingress}
@@ -388,9 +388,9 @@ An ingress network exposes the services in the cluster to the outside network i.
 	\end{center}
 \end{figure}
 \subsection{Networking in Kubernetes}
-Kubernetes supports a large number of network  plugins using different protocols. The type of networking to be used completely depends on the type of cluster you want to set up and your cluster requirements.\\\\
-In a kubernetes network each pod is assigned its own IP address. Pods can communicate with pods, nodes and services in a node without NAT. \\\\
-The networking in kubernetes can be broken down into majorly 4 parts :
+Kubernetes supports a large number of network plugins using different protocols. The type of networking to be used completely depends on the type of cluster you want to set up and your cluster requirements.\\\\
+In a kubernetes network, each pod is assigned its own IP address. Pods can communicate with pods, nodes and services in a node without NAT. \\\\
+The networking in kubernetes can be primarily broken down into 4 parts :
 \begin{enumerate}
 	\item Container to container communication
 	\item Pod to pod communication
@@ -416,21 +416,21 @@ Calico provides a highly scalable networking and network policy solution for con
 \end{figure}
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \subsubsection{Weavenet}
-Weavenet is a simple network for kubernetes and its hosted applications. Weave Net runs as a CNI plug in or stand-alone.
+Weavenet is a simple network for kubernetes and its hosted applications. Weave Net runs as a CNI plug-in or stand-alone.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.3\textheight]{weavenet}
 		\caption{Weavenet}
 	\end{center}
 \end{figure}
-\\In addition to these we have a lot of network plugins supported by kubernetes. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
+\\In addition to these, kubernetes supports many other plugins too. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
 \subsection{Prerequisites for running kubernetes \cite{Prereq}}
 \subsubsection{Disable Swap Space}
-In order to set up a kubernetes cluster all nodes including master must have swap space disabled.
+In order to set up a kubernetes cluster, all nodes including the master must have swap space disabled.
 \begin{itemize}
-	\item To disable swap space for current session run: \\
-		  \textbf{\$ sudo swapoff -a}
-	\item To permanently disable swap space go to /etc/fstab and comment the swap space line.
+	\item To disable swap space for current session, run: \\
+	\textbf{\$ sudo swapoff -a}
+	\item To permanently disable swap space, go to /etc/fstab and comment the swap space line.
 \end{itemize}
 \subsubsection{Make IP static}
 All nodes in cluster including master must have a static IP address.\\
@@ -441,7 +441,7 @@ address  YOUR\_IP\_ADDRESS
 \subsection{Kubernetes setup}
 \begin{enumerate}
 	\item Install docker (follow the steps given \hyperref[sec:dockerinstall]{here} to successfully install docker).
-	\item Enable docker to autostart during restart:\\
+	\item Enable docker to run automatically on startup:\\
 	\textbf{\$ sudo systemctl enable docker}
 	\item Install curl:\\
 	\textbf{\$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg $\vert$ sudo apt-key add}
@@ -453,82 +453,82 @@ address  YOUR\_IP\_ADDRESS
 	\textbf{\$ sudo apt-get install kubelet}
 \end{enumerate}
 \subsection{Setting up your Kubernetes cluster}
-In order to set up your cluster first initialise your master with kubeadm:\\\\
+In order to set up your cluster first, initialise your master with kubeadm:\\\\
 \textbf{\$ kubeadm init  -{}-apiserver-advertise-address=YOUR\_IP\_ADDRESS    -{}-pod-network-cidr=40.196.0.0/16}\\\\
-On successful execution of the command we get a join command for the worker nodes to join the cluster. Preserve this command to bring nodes into the cluster once the dashboard is created.\\\\
- You can also generate the join token by running the command :\\\\
- \textbf{\$ kubeadm token create}\\\\
- And the SHA256 key can be generated by running the command:\\\\
- \textbf{\$ openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt $|$ openssl rsa -pubin -outform der 2$>$/dev/null $|$ openssl dgst -sha256 -hex | sed 's/\string^.* //'}\\\\
- Now to bring any node into the cluster run the following command into the cluster after changing the IP with your master system’s IP address, token and SHA256 key with that generated by running the above command:\\\\
- \textbf{\$ kubeadm join IP\_OF\_MASTER:6443 -{}-token GENERATED\_TOKEN -{}-discovery-token-ca-cert-hash sha256:GENERATED\_HASH}\\\\
- Now once you have successfully initialised the cluster run the following commands :\\\\
- \textbf{
- \$ mkdir -p \$HOME/.kube\\
- \$ sudo cp -i /etc/kubernetes/admin.conf \$HOME/.kube/config\\
- \$ sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
+On successful execution of the command, we get a join command for the worker nodes to join the cluster. Preserve this command to bring nodes into the cluster once the dashboard is created.\\\\
+You can also generate the join token by running the command :\\\\
+\textbf{\$ kubeadm token create}\\\\
+And the SHA256 key can be generated by running the command:\\\\
+\textbf{\$ openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt $|$ openssl rsa -pubin -outform der 2$>$/dev/null $|$ openssl dgst -sha256 -hex | sed 's/\string^.* //'}\\\\
+Now to bring any node into the cluster run the following command into the cluster after changing the IP with your master system’s IP address, token and SHA256 key with that generated by running the above command:\\\\
+\textbf{\$ kubeadm join IP\_OF\_MASTER:6443 -{}-token GENERATED\_TOKEN -{}-discovery-token-ca-cert-hash sha256:GENERATED\_HASH}\\\\
+Once the cluster has been successfully initialised, run the following commands :\\\\
+\textbf{
+	\$ mkdir -p \$HOME/.kube\\
+	\$ sudo cp -i /etc/kubernetes/admin.conf \$HOME/.kube/config\\
+	\$ sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
 }
 \subsubsection{Setting up a pod network}
-	i) To install and set up a calico pod network run the command :\\\\
-	\textbf{\$ kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/\\installation/hosted/kubeadm/1.7/calico.yaml}\\\\
-	ii) To install and set up flannel pod network run the command :\\\\
-	\textbf{\$ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/\\Documentation/kube-flannel.yml}\\\\
-	There are a lot of plugins available that can be used as per the requirements. In this project we have used a calico pod network as CNI.\\
-	Once the network is set up we need to install and host the dashboard on localhost.
+i) To install and set up a calico pod network, run the command :\\\\
+\textbf{\$ kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/\\installation/hosted/kubeadm/1.7/calico.yaml}\\\\
+ii) To install and set up flannel pod network, run the command :\\\\
+\textbf{\$ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/\\Documentation/kube-flannel.yml}\\\\
+There are a lot of plugins available that can be used as per the requirements. In this project, we have used a calico pod network as CNI.\\
+Once the network is set up, we need to install and host the dashboard on localhost.
 \subsubsection{Setting up and hosting the dashboard \cite{Dashboard}}
-	i) For installation and hosting in localhost : \\\\
-	\textbf{\$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/\\v1.8.3/src/deploy/recommended/kubernetes-dashboard.yaml}\\\\
-	ii) For Creating service account:\\\\
-	\textbf{\$ kubectl create serviceaccount dashboard -n default}\\\\
-	iii) To add cluster binding rules to the dashboard:\\\\
-	\textbf{\$ kubectl create clusterrolebinding dashboard-admin -n default 
-		\\-{}-clusterrole=cluster-admin 
-		\\-{}-serviceaccount=default:dashboard}\\\\
-	iv) To generate token for login\\\\
-	\textbf{\$ kubectl get secret \$(kubectl get serviceaccount dashboard\\ -o jsonpath="{.secrets[0].name}") -o jsonpath="{.data.token}" $|$ base64 -{}-decode}\\\\
-	After the token is generated you can run the dashboard on localhost on port 8001(default). To bring up the dashboard run the command :\\\\
-	\textbf{\$ kubectl proxy}\\\\
-	Now you can visit the dashboard on the localhost:8001 at url:\\\\
-	\href{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/}{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-\\dashboard:/proxy/}\\\\
-	The dashboard can be accessed by entering the token generated. We can see the pods running, deployments, services and volumes created. We can also scale up and scale down the number of replicas.
-	\subsubsection{Kubernetes commands for getting resource info}
-	In order to get the complete details of  the pods via command line run the command :\\\\
-	\textbf{\$ kubectl get pods -o wide -{}-all-namespaces}\\\\
-	For viewing pods in default namespace run the command:\\\\
-	\textbf{\$ kubectl get pods}\\\\
-	Similarly for viewing deployments and services run the corresponding commands:\\\\
-	\textbf{\$ kubectl get deployments}\\
-	\textbf{\$ kubectl get services}\\\\
-	So now the cluster is set up and we can create deployments for the running in the cluster. We can expose these deployments to endpoints via services and to external traffic by creating an ingress network.
-	\subsection{Kubernetes API Server}
-	Gateway to the Kubernetes cluster is Api server. It is a centralized system that is accessed by all users, automation, and components in the Kubernetes cluster. The API server implements a RESTful API over HTTP, performs all API operations, and is responsible for storing API objects into a tent storage backend. This chapter covers the details of this operation.
-	\begin{figure}[h!]
-		\begin{center}
-			\includegraphics[totalheight=0.32\textheight]{kubernetesapiserver}
-			\caption{Kubernetes architecture}
-		\end{center}
-	\end{figure}
-	\subsubsection{Pieces of API Server}
-	Kubernetes API server has three core functions:
-	\begin{itemize}
-		\item \textbf{API management:}\\\\
-		In API management process, APIs are exposed and managed by the server.
-		\item \textbf{Request processing:}\\\\
-		Request processing processes individual API requests from a client.
-		\item \textbf{Internal control loops:}\\\\
-		Internal control loops has internals responsibilities for background operations necessary to the successful operation of the API server.
-	\end{itemize}
+i) For installation and hosting in localhost : \\\\
+\textbf{\$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/\\v1.8.3/src/deploy/recommended/kubernetes-dashboard.yaml}\\\\
+ii) For Creating service account:\\\\
+\textbf{\$ kubectl create serviceaccount dashboard -n default}\\\\
+iii) To add cluster binding rules to the dashboard:\\\\
+\textbf{\$ kubectl create clusterrolebinding dashboard-admin -n default 
+	\\-{}-clusterrole=cluster-admin 
+	\\-{}-serviceaccount=default:dashboard}\\\\
+iv) To generate token for login\\\\
+\textbf{\$ kubectl get secret \$(kubectl get serviceaccount dashboard\\ -o jsonpath="{.secrets[0].name}") -o jsonpath="{.data.token}" $|$ base64 -{}-decode}\\\\
+After the token is generated you can run the dashboard on localhost on port 8001(default). To bring up the dashboard run the command :\\\\
+\textbf{\$ kubectl proxy}\\\\
+Now you can visit the dashboard on the localhost:8001 at url:\\\\
+\href{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/}{http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-\\dashboard:/proxy/}\\\\
+The dashboard can be accessed by entering the token generated. We can see the pods running, deployments, services and volumes created. We can also scale up and scale down the number of replicas.
+\subsubsection{Kubernetes commands for getting resource info}
+In order to get the complete details of  the pods via command line run the command :\\\\
+\textbf{\$ kubectl get pods -o wide -{}-all-namespaces}\\\\
+For viewing pods in default namespace run the command:\\\\
+\textbf{\$ kubectl get pods}\\\\
+Similarly for viewing deployments and services run the corresponding commands:\\\\
+\textbf{\$ kubectl get deployments}\\
+\textbf{\$ kubectl get services}\\\\
+Once the cluster is set up, we can create deployments for the running in the cluster. We can expose these deployments to endpoints via services and to external traffic by creating an ingress network.
+\subsection{Kubernetes API Server}
+The Gateway to the Kubernetes cluster is the Kubernetes API server. It is a centralized system that is accessed by all users, automation, and components in the Kubernetes cluster. The API server implements a RESTful API over HTTP, performs all API operations, and is responsible for storing API objects into a tent storage backend.
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.32\textheight]{kubernetesapiserver}
+		\caption{Kubernetes architecture}
+	\end{center}
+\end{figure}
+\subsubsection{Pieces of API Server}
+Kubernetes API server has three core functions:
+\begin{itemize}
+	\item \textbf{API management:}\\\\
+	In API management process, APIs are exposed and managed by the server.
+	\item \textbf{Request processing:}\\\\
+	Request processing processes individual API requests from a client.
+	\item \textbf{Internal control loops:}\\\\
+	Internal control loops has internals responsibilities for background operations necessary to the successful operation of the API server.
+\end{itemize}
 \subsubsection{API Management \cite{KubernetesManagement}}
 The API server is an HTTP server—thus, every API request is an HTTP request. But the characteristics of those HTTP requests must be described so that the client and server know how to communicate. For the purposes of exploration, it’s great to have an API server actually up and running so that you can poke at it. You can either use an existing Kubernetes cluster that you have access to, or you can use the minikube tool for a local Kubernetes cluster. To make it easy to use the curl tool to explore the API server, run the kubectl tool in proxy mode to expose an unauthenticated API server on localhost:8001 using the following command:\\\\
 \textbf{\$ kubectl proxy}
 \subsection{Request Management}
-The main aim of Api server is to receive and process API calls in form of HTTP request.\\
-Type of request performed by Api server are following:
+The main aim of the API server is to receive and process API calls in the form of HTTP requests.\\
+Type of request performed by the API server are as follows:
 \begin{itemize}
-	\item Get
-	\item List
-	\item Post
-	\item Delete
+	\item GET
+	\item LIST
+	\item POST
+	\item DELETE
 \end{itemize}
 \begin{figure}[h!]
 	\begin{center}
@@ -560,7 +560,7 @@ Kompose is tool provided by kubernetes which converts a docker-compose file into
 	\textbf{\$ curl -L https://github.com/kubernetes/kompose/releases/download/\\v1.17.0/kompose-linux-amd64 -o kompose}
 	\item Give executable permission and move the directory:\\\\
 	\textbf{\$ chmod $+$x kompose\\
-			\$ sudo mv ./kompose /usr/local/bin/kompose}
+		\$ sudo mv ./kompose /usr/local/bin/kompose}
 \end{enumerate}
 In order to convert the compose file into kompose run the command :\\\\
 \textbf{\$ kompose convert -f docker-compose.yml}\\\\
@@ -583,6 +583,28 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 \end{figure}
 \subsubsection{Compose on Kubernetes}
 We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})
+\subsection{Work}
+In this project, our aim was to deploy an instance of Open edX on a Kubernetes cluster.
+\subsubsection{Kubernetes cluster}
+At first, we set up a Kubernetes cluster as mentioned above with one master and two nodes.
+\subsubsection{Kompose}
+We converted the docker-compose.yaml file for Open edX containers to multiple Kubernetes deployment files (YAML). But, since the conversion rate was not 100\%, we had to create persistent volumes and claims for those volumes on our own.
+\subsubsection{Persistent volumes and Persistent volume claims}
+We made YAML files to create persistent volumes and then attached each volume to a claim using its corresponding persistent-volume-claim.yaml file.
+\subsubsection{Kubernetes deployment}
+We then deployed all the 15 containers on the cluster. Kubernetes assigned the appropriate node (one among the two) for each container to run.
+\subsubsection{Fault handling}
+We removed one node from the cluster and found out that Kubernetes deplyed all the containers running on that node to the node that was still a part of the cluster.
+\subsubsection{Provisioning}
+The file provision.sh in the devstack directory has the commands and links to the file that are to be executed for provisioning. Those are simply docker commands. Since, our containers are running on a Kubernetes cluster, we used the \textbf{kubectl exec} in place of \textbf{docker exec} to run commands inside the containers. But there were some issuses we faced: \\\\
+\textbf{i) The containers running inside the Kubernetes cluster were not able to connect to the internet}\\\\
+Commands those were to be executed inside a container and required internet access failed, as containers were not able to connect to the internet.\\\\
+\textbf{Suggested resolutions:\\\\}These are some methods that may solve this issue (due to lack of time, we were not able to try them properly and anyone taking up this project from here on can try these methods):
+\begin{itemize}
+	\item On further research, we found out that the internet connectivity problem of the containers was probably due to some issue in the DNS resolution. This can be further looked up using this link: \href{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}\cite{DNS}
+	\item We can mention the commands that are to be executed inside a containere inside its deployment file itself. This is probably a better way than the above one as here the commands will be executed inside any new container that is created through that deployment file. This can be done by using a \textbf{command} and \textbf{args} fields in the deployment file.
+	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
+\end{itemize}
 \pagebreak
 \begin{center}
 	\textbf{\Large{Performance Testing Open edX Ironwood Release}}
@@ -599,7 +621,7 @@ One can install JMeter by downloading the required binaries from
 \section*{JMeter Test Scripts}
 A JMeter test script is a collection of user activities that have been pre-recorded using a proxy. These scripts are stored in the XML format with $.jmx$ extension.
 \par
-The test script can be recorded as follows:
+The test script can be recorded as follows:\cite{Performance}
 \begin{enumerate}
 	\item Firstly, create a new test plan. A test plan describes what JMeter should do when we run a test script. 
 	\item Next, right-click on the newly created test plan and add a thread group. (Add-$>$Threads (Users)-$>$Thread Group) A thread group is used to simulate users for testing an application.
@@ -780,7 +802,7 @@ The application under test could handle 10 users for the specified server config
 \end{itemize}
 
 \par
-The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figure $enter the numbers$.
+The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figures 14-17, 20-23.
 
 
 \bibliographystyle{ieeetr}

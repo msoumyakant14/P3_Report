@@ -22,7 +22,7 @@
 \BOOKMARK [3][-]{subsubsection.3.3.5}{Run containers and experiment with machine commands}{subsection.3.3}% 22
 \BOOKMARK [2][-]{subsection.3.4}{Docker Swarm}{section.3}% 23
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Types of networks in docker}{subsection.3.4}% 24
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Initialising with docker swarm as Manager}{subsection.3.4}% 25
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Initialising a Swarm Node as Manager}{subsection.3.4}% 25
 \BOOKMARK [3][-]{subsubsection.3.4.3}{Docker Stack}{subsection.3.4}% 26
 \BOOKMARK [1][-]{section.4}{Ansible}{}% 27
 \BOOKMARK [2][-]{subsection.4.1}{Installing openssh}{section.4}% 28
@@ -67,5 +67,12 @@
 \BOOKMARK [2][-]{subsection.5.13}{Converting docker-compose file to its Kubernetes equivalent}{section.5}% 67
 \BOOKMARK [3][-]{subsubsection.5.13.1}{Kompose}{subsection.5.13}% 68
 \BOOKMARK [3][-]{subsubsection.5.13.2}{Compose on Kubernetes}{subsection.5.13}% 69
-\BOOKMARK [2][-]{subsection.5.14}{System Configurations}{section.5}% 70
-\BOOKMARK [2][-]{subsection.5.15}{System Configurations}{section.5}% 71
+\BOOKMARK [2][-]{subsection.5.14}{Work}{section.5}% 70
+\BOOKMARK [3][-]{subsubsection.5.14.1}{Kubernetes cluster}{subsection.5.14}% 71
+\BOOKMARK [3][-]{subsubsection.5.14.2}{Kompose}{subsection.5.14}% 72
+\BOOKMARK [3][-]{subsubsection.5.14.3}{Persistent volumes and Persistent volume claims}{subsection.5.14}% 73
+\BOOKMARK [3][-]{subsubsection.5.14.4}{Kubernetes deployment}{subsection.5.14}% 74
+\BOOKMARK [3][-]{subsubsection.5.14.5}{Fault handling}{subsection.5.14}% 75
+\BOOKMARK [3][-]{subsubsection.5.14.6}{Provisioning}{subsection.5.14}% 76
+\BOOKMARK [2][-]{subsection.5.15}{System Configurations}{section.5}% 77
+\BOOKMARK [2][-]{subsection.5.16}{System Configurations}{section.5}% 78

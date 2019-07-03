@@ -1,18 +1,19 @@
 \begin{thebibliography}{1}
 
 \bibitem{Docker}
-``{Official website of Docker "\url{https://docs.docker.com/}".}.''
+``{Official website of Docker "\url{https://docs.docker.com/}". Accessed on
+  July 2019}.''
 
 \bibitem{Kubernetes}
 ``{Official website of Kubernetes "\url{https://kubernetes.io/docs/home/}".
   }.''
 
 \bibitem{Prereq}
-``{Prereq "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}".
-  }.''
+``{Prerequisites for installing Kubernetes
+  "\url{https://www.edureka.co/blog/install-kubernetes-on-ubuntu}". }.''
 
 \bibitem{Dashboard}
-``{Dashboard
+``{Setting up and hosting the dashboard
   "\url{https://www.vikki.in/kubernetes-on-ubuntu-18-04-with-dashbaoard/}".
   }.''
 
@@ -20,5 +21,14 @@
 ``{Kubernetes management
   "\url{https://www.oreilly.com/library/view/managing-kubernetes/9781492033905/ch04.html}".
   }.''
+
+\bibitem{DNS}
+``{Pods are unable to access internet
+  "\url{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}".
+  }.''
+
+\bibitem{Performance}
+B.~Erinle, {\em JMeter cookbook}.
+\newblock Packt Publishing., 2014, 1st Edition.
 
 \end{thebibliography}
