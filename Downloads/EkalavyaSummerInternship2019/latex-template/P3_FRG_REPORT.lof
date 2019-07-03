@@ -1,25 +1,33 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Kubernetes pods}}{11}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Kubernetes deployment}}{12}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Kubernetes service}}{12}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Ingress network}}{13}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Flannel network}}{14}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Calico network}}{15}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Weavenet}}{15}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Kubernetes architecture}}{19}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Request management}}{20}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Kompose}}{22}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Persistent volumes}}{22}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces SAR CPU Metrics}}{28}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces SAR Memory Metrics}}{28}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{29}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{30}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{31}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{32}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces SAR CPU Metrics}}{34}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces SAR Memory Metrics}}{34}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{35}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{36}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{37}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{38}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces JMeter Summary Report for Open edX Native.}}{39}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{39}{figure.25}
+\contentsline {figure}{\numberline {1}{\ignorespaces TLS handshake timeout error}}{6}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Kubernetes pods \cite {Pods}}}{12}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Kubernetes deployment \cite {Deployments}}}{12}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Kubernetes service \cite {Service}}}{13}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Ingress network \cite {Ingress}}}{13}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Flannel network \cite {Flannel}}}{14}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Calico network \cite {Calico}}}{15}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Weavenet \cite {Weavenet}}}{16}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Kubernetes architecture \cite {KArc}}}{19}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Request management \cite {Request}}}{21}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Kompose \cite {Kompose}}}{22}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Persistent volumes \cite {Persistent}}}{23}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Nodes connected in a Kuberentes cluster}}{24}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Persistent Volumes}}{25}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Persistent Volume Claims}}{25}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Kubernetes deployments}}{26}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{26}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Pods running before deleting a node}}{27}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{27}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{32}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{32}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{33}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{34}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{35}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{36}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces SAR CPU Metrics}}{38}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces SAR Memory Metrics}}{38}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{39}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{40}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{41}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{42}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces JMeter Summary Report for Open edX Native.}}{43}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{43}{figure.33}

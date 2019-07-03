@@ -16,6 +16,17 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Pods}
+\citation{Deployments}
+\citation{Service}
+\citation{Ingress}
+\citation{Flannel}
+\citation{Calico}
+\citation{Weavenet}
+\citation{KArc}
+\citation{Request}
+\citation{Kompose}
+\citation{Persistent}
 \citation{Docker}
 \citation{Kubernetes}
 \citation{Prereq}
@@ -34,110 +45,144 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Terms related to Docker}{5}{subsection.3.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Containerization}{5}{subsubsection.3.2.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Docker Image}{5}{subsubsection.3.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces TLS handshake timeout error}}{6}{figure.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Docker Container}{6}{subsubsection.3.2.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Docker Registry}{6}{subsubsection.3.2.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.5}Docker Engine}{6}{subsubsection.3.2.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.6}Docker Compose}{6}{subsubsection.3.2.6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7}Dockerfiles}{6}{subsubsection.3.2.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Docker-Machine}{6}{subsection.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.6}Docker Compose}{7}{subsubsection.3.2.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7}Dockerfiles}{7}{subsubsection.3.2.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Docker-Machine}{7}{subsection.3.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Install Docker Machine:}{7}{subsubsection.3.3.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Use Docker Machine to run Docker Containers:}{7}{subsubsection.3.3.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Create a Machine}{7}{subsubsection.3.3.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4}Connect your shell to the new machine}{7}{subsubsection.3.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5}Run containers and experiment with machine commands}{7}{subsubsection.3.3.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Docker Swarm}{7}{subsection.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5}Run containers and experiment with machine commands}{8}{subsubsection.3.3.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Docker Swarm}{8}{subsection.3.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Types of networks in docker}{8}{subsubsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Initialising a Swarm Node as Manager}{8}{subsubsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Initialising a Swarm Node as Manager}{9}{subsubsection.3.4.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Docker Stack}{9}{subsubsection.3.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Ansible}{9}{section.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Installing openssh}{9}{subsection.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{9}{subsection.4.2}}
-\citation{Kubernetes}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Ansible}{10}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Installing openssh}{10}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{10}{subsection.4.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ansible setup}{10}{subsection.4.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Adding repository}{10}{subsubsection.4.3.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Installing ansible}{10}{subsubsection.4.3.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Checking version}{10}{subsubsection.4.3.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Ansible directories}{10}{subsubsection.4.3.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Making a copy a directory for our use}{10}{subsubsection.4.3.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Some useful commands for ansible}{10}{subsection.4.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}To see the hostnames of all nodes}{10}{subsubsection.4.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}To see the volumes used by all nodes}{10}{subsubsection.4.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}To run an ansible-playbook}{10}{subsubsection.4.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Kubernetes\cite  {Kubernetes}}{10}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}What is Kubernetes}{10}{subsection.5.1}}
+\citation{Kubernetes}
+\citation{Pods}
+\citation{Deployments}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Some useful commands for ansible}{11}{subsection.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}To see the hostnames of all nodes}{11}{subsubsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}To see the volumes used by all nodes}{11}{subsubsection.4.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}To run an ansible-playbook}{11}{subsubsection.4.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Kubernetes\cite  {Kubernetes}}{11}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}What is Kubernetes}{11}{subsection.5.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Main Features Of Kubernetes}{11}{subsection.5.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Terminologies in Kubernetes}{11}{subsection.5.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Pod}{11}{subsubsection.5.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Kubernetes pods}}{11}{figure.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Deployment}{11}{subsubsection.5.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Kubernetes deployment}}{12}{figure.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Service}{12}{subsubsection.5.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Kubernetes service}}{12}{figure.3}}
+\citation{Service}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Kubernetes pods \cite  {Pods}}}{12}{figure.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Deployment}{12}{subsubsection.5.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Kubernetes deployment \cite  {Deployments}}}{12}{figure.3}}
+\citation{Ingress}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Service}{13}{subsubsection.5.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Kubernetes service \cite  {Service}}}{13}{figure.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Ingress network}{13}{subsubsection.5.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Ingress network}}{13}{figure.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Networking in Kubernetes}{13}{subsection.5.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Flannel}{13}{subsubsection.5.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Flannel network}}{14}{figure.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Calico}{14}{subsubsection.5.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Calico network}}{15}{figure.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Ingress network \cite  {Ingress}}}{13}{figure.5}}
+\citation{Flannel}
+\citation{Calico}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Networking in Kubernetes}{14}{subsection.5.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Flannel}{14}{subsubsection.5.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Flannel network \cite  {Flannel}}}{14}{figure.6}}
+\citation{Weavenet}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Calico}{15}{subsubsection.5.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Calico network \cite  {Calico}}}{15}{figure.7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3}Weavenet}{15}{subsubsection.5.4.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Weavenet}}{15}{figure.7}}
 \citation{Prereq}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Weavenet \cite  {Weavenet}}}{16}{figure.8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Prerequisites for running kubernetes \cite  {Prereq}}{16}{subsection.5.5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}Disable Swap Space}{16}{subsubsection.5.5.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}Make IP static}{16}{subsubsection.5.5.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Kubernetes setup}{16}{subsection.5.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Setting up your Kubernetes cluster}{16}{subsection.5.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Setting up your Kubernetes cluster}{17}{subsection.5.7}}
 \citation{Dashboard}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1}Setting up a pod network}{17}{subsubsection.5.7.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard \cite  {Dashboard}}{17}{subsubsection.5.7.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{18}{subsubsection.5.7.3}}
-\citation{KubernetesManagement}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1}Setting up a pod network}{18}{subsubsection.5.7.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard \cite  {Dashboard}}{18}{subsubsection.5.7.2}}
+\citation{KArc}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{19}{subsubsection.5.7.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Kubernetes API Server}{19}{subsection.5.8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Kubernetes architecture}}{19}{figure.8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{19}{subsubsection.5.8.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2}API Management \cite  {KubernetesManagement}}{19}{subsubsection.5.8.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Kubernetes architecture \cite  {KArc}}}{19}{figure.9}}
+\citation{KubernetesManagement}
+\citation{Request}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{20}{subsubsection.5.8.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2}API Management \cite  {KubernetesManagement}}{20}{subsubsection.5.8.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Request Management}{20}{subsection.5.9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Request management}}{20}{figure.9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10}ETCD}{20}{subsection.5.10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.11}Kube-Scheduler}{20}{subsection.5.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{20}{subsection.5.12}}
+\citation{Kompose}
+\citation{Persistent}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Request management \cite  {Request}}}{21}{figure.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{21}{subsection.5.12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.13}Converting docker-compose file to its Kubernetes equivalent}{21}{subsection.5.13}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.13.1}Kompose}{21}{subsubsection.5.13.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Kompose}}{22}{figure.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Persistent volumes}}{22}{figure.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Kompose \cite  {Kompose}}}{22}{figure.11}}
+\citation{Komposefiles}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Persistent volumes \cite  {Persistent}}}{23}{figure.12}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.13.2}Compose on Kubernetes}{23}{subsubsection.5.13.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.14}Work}{23}{subsection.5.14}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.1}Kubernetes cluster}{23}{subsubsection.5.14.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.2}Kompose}{23}{subsubsection.5.14.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.3}Persistent volumes and Persistent volume claims}{23}{subsubsection.5.14.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.4}Kubernetes deployment}{23}{subsubsection.5.14.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.5}Fault handling}{23}{subsubsection.5.14.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.14.6}Provisioning}{23}{subsubsection.5.14.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Our progress}{23}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Kubernetes cluster}{23}{subsection.6.1}}
+\citation{Hostvolumes}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Nodes connected in a Kuberentes cluster}}{24}{figure.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Kompose}{24}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Persistent volumes and Persistent volume claims}{24}{subsection.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Persistent Volumes}}{25}{figure.14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Persistent Volume Claims}}{25}{figure.15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Kubernetes deployment}{26}{subsection.6.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Kubernetes deployments}}{26}{figure.16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Kubernetes deployments after removing gradebook and forum}}{26}{figure.17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Fault handling}{27}{subsection.6.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Pods running before deleting a node}}{27}{figure.18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Pods running after deleting the node}}{27}{figure.19}}
 \citation{DNS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Provisioning}{28}{subsection.6.6}}
 \citation{Performance}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.15}System Configurations}{27}{subsection.5.15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces SAR CPU Metrics}}{28}{figure.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces SAR Memory Metrics}}{28}{figure.13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{29}{figure.14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{30}{figure.15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{31}{figure.16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{32}{figure.17}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.16}System Configurations}{33}{subsection.5.16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces SAR CPU Metrics}}{34}{figure.18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces SAR Memory Metrics}}{34}{figure.19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{35}{figure.20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{36}{figure.21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{37}{figure.22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{38}{figure.23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces JMeter Summary Report for Open edX Native.}}{39}{figure.24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{39}{figure.25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}System Configurations}{31}{subsection.6.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces SAR CPU Metrics}}{32}{figure.20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces SAR Memory Metrics}}{32}{figure.21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{33}{figure.22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }}{34}{figure.23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{35}{figure.24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}}{36}{figure.25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8}System Configurations}{37}{subsection.6.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces SAR CPU Metrics}}{38}{figure.26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces SAR Memory Metrics}}{38}{figure.27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}}{39}{figure.28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}}{40}{figure.29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}}{41}{figure.30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}}{42}{figure.31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces JMeter Summary Report for Open edX Native.}}{43}{figure.32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces JMeter Summary Report for Open edX Devstack.}}{43}{figure.33}}
 \bibstyle{ieeetr}
 \bibdata{biblio}
-\bibcite{Docker}{1}
-\bibcite{Kubernetes}{2}
-\bibcite{Prereq}{3}
-\bibcite{Dashboard}{4}
-\bibcite{KubernetesManagement}{5}
-\bibcite{DNS}{6}
-\bibcite{Performance}{7}
+\bibcite{Pods}{1}
+\bibcite{Deployments}{2}
+\bibcite{Service}{3}
+\bibcite{Ingress}{4}
+\bibcite{Flannel}{5}
+\bibcite{Calico}{6}
+\bibcite{Weavenet}{7}
+\bibcite{KArc}{8}
+\bibcite{Request}{9}
+\bibcite{Kompose}{10}
+\bibcite{Persistent}{11}
+\bibcite{Docker}{12}
+\bibcite{Kubernetes}{13}
+\bibcite{Prereq}{14}
+\bibcite{Dashboard}{15}
+\bibcite{KubernetesManagement}{16}
+\bibcite{Komposefiles}{17}
+\bibcite{Hostvolumes}{18}
+\bibcite{DNS}{19}
+\bibcite{Performance}{20}

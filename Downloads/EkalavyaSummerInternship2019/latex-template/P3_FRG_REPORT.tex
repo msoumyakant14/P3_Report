@@ -227,7 +227,15 @@ Docker is an open-source software tool designed to automate and ease the process
 \subsubsection{Containerization}
 Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application within a container with its own operating environment. Essentially, containers share the kernel space with the host OS, but have a separate user space. This makes them lightweight.
 \subsubsection{Docker Image}
-A \textit{Docker Image} is the basic unit for deploying a Docker container. A Docker image is essentially a static snapshot of a container, incorporating all of the objects needed to run a container.
+A \textit{Docker Image} is the basic unit for deploying a Docker container. A Docker image is essentially a static snapshot of a container, incorporating all of the objects needed to run a container.\\\\
+\textbf{TLS handshake timeout error in pulling Docker image :}\\\\
+In case there is a TLS handshake timeout error while pulling a Docker image from an online repository, try running the command again and again and eventually the image will be pulled:
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.4\textheight]{TLS}
+		\caption{TLS handshake timeout error}
+	\end{center}
+\end{figure} 
 \subsubsection{Docker Container}
 A \textit{Docker Container} encapsulates a Docker image and when live and running, is considered a container. Each container runs in an isolated environment on the host machine.
 \subsubsection{Docker Registry}
@@ -359,7 +367,7 @@ The most fundamental unit in a kubernetes cluster is a pod. A pod is a collectio
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width=\textwidth, trim= 0 0 0 7cm, clip=true]{pods}
-		\caption{Kubernetes pods}
+		\caption{Kubernetes pods \cite{Pods}}
 	\end{center}
 \end{figure}
 \subsubsection{Deployment}
@@ -367,16 +375,15 @@ A deployment can be seen as a stateless state of the pod. A deployment is used t
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.45\textheight]{deploy}
-		\caption{Kubernetes deployment}
+		\caption{Kubernetes deployment \cite{Deployments}}
 	\end{center}
 \end{figure}
-\\\\\\\\\\
 \subsubsection{Service}
 A service exposes a deployment as a network service. A deployment is stateless whereas a service can be considered as a stateful definition. The three types of services in kubernetes are: ClusterIP, NodePort and LoadBalancer.\\
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.25\textheight]{service}
-		\caption{Kubernetes service}
+		\caption{Kubernetes service \cite{Service}}
 	\end{center}
 \end{figure}
 \subsubsection{Ingress network}
@@ -384,7 +391,7 @@ An ingress network exposes the services in the cluster to the outside network i.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.31\textheight]{ingress}
-		\caption{Ingress network}
+		\caption{Ingress network \cite{Ingress}}
 	\end{center}
 \end{figure}
 \subsection{Networking in Kubernetes}
@@ -403,26 +410,27 @@ Flannel is the simplest kubernetes network  which satisfies all kubernetes requi
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.4\textheight, width=\textwidth]{flannel}
-		\caption{Flannel network}
+		\caption{Flannel network \cite{Flannel}}
 	\end{center}
 \end{figure}
 \subsubsection{Calico}
-Calico provides a highly scalable networking and network policy solution for connecting Kubernetes pods based on the same IP networking principles as the internet, for both Linux and Windows. Calico can be deployed without encapsulation or overlays to provide high-performance, high-scale data center networking.
+Calico provides a highly scalable networking and network policy solution for connecting Kubernetes pods based on the same IP networking principles as the internet, for both Linux and Windows. Calico can be deployed without encapsulation or overlays to provide high-performance, high-scale data center networking.\\
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.42\textheight]{calico}
-		\caption{Calico network}
+		\caption{Calico network \cite{Calico}}
 	\end{center}
 \end{figure}
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 \subsubsection{Weavenet}
 Weavenet is a simple network for kubernetes and its hosted applications. Weave Net runs as a CNI plug-in or stand-alone.
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[totalheight=0.3\textheight]{weavenet}
-		\caption{Weavenet}
+		\includegraphics[totalheight=0.33\textheight]{weavenet}
+		\caption{Weavenet \cite{Weavenet}}
 	\end{center}
 \end{figure}
+\\\\\\\\\\\\\\\\\\\\\\\\
 \\In addition to these, kubernetes supports many other plugins too. A list of them can be found in the official documentation page of kubernetes (\href{https://kubernetes.io/docs/concepts/cluster-administration/networking/}{Networking in Kubernetes}).
 \subsection{Prerequisites for running kubernetes \cite{Prereq}}
 \subsubsection{Disable Swap Space}
@@ -505,7 +513,7 @@ The Gateway to the Kubernetes cluster is the Kubernetes API server. It is a cent
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.32\textheight]{kubernetesapiserver}
-		\caption{Kubernetes architecture}
+		\caption{Kubernetes architecture \cite{KArc}}
 	\end{center}
 \end{figure}
 \subsubsection{Pieces of API Server}
@@ -533,7 +541,7 @@ Type of request performed by the API server are as follows:
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics*[totalheight=0.1\textheight]{kubereqman}
-		\caption{Request management}
+		\caption{Request management \cite{Request}}
 	\end{center}
 \end{figure}
 \subsection{ETCD}
@@ -571,38 +579,91 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.38\textheight]{kompose}
-		\caption{Kompose}
+		\caption{Kompose \cite{Kompose}}
 	\end{center}
 \end{figure}
 \\The persistent volumes present are created by admin so that a developer can attach a claim and use the volume for the pod.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.33\textheight]{persistentvolumes}
-		\caption{Persistent volumes}
+		\caption{Persistent volumes \cite{Persistent}}
 	\end{center}
 \end{figure}
+\\\\\\\\\\
 \subsubsection{Compose on Kubernetes}
 We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})
-\subsection{Work}
+\section{Our progress}
 In this project, our aim was to deploy an instance of Open edX on a Kubernetes cluster.
-\subsubsection{Kubernetes cluster}
-At first, we set up a Kubernetes cluster as mentioned above with one master and two nodes.
-\subsubsection{Kompose}
-We converted the docker-compose.yaml file for Open edX containers to multiple Kubernetes deployment files (YAML). But, since the conversion rate was not 100\%, we had to create persistent volumes and claims for those volumes on our own.
-\subsubsection{Persistent volumes and Persistent volume claims}
-We made YAML files to create persistent volumes and then attached each volume to a claim using its corresponding persistent-volume-claim.yaml file.
-\subsubsection{Kubernetes deployment}
+\subsection{Kubernetes cluster}
+At first, we set up a Kubernetes cluster as mentioned above with one master and three nodes.
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.4\textheight]{cluster}
+		\caption{Nodes connected in a Kuberentes cluster}
+	\end{center}
+\end{figure}
+\\\\\\\\\\\\\\\\\\\\
+\subsection{Kompose}
+We converted the docker-compose.yaml file for Open edX containers to multiple Kubernetes deployment files (YAML). But, since the conversion rate was not 100\%, we had to create persistent volumes and claims for those volumes on our own.\\\\
+The converted files can be found in the github repository : \\ \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kompose_files}{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kompose\_files} \cite{Komposefiles}
+\subsection{Persistent volumes and Persistent volume claims}
+We made YAML files to create persistent volumes and then attached each volume to a claim using its corresponding persistent-volume-claim.yaml file.\\\\
+The persistent volume and claim files can be found in the github repository :\\\\ \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/host_volumes}{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/host\_volumes} \cite{Hostvolumes}. \\\\You need not create all the persistent volume and claim files manually, we have created a bash script \textbf{volumes.sh} in the same directory that does the job. 
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.39\textheight]{PersistentVolume}
+		\caption{Persistent Volumes}
+	\end{center}
+\end{figure}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.39\textheight]{PersistentVolumeClaim}
+		\caption{Persistent Volume Claims}
+	\end{center}
+\end{figure}
+\subsection{Kubernetes deployment}
 We then deployed all the 15 containers on the cluster. Kubernetes assigned the appropriate node (one among the two) for each container to run.
-\subsubsection{Fault handling}
-We removed one node from the cluster and found out that Kubernetes deplyed all the containers running on that node to the node that was still a part of the cluster.
-\subsubsection{Provisioning}
-The file provision.sh in the devstack directory has the commands and links to the file that are to be executed for provisioning. Those are simply docker commands. Since, our containers are running on a Kubernetes cluster, we used the \textbf{kubectl exec} in place of \textbf{docker exec} to run commands inside the containers. But there were some issuses we faced: \\\\
-\textbf{i) The containers running inside the Kubernetes cluster were not able to connect to the internet}\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.34\textheight]{fgcrash}
+		\caption{Kubernetes deployments}
+	\end{center}
+\end{figure}
+\\The gradebook and forum deployments were unsuccessful. But, those two are not necessary for running the bare minimum Open edX instance and hence can be removed:
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[totalheight=0.34\textheight]{dep100}
+		\caption{Kubernetes deployments after removing gradebook and forum}
+	\end{center}
+\end{figure}
+\subsection{Fault handling}
+We removed one node from the cluster and found out that Kubernetes deployed all the containers running on that node to the node that was still a part of the cluster.\\\\
+\textbf{The pods running in the cluster:}
+\begin{itemize}
+	\item Before deleting the node epsy: 
+		\begin{figure}[h!]
+			\begin{center}
+				\includegraphics[totalheight=0.32\textheight]{podswithepsy}
+				\caption{Pods running before deleting a node}
+			\end{center}
+		\end{figure}
+	\item After deleting the node epsy:
+		\begin{figure}[h!]
+			\begin{center}
+				\includegraphics[totalheight=0.32\textheight]{podswithoutepsy}
+				\caption{Pods running after deleting the node}
+			\end{center}
+		\end{figure}
+\end{itemize}
+As we can see, the pods which were earlier running on the node epsy, now run on the remaining nodes after, their host node is deleted. This rescheduling of the pods is done automatically by Kubernetes once a node goes down. The reshudiling takes very less time as is clear from the image (15-16 seconds in this case). 
+\subsection{Provisioning}
+The file provision.sh in the devstack directory has the commands and links to the files that are to be executed for provisioning and migration of databases. Those are simply docker commands. Since, our containers are running on a Kubernetes cluster, we used the \textbf{kubectl exec} in place of \textbf{docker exec} to run commands inside the containers. But we faced an internet connectivity issue for the pods: \\\\
+\textbf{The containers running inside the Kubernetes cluster were not able to connect to the internet}\\\\
 Commands those were to be executed inside a container and required internet access failed, as containers were not able to connect to the internet.\\\\
 \textbf{Suggested resolutions:\\\\}These are some methods that may solve this issue (due to lack of time, we were not able to try them properly and anyone taking up this project from here on can try these methods):
 \begin{itemize}
 	\item On further research, we found out that the internet connectivity problem of the containers was probably due to some issue in the DNS resolution. This can be further looked up using this link: \href{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}{https://blog.yaakov.online/kubernetes-getting-pods-to-talk-to-the-internet/}\cite{DNS}
-	\item We can mention the commands that are to be executed inside a containere inside its deployment file itself. This is probably a better way than the above one as here the commands will be executed inside any new container that is created through that deployment file. This can be done by using a \textbf{command} and \textbf{args} fields in the deployment file.
+	\item We can mention the commands that are to be executed inside a containere inside its deployment file itself. This is probably a better way than the above one as here the commands will be executed inside any new container that is created through that deployment file. This can be done by using \textbf{command} and \textbf{args} fields in the deployment file.
 	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
 \end{itemize}
 \pagebreak

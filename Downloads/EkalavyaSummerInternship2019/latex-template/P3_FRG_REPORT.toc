@@ -12,67 +12,67 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Docker Container}{6}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Docker Registry}{6}{subsubsection.3.2.4}
 \contentsline {subsubsection}{\numberline {3.2.5}Docker Engine}{6}{subsubsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.6}Docker Compose}{6}{subsubsection.3.2.6}
-\contentsline {subsubsection}{\numberline {3.2.7}Dockerfiles}{6}{subsubsection.3.2.7}
-\contentsline {subsection}{\numberline {3.3}Docker-Machine}{6}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.2.6}Docker Compose}{7}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Dockerfiles}{7}{subsubsection.3.2.7}
+\contentsline {subsection}{\numberline {3.3}Docker-Machine}{7}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Install Docker Machine:}{7}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Use Docker Machine to run Docker Containers:}{7}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Create a Machine}{7}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Connect your shell to the new machine}{7}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Run containers and experiment with machine commands}{7}{subsubsection.3.3.5}
-\contentsline {subsection}{\numberline {3.4}Docker Swarm}{7}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Run containers and experiment with machine commands}{8}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.4}Docker Swarm}{8}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}Types of networks in docker}{8}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Initialising a Swarm Node as Manager}{8}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2}Initialising a Swarm Node as Manager}{9}{subsubsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.3}Docker Stack}{9}{subsubsection.3.4.3}
-\contentsline {section}{\numberline {4}Ansible}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Installing openssh}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{9}{subsection.4.2}
+\contentsline {section}{\numberline {4}Ansible}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Installing openssh}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Generating key at server and copying in client}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Ansible setup}{10}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Adding repository}{10}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Installing ansible}{10}{subsubsection.4.3.2}
 \contentsline {subsubsection}{\numberline {4.3.3}Checking version}{10}{subsubsection.4.3.3}
 \contentsline {subsubsection}{\numberline {4.3.4}Ansible directories}{10}{subsubsection.4.3.4}
 \contentsline {subsubsection}{\numberline {4.3.5}Making a copy a directory for our use}{10}{subsubsection.4.3.5}
-\contentsline {subsection}{\numberline {4.4}Some useful commands for ansible}{10}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}To see the hostnames of all nodes}{10}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}To see the volumes used by all nodes}{10}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}To run an ansible-playbook}{10}{subsubsection.4.4.3}
-\contentsline {section}{\numberline {5}Kubernetes\cite {Kubernetes}}{10}{section.5}
-\contentsline {subsection}{\numberline {5.1}What is Kubernetes}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {4.4}Some useful commands for ansible}{11}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}To see the hostnames of all nodes}{11}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}To see the volumes used by all nodes}{11}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}To run an ansible-playbook}{11}{subsubsection.4.4.3}
+\contentsline {section}{\numberline {5}Kubernetes\cite {Kubernetes}}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}What is Kubernetes}{11}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Main Features Of Kubernetes}{11}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Terminologies in Kubernetes}{11}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}Pod}{11}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Deployment}{11}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Service}{12}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.2}Deployment}{12}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Service}{13}{subsubsection.5.3.3}
 \contentsline {subsubsection}{\numberline {5.3.4}Ingress network}{13}{subsubsection.5.3.4}
-\contentsline {subsection}{\numberline {5.4}Networking in Kubernetes}{13}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Flannel}{13}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Calico}{14}{subsubsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4}Networking in Kubernetes}{14}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Flannel}{14}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Calico}{15}{subsubsection.5.4.2}
 \contentsline {subsubsection}{\numberline {5.4.3}Weavenet}{15}{subsubsection.5.4.3}
 \contentsline {subsection}{\numberline {5.5}Prerequisites for running kubernetes \cite {Prereq}}{16}{subsection.5.5}
 \contentsline {subsubsection}{\numberline {5.5.1}Disable Swap Space}{16}{subsubsection.5.5.1}
 \contentsline {subsubsection}{\numberline {5.5.2}Make IP static}{16}{subsubsection.5.5.2}
 \contentsline {subsection}{\numberline {5.6}Kubernetes setup}{16}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Setting up your Kubernetes cluster}{16}{subsection.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Setting up a pod network}{17}{subsubsection.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard \cite {Dashboard}}{17}{subsubsection.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{18}{subsubsection.5.7.3}
+\contentsline {subsection}{\numberline {5.7}Setting up your Kubernetes cluster}{17}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Setting up a pod network}{18}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Setting up and hosting the dashboard \cite {Dashboard}}{18}{subsubsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Kubernetes commands for getting resource info}{19}{subsubsection.5.7.3}
 \contentsline {subsection}{\numberline {5.8}Kubernetes API Server}{19}{subsection.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{19}{subsubsection.5.8.1}
-\contentsline {subsubsection}{\numberline {5.8.2}API Management \cite {KubernetesManagement}}{19}{subsubsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.1}Pieces of API Server}{20}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}API Management \cite {KubernetesManagement}}{20}{subsubsection.5.8.2}
 \contentsline {subsection}{\numberline {5.9}Request Management}{20}{subsection.5.9}
 \contentsline {subsection}{\numberline {5.10}ETCD}{20}{subsection.5.10}
 \contentsline {subsection}{\numberline {5.11}Kube-Scheduler}{20}{subsection.5.11}
-\contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{20}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.12}Kube-Control-Manager}{21}{subsection.5.12}
 \contentsline {subsection}{\numberline {5.13}Converting docker-compose file to its Kubernetes equivalent}{21}{subsection.5.13}
 \contentsline {subsubsection}{\numberline {5.13.1}Kompose}{21}{subsubsection.5.13.1}
 \contentsline {subsubsection}{\numberline {5.13.2}Compose on Kubernetes}{23}{subsubsection.5.13.2}
-\contentsline {subsection}{\numberline {5.14}Work}{23}{subsection.5.14}
-\contentsline {subsubsection}{\numberline {5.14.1}Kubernetes cluster}{23}{subsubsection.5.14.1}
-\contentsline {subsubsection}{\numberline {5.14.2}Kompose}{23}{subsubsection.5.14.2}
-\contentsline {subsubsection}{\numberline {5.14.3}Persistent volumes and Persistent volume claims}{23}{subsubsection.5.14.3}
-\contentsline {subsubsection}{\numberline {5.14.4}Kubernetes deployment}{23}{subsubsection.5.14.4}
-\contentsline {subsubsection}{\numberline {5.14.5}Fault handling}{23}{subsubsection.5.14.5}
-\contentsline {subsubsection}{\numberline {5.14.6}Provisioning}{23}{subsubsection.5.14.6}
-\contentsline {subsection}{\numberline {5.15}System Configurations}{27}{subsection.5.15}
-\contentsline {subsection}{\numberline {5.16}System Configurations}{33}{subsection.5.16}
+\contentsline {section}{\numberline {6}Our progress}{23}{section.6}
+\contentsline {subsection}{\numberline {6.1}Kubernetes cluster}{23}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Kompose}{24}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Persistent volumes and Persistent volume claims}{24}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Kubernetes deployment}{26}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Fault handling}{27}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Provisioning}{28}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}System Configurations}{31}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}System Configurations}{37}{subsection.6.8}
