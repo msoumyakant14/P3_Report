@@ -1,0 +1,586 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in, a4paper]{geometry}
+
+\title{P1 Project Report}
+\author{Yasasvi Peruvemba, Ajit Kumar}
+
+ \ifx\pdftexversion\undefined
+ \usepackage[dvips]{graphicx}
+ \else
+ 
+ \usepackage[pdftex]{graphicx}
+ \DeclareGraphicsRule{*}{mps}{*}{}
+ \fi
+\usepackage{url}
+\usepackage{chapterbib}
+\usepackage{hyperref}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{textcomp}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{Project: P1}
+\lfoot{Fundamental Research Group, IIT Bombay}
+\cfoot{ }
+\rfoot{\thepage}
+
+\renewcommand{\bibname}{References}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+%***********************
+%Title page
+\begin{titlepage}
+ \begin{center}
+ \begin{figure}[h]
+ \centering
+ \includegraphics[width=8cm]{./iitb-black.pdf}
+\end{figure}
+
+INDIAN INSTITUTE OF TECHNOLOGY, BOMBAY\\
+EKLAVYA SUMMER INTERNSHIP 2019\\
+(FUNDAMENTAL RESEARCH GROUP) 
+\noindent\rule{15cm}{0.4pt}\\
+\textbf{\huge \\Porting of C/C++ Applications to the Web}\\
+\textbf{}\\
+\noindent\rule{15cm}{0.4pt}
+\newline
+\\Under the guidance of: \textbf{Prof. D.B. Phatak}
+\begin{multicols}{2}
+\textbf{\\ \large
+\textbf{Team:} \\
+\textbf{Ajit Kumar}\\
+\textbf{Akash Soni}\\
+\textbf{Sarthak Mishra}\\
+\textbf{Shikhar Suman}\\
+\textbf{Yasasvi V Peruvemba}\\
+}
+\columnbreak
+\textbf{\\ \large
+\textbf{Mentors:}\\
+\textbf{Mr. Nagesh Karmali}\\
+\textbf{Mr. Rajesh Kushalkar}
+}
+\end{multicols}
+
+\end{center}
+\end{titlepage}
+%*****************************
+
+%certificate area
+%*************************
+\pagebreak
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\huge{Summer Internship 2019 Project}\\[0.5cm]
+Approval Certificate\\[1.0cm]
+\huge{Department of Computer Science and Engineering}\\[0.5cm]
+\normalsize
+\textsc{Indian Institute of Technology Bombay}\\[2.0cm]
+
+\emph{\LARGE Certificate}\\[2.5cm]
+\end{center}
+\normalsize The project entitled Porting of C or CPP Desktop Applications on the web submitted by Mr. Ajit Kumar, Mr. Akash Soni, Mr. Sarthak Mishra, Mr. Shikhar Suman and Mr. Yasasvi V Peruvemba is approved for Summer Internship 2019 programme from 19th May 2019 to 9th July 2019, at Department of Computer Science
+and Engineering, IIT Bombay.\\[1.0cm]
+
+\begin{multicols}{2}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\DR. D.B. PATHAK} \\
+Dept. of CSE, IITB \\
+Principle Investigator \\
+\columnbreak
+
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\MR. NAGESH KARMALI} \\
+Dept. of CSE, IITB \\
+Project-In-Charge \\
+\textbf{\\\\}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\MR. RAJESH KUSHALKAR} \\
+Dept. of CSE, IITB \\
+Project-In-Charge \\
+\end{multicols}
+
+\begin{flushleft}
+Date:\today \\
+Place:
+\end{flushleft}
+\pagebreak
+%*************************
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\listoffigures
+
+\pagebreak
+
+\listoftables
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\section{Acknowledgement}
+We have spent a lot of effort on this project. However, it would not have been possible without the kind support of various individuals and organizations, we would like to extend our sincere thanks to all of them.
+\\
+\\
+We would like to express our sincere thanks and regards to Prof D.B.Phatak and Indian Institute of Technology, Bombay for providing us this unparalleled opportunity to work on this esteemed project. We would also like to extend our sincere thanks to Mr. Nagesh Karmali for supervising our project. Our sincere thanks to Mr.Rajesh Kushalkar, without whom the project would not be this refined and successful.
+\\ 
+\\
+Finally we usher our thanks to the open-source community and others who have willingly assisted us in the smallest possible manners in the development of the project.
+
+\pagebreak
+
+%***************************************
+%Declaration Page
+%***************************************
+\section{Declaration}
+\textbf{\\}
+I declare that this written submission represents my ideas in my own words and where others’ ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed
+\textbf{\\\\\\\\}
+\begin{multicols}{2}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\AJIT KUMAR} \\
+IIT ISM  DHANBAD\\
+\textbf{\\\\\\}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\AKASH SONI} \\
+NIT HAMIRPUR\\
+\textbf{\\\\\\}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\SARTHAK MISHRA} \\
+SIT TUMKUR\\
+\textbf{\\\\\\}
+\columnbreak
+
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\SHIKHAR SUMAN} \\
+IIT ISM  DHANBAD\\
+\textbf{\\\\\\}
+\noindent\rule{5cm}{0.4pt}\\
+\textbf{\\YASASVI V PERUVEMBA} \\
+IIT INDORE\\
+\textbf{\\\\}
+\end{multicols}
+\pagebreak
+%**************************************
+\section{Abstract}
+
+Porting of applications to the web, refers to the transpiling of desktop applications, coded in C/C++ into it’s JavaScript counterpart, which can then be hosted as a web-service. This is an FRG Project aimed towards a more secure and space efficient alternative for native applications.
+\\
+\\
+In the upcoming sections, the methodologies and techniques used are described, along with the specified results. Also, more insight about the key technologies used is given, justifying why they were necessary for the project. The basis behind the applied technology is also justified below.
+\\
+\\
+In this project, we have achieved success in porting four different applications viz. PNGCrush, Tetris, GNUPlot and SimAvr.
+
+
+\pagebreak
+
+\section{Introduction} 
+This project aims at converting C/C++ desktop applications to the web. To aid us in porting applications to the web, i.e, in converting C/C++ logic into it’s JavaScript counterpart, there are a few tools. In particular, we will be dealing with Emscripten, an LLVM compiler which forms the base of our project.
+\\
+The reason for why we used Emscripten other than it’s more recent counterparts is justified in the following sections. The main aim of this project is to aid the Porting of Educational Applications.  
+
+\subsection{Why Porting?}
+In software engineering, porting is the process of adapting software for the purpose of achieving some form of execution in a computing environment that is different from the one that a given program (meant for such execution) was originally designed for (e.g. different CPU, operating system, or third party library). The term is also used when software/hardware is changed to make them usable in different environments.  \cite{PortingDef}
+\\
+\\
+For our project, we are concerned with porting application logic from C/C++ to JavaScript.
+
+\subsection{The Need}
+Write text here
+
+\pagebreak
+
+\subsection{C/C++}
+These are the languages in which the Desktop Applications that we port are written and developed in. They are also widely regarded among the most popular languages for every Computer Science enthusiast. 
+\\ 
+\\
+For the purpose of our project, it is important to note that any of the application that we port could be written in either C or C++. 
+
+\subsubsection{C Programming Language}
+C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, while a static type system prevents unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and has found lasting use in applications previously coded in assembly language. Such applications include operating systems, as well as various application software for computers ranging from supercomputers to embedded systems. \cite{CDef}
+
+\subsubsection{C++ Programming Language}
+C++ is also a general-purpose, procedural computer programming language, which was developed as an extension of the C language by Bjarne Stroustrup. It is also referred to as “C with Classes”. It provides a great deal of features that include generic, functional and object-oriented, in addition to low-level memory manipulation.\\
+
+\subsection{asm.js}
+asm.js is a subset of JavaScript designed to allow computer software written in languages such as C/C++ to be run as web applications while maintaining performance characteristics considerably better than standard JavaScript, which is the typical language used for such applications. 
+\\
+\\
+asm.js enables significant performance improvements for web applications, but does not aim to improve the performance of hand-written JavaScript code, nor does it enable anything other than enhanced performance. \cite{AsmInfo}
+
+\pagebreak
+
+\subsection{WebAssembly}
+WebAssembly is a successor to ams.js, as it saw Google, Mozilla and a plethora of other browser developing companies, put it’s resources into the development process.
+\\
+\\
+WebAssembly is a new type of code that can be run in modern web browsers — it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++ and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together.
+\\
+\\
+The wasm format makes it possible to support graphics-heavy games in a browser without plug-ins. It can be used to port scientific simulation and other compute-intensive applications to the web platform. It also has non-web applications such as the Internet of Things, mobile apps and JavaScript virtual machines. \cite{WASMInfo}
+\\
+\\
+The following figure shows the WebAssembly Flow.
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./WASMFlow.png}
+ \caption{WebAssembly Flow\label{fig:WASMFlow}}
+\end{figure}
+\\
+WebAssembly was developed in spite of the pre-existence of asm.js, because, Asm.js was stored as text, whereas WASM is stored as binary code, hence being space efficient.
+\pagebreak
+
+\section{Emscripten}
+Emscripten is a toolchain for compiling to asm.js and WebAssembly, built using LLVM, that lets you run C and C++ on the web at near-native speed without plugins.\cite{EmscriptenCommon}
+
+\subsection{Overview}
+Emscripten is a source to source compiler that generates asm.js from C and C++ source files. It takes an LLVM bitcode (the code generated as output of compiler such as Clang for C/C++ files).
+\\
+\\
+Emscripten uses emscripten Software Development kit known as emsdk.
+EMSDK consists of:
+\begin{itemize}
+ \item Clang/LLVM
+ \item Emscripten Compiler (emcc,em++)
+ \item Binaryen \\
+\end{itemize}
+Clang/LLVM generates the bitcode from the C/C++ source files. emcc is the Emscripten compiler that works similar like gcc while em++ is analogous to g++. These are used to convert the bitcode into asm.js file Binaryen is a compiler and toolchain infrastructure library for WebAssembly, written in C++. It aims to make compiling to WebAssembly. Emscripten uses Binaryen’s asm2wasm tool to compile asm.js to WASM. \cite{EmscriptenCommon}\\
+\\
+\\
+The following figure shows the Emscripten Toolchain.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=12cm]{./EmscriptenToolchain.png}
+ \caption{Emscripten Toolchain\label{fig:EmscriptenToolchain}}
+\end{figure}
+\pagebreak
+
+\subsection{Installation}
+Dependencies: Python 2.7 , CMake , Java (optional, required for closure compiler). Youcan install them on your Linux based kernel, by executing the following command on the terminal window.
+\\ \\
+\texttt{sudo apt-get install python cmake default-jre} \\ \\
+The core of the emscripten SDK is written in python so above dependencies must be installed.
+\\
+\\
+\emph{Get the emsdk repo}\\
+\texttt{git clone https://github.com/emscripten-core/emsdk.git}
+\\
+\\
+\emph{Enter that directory}\\
+\texttt{cd emsdk}
+\\
+\\
+\emph{Fetch the latest version of the emsdk (not needed the first time you clone)}\\
+\texttt{git pull}
+\\
+\\
+\emph{Download and install the latest SDK tools.}\\
+\texttt{./emsdk install latest}
+\\
+\\
+\emph{Make the "latest" SDK "active" for the current user. (writes ~/.emscripten file)}\\
+\texttt{./emsdk activate latest}
+\\
+\\
+\emph{Activate PATH and other environment variables in the current terminal}\\
+\texttt{source ./emsdk\_{}env.sh}
+\\
+\\
+To access emscripten sdk compiler emcc, emsdk\_env is run in the terminal.
+\\ \\
+Sample Example :\\ \\
+\textbf{HelloPorting.cpp}\\ \\
+\textsl{\#include\textless iostream\textgreater\\
+using namespace std;\\
+int main()\{ \\
+	cout\textless\textless”This is the first Porting Example using Emscripten”\textless\textless endl;\\
+	return 0;\\
+\}}
+\\
+\\
+To generate JavaScript files\\
+\texttt{emcc  HelloPorting.cpp -o HelloPorting.js}
+\\
+\\
+To generate HTML files (this generates a HTML file from cpp files into a predefined template)\\
+\texttt{emcc HelloPorting.cpp -o HelloPorting.html}
+\\
+Html output file\\
+\texttt{<firefox or chrome> output}
+\\ \\
+Another way :\\
+\texttt{emcc HelloPorting.cpp -o HelloPorting.bc}\\
+\texttt{emcc HelloPorting.bc -o HelloPorting.html}
+
+\subsection{Building Projects with Emscripten}
+
+\subsubsection{emconfigure}
+\subsubsection{emmake}
+
+\subsection{Insight on Generated JS Files}
+Whenever we compile the source C/C++ files with emcc, it generates the js files linked with either WASM or asm.js. The generated js file contains a global object called \textbf{Module}.\\ \\
+\textbf{"Module is a global JavaScript object with attributes that Emscripten-generated code calls at various points in its execution."}\cite{EmscriptenCommon}
+\\ \\
+Module object contains several properties and methods that are useful in the interaction with the source C/C++ files and generated JS file.\\ \\
+Some of the important properties and methods are :\\ \\
+\texttt{Module.arguments}\\
+The commandline arguments. The value of arguments contains the values returned if compiled code checks argc and argv.\\ \\
+\texttt{Module.noInitialRun}\\
+If noInitialRun is set to true, main() will not be automatically called (you can do so yourself later). The program will still call global initializers, set up memory initialization, and so forth.\\ \\
+\texttt{Module.print}\\
+Called when something is printed to standard output (stdout).\\ \\ 
+\texttt{Module.printErr}\\
+Called when something is printed to standard error (stderr).\\ \\
+\texttt{Module.callMain}\\
+This method helps to call the main function and accepts one parameter i.e. an array of arguments.\\ \\
+We can also define our custom print function and printErr function through Module object. \\ \\
+\texttt{var module = \{ \\
+    noInitialRun : true;\\
+    print: function(text)\{ \\
+   	 console.log(text); \\
+    \} \\
+    printErr : function(text)\{ \\
+   	 console.error(text); \\
+\};
+}\\ \\
+Add this above code snippet, just below the declaration of the Module object in the generated JS file, to print the standard output from the source C/C++ files.
+
+\subsection{Interacting with C/C++ functions from JavaScript through Emscripten}
+Emscripten provides two functions ccall() and cwrap() for calling C/C++ compiled functions from JavaScript. \\ \\
+If your function is used in other functions, LLVM may inline it and it will not appear as a unique function in the JavaScript. Prevent inlining by defining the function with EMSCRIPTEN\_KEEPALIVE:\\ \\
+\texttt{void EMSCRIPTEN\_KEEPALIVE yourCfunc() \{..\}}\\ \\
+EMSCRIPTEN\_KEEPALIVE also exports the function, as if it were on EXPORTED\_FUNCTIONS. All functions not kept alive through EXPORTED\_FUNCTIONS or EMSCRIPTEN\_KEEPALIVE, will potentially be removed. Make sure you keep the things you need alive using one or both of those methods. \\ \\
+
+\subsubsection{ccall}
+\texttt{\textbf{ccal}l(ident, returnType, argTypes, args, opts)}\\ \\
+Call a compiled C function from JavaScript. The function executes a compiled C function from JavaScript and returns the result. To prevent name mangling in C++ function needs to wrapped in extern “C” block.\\ \\
+\emph{returnType} and \emph{argTypes} let you specify the types of parameters and the return value. The possible types are "number", "string", "array", or "boolean", which correspond to the appropriate JavaScript types. You can also specify \emph{null} for the \emph{returnType} if the function is void.
+
+\pagebreak
+
+\subsubsection{cwrap}
+\texttt{\textbf{cwrap}(ident, returnType, argTypes)}\\ \\
+Returns a native JavaScript wrapper for a C function.This is similar to ccall(), but returns a JavaScript function that can be reused as many times as needed. The C function can be defined in the C file, or be a C-compatible C++ function defined using extern "C" (to prevent name mangling).\\ \\
+\emph{returnType} and \emph{argTypes} let you specify the types of parameters and the return value. The possible types are "number", "string", "array", or "boolean", which correspond to the appropriate JavaScript types. You can also specify \emph{null} for the \emph{returnType} if the function is void.
+
+\subsection{FileSystem API}
+Till now we have seen that Emscripten provides several methods and functions to help us interact with compiled C/C++ files. But many C /C++ applications need files to store and read data.\\ \\ 
+Handling Files in JS is not easy and the Emscripten FIle System API comes handy here. File System API, defined as an FS object provides support for handling files and file-based input and output.\\ \\
+Emscripten predominantly compiles code that uses synchronous file I/O, so the majority of the FS member functions offer a synchronous interface (with errors being reported by raising exceptions of type FS.ErrnoError).\cite{EmscriptenFS}
+\\ \\
+If we only need to read or write from a particular file in a C/C++ application then at the time of porting it to JavaScript, we can use “--preload-file” flag, passing the file/directory as an argument. This file will be accessible by name through fopen and other functions within the program.\\ \\
+For more advanced options such as dynamic creation and deletion of files we need File System API.\\ \\
+File System API provides several methods to interact with files. Some of them used frequently by us are: \\ \\
+\texttt{FS.createDataFile(parent , name, data, canRead, canWrite, canOwn)}\\
+It creates a data file in the address specified as parent (mostly “/”, i.e root) with name and data provided.\\
+Arguments :\\
+\tab parent(string) : address where file is to be created( normally set to “/”, i.e root)\\
+\tab name(string) : name of the file with extension \\
+\tab data(UTF8array) : data to be stored in file\\
+\tab canRead(bool) : boolean value if set to true provide read access\\
+\tab canWrite(bool) : boolean value if set to true provide write access\\
+\tab canOwn(bool) : boolean value if set to true give owner access\\
+\texttt{FS.unlink(name)}\\
+Deletes the file with given name if present else throws error.\\
+Arguments :\\
+\tab name(String) : name of the file to be deleted\\ \\
+\texttt{FS.findObject(name)}\\
+Returns the file object with given name if found else null\\
+Arguments :\\
+\tab name(string) : name of the file to be found\\ \\
+Several other methods can be found on \url{https://emscripten.org/docs/api_reference/Filesystem-API.html}\\ \\
+Note: If files are being used within C/C++ source files then file system support in Emscripten is added by default but in case it doesn’t,  we can forcefully add File System support by passing flag -s FORCE\_FILESYSTEM=1 to emcc when compiling.\\ \\
+In combination to all these we can also use the local-storage feature of window object provided by HTML5 to store files and their data as key value pairs.
+
+\pagebreak
+
+\section{PNGCrush}
+
+
+
+\pagebreak
+
+\section{SimAVR}
+\subsection{Overview}
+Like many MicroControllers available namely 8051, 8031 etc which basically uses C (embedded C) code, we also have others like Atmel ATMega 1280 mcu(Micro Controller Unit) which uses AVR codes. Like other programming, Programming in AVR also needs knowledge about its syntax but its like impractical to say that ‘errors won’t be arised’. So, as a debugger and also many a times simulation of such programs in the absence of actual hardware, so here comes the need of some debugging tool or software which can help us to do so for which we have “SimAVR”. It basically requires elf file, producing a vcd file from which, is fed as an input to gtkwave on which corresponding waveforms are graphed, which serves as its final output.
+\subsection{NEED TO PORT SimAVR ?}
+SimAVR comes as an github repository from which it needs to be cloned first and then installation of a software named GTKWave is required for simulation. As we know, it is not really practical and possible to have all necessary machine requirements, memory space, time and most importantly patience to download, install and follow their “ReadMe”. In this modern era of mobile phones, which are much more handy than laptops or systems. Thus, we found the need of an hour and so we here present Port of SimAVR to make it accessible through web on every device(even on, thus, phones) at no cost of installation memory, time or patience.
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./gtkwavetrace.PNG}
+ \caption{GTK Wave Trace\label{fig:GTK Wave Trace}}
+\end{figure}
+\subsection{HISTORY}
+Till date, we use softwares namely WinAVR, Atmel Studio for AVR Programming and Keil uVision IDE, Flash Magic Tool for C being used in microcontrollers like 8051, 8031, for programming and dumping the generated .hex files on actual hardware to run. With time got evolved, we found the use of some simulation tool required for debugging as well as running on virtual hardware and thus, SimAVR got developed to simulate the effect of hardware devices with GTKWave, producing waveforms.
+\subsection{UseCase}
+\begin{enumerate}
+ \item Novice Programmers, as LEDs being used on Port may give direct visual effect as an actual output. Comparing which with expected output, may validate.
+ \item Experienced Programmers, along with LEDs it includes a Terminal/Command Prompt like screen to display in-depth information, necessary to debug. For Eg. Time Delay, No. of machine cycles etc., depending upon the type of program input as .hex file.
+ \item Companies to test large programs and softwares which may lot of time to dump into actual hardware and test. Debugging through it, thus, becomes easier.
+ \item Educational Institutes/Organizations to test the validity of code of students, in limitation or lack of hardware devices, in just one go.
+\end{enumerate}
+
+\subsection{Procedure to Port}
+\begin{enumerate}
+ \item Clone simavr from https://github.com/buserror/simavr.
+ \item As it contains support for almost all types of microcontrollers, we selected to port a specific module namely “Atmel ATMega 1280 mcu”. Also, another reason for selecting it in specific, was that we got MakeFile and main file along with hd44780 for LCD and wdg0151, a module for LCD, to build.
+ \item The code doesn’t work in just simply compiling with emscripten. The following changes were made in order to make it get compiled and run successfully
+ \begin{enumerate}
+ \item Configure cmake file and make necessary builds to take place.\\
+ \texttt{emconfigure cmake}
+ \item Update link.txt file to make it generate js without wasm, passing necessary flags to emcc command as: \\
+ \texttt{emcc -s ASM\_JS=1 -s WASM=0 -s FORCE\_FILESYSTEM=1 \textbackslash}\\
+ \texttt{-s ERROR\_ON\_UNDEFINED\_SYMBOLS=0 \textbackslash}\\
+ \texttt{ -s EXTRA\_EXPORTED\_RUNTIME\_METHODS=’[“ccall”,”cwrap”,”ALLOC\_NORMAL”]’}
+  \item Main.c file was updated with the following few changes:
+ \begin{enumerate}
+ \item Inclusion of ‘hd44780’ c and header file to call its functions which returns machine cycles and time taken (in uS). 
+ \item Inclusion of “simelf.c” file function which was not being run earlier.
+ \item Declaration a pointer of hd44780 type and initializing its functions like init through it.
+ \item Calling specific functions of wdg0151.c which were not being called on own earlier.
+ \item Rendering of extra but necessary information like Total LEDs on, machine cycles etc(depending upon logic implemented in AVR code) on own Terminal.
+ \end{enumerate}
+ \end{enumerate}
+ \item After making such suitable changes, remove libelf dependency from Makefile.
+ \item The final port is available at git repository, \url{https://github.com/sarthaksarm/Port-of-SimAVR.git}.
+It contains details about changes made.
+
+\end{enumerate}
+
+\subsection{Errors Faced}
+\begin{enumerate}
+\item Python(.py) file errors in emscripten module.\\ \\
+\textbf{Reason}: Due to unsuccessful compilation of project, we changed even standard I/O files of emscripten which couldn’t get undo.\\\\
+\textbf{FIX}: Reinstalling emscripten couldn’t address the issue as it stores some files in system cache which weren’t being deleted and the errors were same.
+
+\item “Errors on Undefined Symbols” (HD44780 can’t be included)\\ \\
+\textbf{Reason}: MakeFile needs an object file i.e “hd44780.c.o” which it is not able to find and thus the error.\\\\
+\textbf{FIX}:  Just replicate the process of building of “wdg0151.c.o” in MakeFile i.e Build object file through it successfully and it’ll get fixed.
+
+\item While generation of .elf or .hex files, AVR ERRORS\\ \\
+\textbf{Reason}: Make file of WinAVR requires many compiler dependencies, unnecessary at times.\\\\
+\textbf{FIX}:  Remove these two lines from "Makefile" of WinAVR:\\
+\texttt{\# flags to generate dependency files.}\\
+\texttt{GENDEPFLAGS = -MMD -MP -MF .dep/\$(@F).d}
+
+\end{enumerate}
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./no_sol1.PNG}
+ \caption{Error1\label{fig:error faced_1}}
+\end{figure}
+\pagebreak
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./no_sol2.PNG}
+ \caption{Error2\label{fig:error_faced_2}}
+\end{figure}
+
+\subsection{EXAMPLES}
+\textbf{INPUT FILE}: \\LEDProg.hex(Source Code on \url{https://github.com/sarthaksarm/Port-of-SimAVR.git}\\\\
+\textbf{OUTPUT}: \\ \\
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./LEDsProgScreen.PNG}
+ \caption{LED program output\label{fig:output}}
+\end{figure}
+\pagebreak
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=12cm]{./LEDsProgScreen2.PNG}
+ \caption{LED program output\label{fig:output}}
+\end{figure}
+
+\subsection{LIMITATIONS}
+\begin{enumerate}
+\item The port supports especially ATMega 1280 mcu, thus other versions of mcu are not supported.
+\item Rendering of LCD screen i.e Graphic representation is not available. However, mostly information is being printed on terminal at this stage to simplify debug process.
+\item The timing is fixed as described for the 5V-versions.
+\item Only .hex file format is acceptable. However, command has been provided to convert an elf file into .hex .
+\end{enumerate}
+\pagebreak
+
+\section{Template Stuff}
+
+Example of bulleted list
+\begin{itemize}
+ \item write point 1 here \cite{SRS1998}\cite{SimpleCCP-Windows}
+ \item write point 2 here
+ \item write point 3 here
+\end{itemize}
+
+Example of Numbered list
+\begin{enumerate}
+ \item Write point 1 here
+ \item Write point 2 here
+ \item write point 3 here
+\end{enumerate}
+
+\pagebreak
+
+\section{Section name}
+Write text here
+
+\pagebreak
+
+\section{Another Section name}
+Write text here. Example of table.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|p{4cm}|}
+ \hline
+ \textbf{No.} & \textbf{Company} & \textbf{Operating System} \\
+ \hline
+ 1 & Nokia & Symbian (S60, S40) \\
+ \hline
+ 2 & Microsoft & Windows \\
+ \hline
+ 3 & Apple Inc. & IOS \\
+ \hline
+ 4 & Blackberry & Blackberry \\
+ \hline
+\end{tabular}
+ \caption{Mobile Operating Systems}
+ \end{center}
+\end{table}
+
+\subsection{Subsection}
+Write text here
+
+
+\section{Fifth Section name}
+Write text here
+
+\subsection{Subsection}
+Write text here
+
+\subsubsection{Sub-Sub-section}
+Write text here
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio}
+
+
+\end{document}

@@ -1,0 +1,103 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Aim of the project}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Open edX}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Open edX architecture}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Releases}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Installation}{2}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Native installation}{2}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.2}Docker-based installation}{3}{subsubsection.1.2.3.2}
+\contentsline {chapter}{\numberline {2}Docker}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}About Docker}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Terms related to Docker}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Containerization}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Docker Image}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Docker Container}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Docker Registry}{8}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Docker Engine}{8}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Docker Compose}{9}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Dockerfiles}{9}{subsection.2.2.7}
+\contentsline {section}{\numberline {2.3}Docker-Machine}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Install Docker Machine:}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Use Docker Machine to run Docker Containers:}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Create a Machine}{9}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Connect your shell to the new machine}{10}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Run containers and experiment with machine commands}{10}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Docker Swarm}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Types of networks in docker}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Initialising a Swarm Node as Manager}{11}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Docker Stack}{11}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Ansible}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Installing openssh}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Generating key at server and copying in client}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ansible setup}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Adding repository}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Installing ansible}{12}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Checking version}{13}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Ansible directories}{13}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Making a copy of a directory for our use}{13}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Some useful commands for ansible}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}To see the hostnames of all nodes}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}To see the volumes used by all nodes}{13}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}To run an ansible-playbook}{13}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Kubernetes}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}What is Kubernetes}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Main Features Of Kubernetes}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Terminologies in Kubernetes}{14}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Pod}{14}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Deployment}{15}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Service}{16}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Ingress network}{16}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Networking in Kubernetes}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Flannel}{17}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Calico}{18}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Weavenet}{18}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Prerequisites for running kubernetes \cite {Prereq}}{19}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Disable Swap Space}{19}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Make IP static}{19}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Kubernetes setup}{20}{section.4.6}
+\contentsline {section}{\numberline {4.7}Setting up your Kubernetes cluster}{20}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Setting up a pod network}{21}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Setting up and hosting the dashboard \cite {Dashboard}}{21}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Kubernetes commands for getting resource info}{22}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}Kubernetes API Server}{22}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Pieces of API Server}{23}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}API Management \cite {KubernetesManagement}}{23}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Request Management}{24}{subsection.4.8.3}
+\contentsline {section}{\numberline {4.9}ETCD}{24}{section.4.9}
+\contentsline {section}{\numberline {4.10}Kube-Scheduler}{24}{section.4.10}
+\contentsline {section}{\numberline {4.11}Kube-Control-Manager}{24}{section.4.11}
+\contentsline {section}{\numberline {4.12}Converting docker-compose file to its Kubernetes equivalent}{25}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Kompose}{25}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Compose on Kubernetes}{27}{subsection.4.12.2}
+\contentsline {chapter}{\numberline {5}Our progress}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kubernetes cluster}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Kompose}{29}{section.5.2}
+\contentsline {section}{\numberline {5.3}Persistent volumes and Persistent volume claims}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}Kubernetes deployment}{31}{section.5.4}
+\contentsline {section}{\numberline {5.5}Fault handling}{32}{section.5.5}
+\contentsline {section}{\numberline {5.6}Provisioning}{33}{section.5.6}
+\contentsline {chapter}{\numberline {6}Future works}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Creating provision scripts for other deployments}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Other conversion methods for docker compose}{35}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Compose on Kubernetes}{35}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Using Minikube instead}{35}{section.6.3}
+\contentsline {section}{\numberline {6.4}Tutor}{35}{section.6.4}
+\contentsline {section}{\numberline {6.5}Creating an Ingress Network}{35}{section.6.5}
+\contentsline {chapter}{\numberline {7}Performance Testing Open edX Ironwood Release}{36}{chapter.7}
+\contentsline {section}{\numberline {7.1}Tools used for Performance Testing}{36}{section.7.1}
+\contentsline {section}{\numberline {7.2}JMeter Test Scripts}{36}{section.7.2}
+\contentsline {section}{\numberline {7.3}Viewing JMeter Test Results using Listeners}{37}{section.7.3}
+\contentsline {section}{\numberline {7.4}Test Scenario}{38}{section.7.4}
+\contentsline {section}{\numberline {7.5}Testing Open edX Native Installation}{38}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}System Configurations}{38}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Load Generator System Details}{38}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Server Configuration}{39}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}Test Details}{39}{subsection.7.5.4}
+\contentsline {subsection}{\numberline {7.5.5}Test Results}{39}{subsection.7.5.5}
+\contentsline {section}{\numberline {7.6}Testing Open edX Developer Stack (Devstack)}{45}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}System Configurations}{45}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Load Generator System Details}{45}{subsection.7.6.2}
+\contentsline {subsection}{\numberline {7.6.3}Server Configuration}{45}{subsection.7.6.3}
+\contentsline {subsection}{\numberline {7.6.4}Test Details}{45}{subsection.7.6.4}
+\contentsline {subsection}{\numberline {7.6.5}Test Results}{45}{subsection.7.6.5}
+\contentsline {section}{\numberline {7.7}Test Results}{52}{section.7.7}
