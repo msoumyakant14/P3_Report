@@ -858,6 +858,8 @@ Our test scenario is as follows:
 \end{enumerate}
 We had used this scenario since it involves all the activities that can be performed by a user on a course page.
 \par
+\section{Obtaining CPU and Memory Metrics Using SAR (System Activity Report)}
+SAR commands are used to monitor system activity. While the performance test is being conducted, the SAR commands can be used to store the system load values (CPU Utilization, Memory Consumption, etc.) in a file, which can then be fed into the kSar tool to generate graphs. Along with that, we use the top command to monitor the processes which consume the most CPU and memory resources.
 \section{Testing Open edX Native Installation}
 \subsection{System Configurations}
 Here are the details of the hardware and software configuration of the application under test and the client machine that has been used to generate load.
@@ -880,43 +882,43 @@ Here are the details of the hardware and software configuration of the applicati
 \end{itemize}
 
 \subsection{Test Results}
-The application under test could handle 100 users for the specified server configuration under the current test setup. Furthermore, the test fails for around 120-130 users.
+The application under test could handle 100 users for the specified server configuration under the current test setup. Figure 6.9 presents a summary of the test results. Furthermore, the test fails for around 120-130 users.
 \\\\\\\\\\\\\\\\\\\\\\
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_mridul.png}
-	\caption{SAR CPU Metrics}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_mridul_new.png}
+	\caption{SAR CPU Metrics. The CPU Utilization is between 85\% to 95 \%.}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/mem_mridul.png}
-	\caption{SAR Memory Metrics}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/mem_mridul_new.png}
+	\caption{SAR Memory Metrics. The Memory Consumption Percentage is close to 100\%.}
 \end{figure}
 
 \newpage
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S1.png}
+%	\caption{A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP %Server, takes up most of the CPU resources.}
+%\end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S1.png}
-	\caption{A look at the top command, 15 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S2.png}\begin{center}
-		\textbf{\Large{Performance Testing Open edX Ironwood Release}}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Downloads/EkalavyaSummerInternship2019/latex-template/intro/S2_new.png}\begin{center}
+		
 	\end{center}
 	\caption{A look at the top command, 30 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources. }
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S3.png}
-	\caption{A look at the top command, 45 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Downloads/EkalavyaSummerInternship2019/latex-template/intro/S3_new.png}
+	\caption{A look at the top command, 45 minutes into the test. Once again, it can be inferred that Guincorn takes up most of the CPU resources.}
 \end{figure}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S4.png}
-	\caption{A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP Server, takes up most of the CPU resources.}
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S4.png}
+%	\caption{A look at the top command, 60 minutes into the test. Guincorn, which is a Python Web Server Gateway Interface HTTP %Server, takes up most of the CPU resources.}
+%\end{figure}
 \clearpage
 \section{Testing Open edX Developer Stack (Devstack)}
 \subsection{System Configurations}
@@ -939,42 +941,42 @@ Here are the details of the hardware and software configuration of the applicati
 	\item Virtual Connections: 10
 \end{itemize}
 \subsection{Test Results}
-The application under test could handle 10 users for the specified server configuration under the current test setup. Figure 6.14 presents a summary of the test results. Furthermore, the test fails for around 15-20 users.
+The application under test could handle 10 users for the specified server configuration under the current test setup. Figure 6.10 presents a summary of the test results. Furthermore, the test fails for around 15-20 users.
 \clearpage
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_harshit.png}
-	\caption{SAR CPU Metrics}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/cpu_harshit_new.png}
+	\caption{SAR CPU Metrics. The CPU Utilization is between 40\% to 50\%.}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/mem_harshit.png}
-	\caption{SAR Memory Metrics}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/mem_harshit_new.png}
+	\caption{SAR Memory Metrics. The memory consumption percentage is close to 100\%.}
 \end{figure}
 
 \newpage
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S1_harshit.png}
+%	\caption{A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}
+%\end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S1_harshit.png}
-	\caption{A look at the top command, 15 minutes into the test. Python takes up most of the CPU Resources.}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S2_harshit.png}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Downloads/EkalavyaSummerInternship2019/latex-template/intro/S2_harshit_new.png}
 	\caption{A look at the top command, 30 minutes into the test. Python takes up most of the CPU Resources.}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S3_harshit.png}
-	\caption{A look at the top command, 45 minutes into the test. Python takes up most of the CPU Resources.}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Downloads/EkalavyaSummerInternship2019/latex-template/intro/S3_harshit_new.png}
+	\caption{A look at the top command, 45 minutes into the test. Once again, it can be inferred that Python takes up most of the CPU Resources.}
 \end{figure}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S4_harshit.png}
-	\caption{A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{intro/S4_harshit.png}
+%	\caption{A look at the top command, 60 minutes into the test. Python takes up most of the CPU Resources.}
+%\end{figure}
 
 \begin{figure}[h!]
 	\centering
@@ -990,21 +992,21 @@ The application under test could handle 10 users for the specified server config
 \clearpage
 \section{Test Results} 
 \begin{itemize}
-	\item Under the current test setup and server configurations, it is evident from Section 6.5.5 and 6.6.5 that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of virtual connections that could be handled by Open edX Devstack.
-	\item Figure 6.13 and 6.14 show that in $1$ hour, the total number of transation completed by Open edX Native was $8174$, much more than that of Open edX Devstack, which amounted to $1030$.
-	\item Furthermore, the average response time of Open edX Native is $24.316$ seconds, which outperforms Open edX Devstack, whose average response time is $33.313$ seconds.
-	\item Along with that, the throughput, which has been measured in requests/sec, for Open edX Native is $4.01$, whereas it is $0.28$ for Open edX Devstack.
-	\item As for the CPU Utilization, Figure 6.1 and 6.7 conclude that Open edX Native consumes around 85-95\% of CPU Resources, which is much more than the CPU Utilization of Open edX Devstack (40-50\%).
-	\item The memory consumption was close to 100\% in both the setups, as inferred by Figure 6.2 and 6.8.
-	\item A closer look at the Summary Reports shows that the response time recorded corresponding to the case where the enrolled course's dashboard is accessed is very high, relative to other requests in a given test plan. Moreover, this response time is exceedingly high for Open edX Devstack.
+	\item Under the current test setup and server configurations, it is evident from Section 6.6.5 and 6.7.5 that \textbf{Open edX Native can handle around 100 virtual connections, which is much better than 10, the number of virtual connections that could be handled by Open edX Devstack}.
+	\item Figure 6.9 and 6.10 show that \textbf{in 1 hour, the total number of transactions completed by Open edX Native was 8174}, much more than \textbf{that of Open edX Devstack, which amounted to 1030}.
+	\item Furthermore, \textbf{the average response time of Open edX Native is 24.316 seconds}, which outperforms \textbf{Open edX Devstack, whose average response time is 33.313 seconds}.
+	\item Along with that, \textbf{the throughput}, which has been measured in requests/sec, \textbf{for Open edX Native is 4.01}, whereas it is \textbf{0.28 for Open edX Devstack}.
+	\item As for the CPU Utilization, Figure 6.1 and 6.5 conclude that \textbf{Open edX Native consumes around 85-95\% of CPU Resources}, which is much more than \textbf{the CPU Utilization of Open edX Devstack (40-50\%)}.
+	\item The \textbf{memory consumption was close to 100\% in both the setups}, as inferred by Figure 6.2 and 6.6.
+	\item A closer look at the Summary Reports shows that \textbf{the response time recorded corresponding to the case where the enrolled course's dashboard is accessed is very high}, relative to other requests in a given test plan. Moreover, this response time is exceedingly high for Open edX Devstack.
 \end{itemize}
 
 \par
-The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figures 14-17, 20-23.
+The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figures 6.3, 6.4, 6.7 \& 6.8.
 
 \chapter{Future works}
 \section{Creating provision scripts for other deployments}
-The provision scripts for mongo and mysql was creted and similarly the provisioning script for other deployments needs to be created. To create provisioning scripts reference of devstack provisioning scripts should be taken. 
+The provision scripts for mongo and mysql was created and similarly the provisioning script for other deployments needs to be created. To create provisioning scripts reference of devstack provisioning scripts should be taken. 
 \section{Other conversion methods for docker compose file}
 \subsection{Compose on Kubernetes}
 Compose on Kubernetes helps to convert docker compose file into Kubernetes compose files. It may be used as an alternative for Kompose (which was used in this project). More details on Compose on Kubernetes can be found at \url{https://github.com/docker/compose-on-kubernetes.git}\cite{Compose}
