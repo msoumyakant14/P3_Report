@@ -569,7 +569,7 @@ iface wlo1 inet static\\
 address  YOUR\_IP\_ADDRESS
 \section{Kubernetes setup}
 \begin{enumerate}
-	\item Install docker (follow the steps given \hyperref[sec:dockerinstall]{here} to successfully install docker).
+	\item Install docker (follow the steps given in \hyperref[sec:dockerinstall]{1.2.3.2} to successfully install docker).
 	\item Enable docker to run automatically on startup:\\
 	\textbf{\$ sudo systemctl enable docker}
 	\item Install curl:\\
@@ -803,19 +803,6 @@ Commands those were to be executed inside a container and required internet acce
 	We can create a ConfigMap containing all the arguments to be passed to the commands that are to be run inside the container. So, whenever a new pod is created, the containers are configured accordingly.\cite{Configmap}
 	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
 \end{itemize}
-\chapter{Future works}
-\section{Creating provision scripts for other deployments}
-The provision scripts for mongo and mysql was creted and similarly the provisioning script for other deployments needs to be created. To create provisioning scripts reference of devstack provisioning scripts should be taken. 
-\section{Other conversion methods for docker compose}
-\subsection{Compose on Kubernetes}
-Compose on Kubernetes helps to convert docker compose file into Kubernetes compose files. It may be used as an alternative for Kompose (which was used in this project). More details on Compose on Kubernetes can be found at \url{https://github.com/docker/compose-on-kubernetes.git}\cite{Compose}
-\section{Using Minikube instead}
-Minikube is an open source tool used to create a kubenetes cluster for deployment using the virtual box hypervisor. The major disadvantage of minikube is that it runs all the nodes including master in a single machine which is not useful in our case. Nonetheless, it can be used for testing.
-\section{Tutor}
-Tutor is an open source tool to deploy an Open edX instance for production. It supports both local and cluster deployment using kubernetes. To read more about tutor visit \url{https://docs.tutor.overhang.io/}\cite{Tutor}. 
-\section{Creating an Ingress Network}
-An Ingress network needs to be created to expose the pods to the outside network or to external traffic. An ingress network redirects a request coming from external traffic to the services in the cluster. Nginx can be used as an ingress controller for the network.
-\pagebreak
 \chapter{Performance Testing Open edX Ironwood Release}
 Given a certain load, Performance Testing allows us to determine and examine non-functional parameters like speed and stability of an application.
 \par
@@ -1014,6 +1001,20 @@ The application under test could handle 10 users for the specified server config
 
 \par
 The official Open edX documentation states that nginx and gunicorn have been disabled in Devstack. Hence, it uses Django's runserver as an alternative. This can be verified by the top command's result as shown in figures 14-17, 20-23.
+
+\chapter{Future works}
+\section{Creating provision scripts for other deployments}
+The provision scripts for mongo and mysql was creted and similarly the provisioning script for other deployments needs to be created. To create provisioning scripts reference of devstack provisioning scripts should be taken. 
+\section{Other conversion methods for docker compose}
+\subsection{Compose on Kubernetes}
+Compose on Kubernetes helps to convert docker compose file into Kubernetes compose files. It may be used as an alternative for Kompose (which was used in this project). More details on Compose on Kubernetes can be found at \url{https://github.com/docker/compose-on-kubernetes.git}\cite{Compose}
+\section{Using Minikube instead}
+Minikube is an open source tool used to create a kubenetes cluster for deployment using the virtual box hypervisor. The major disadvantage of minikube is that it runs all the nodes including master in a single machine which is not useful in our case. Nonetheless, it can be used for testing.
+\section{Tutor}
+Tutor is an open source tool to deploy an Open edX instance for production. It supports both local and cluster deployment using kubernetes. To read more about tutor visit \url{https://docs.tutor.overhang.io/}\cite{Tutor}. 
+\section{Creating an Ingress Network}
+An Ingress network needs to be created to expose the pods to the outside network or to external traffic. An ingress network redirects a request coming from external traffic to the services in the cluster. Nginx can be used as an ingress controller for the network.
+\pagebreak
 
 
 \bibliographystyle{ieeetr}

@@ -76,28 +76,28 @@
 \contentsline {section}{\numberline {5.4}Kubernetes deployment}{31}{section.5.4}
 \contentsline {section}{\numberline {5.5}Fault handling}{32}{section.5.5}
 \contentsline {section}{\numberline {5.6}Provisioning}{33}{section.5.6}
-\contentsline {chapter}{\numberline {6}Future works}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Creating provision scripts for other deployments}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Other conversion methods for docker compose}{35}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Compose on Kubernetes}{35}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Using Minikube instead}{35}{section.6.3}
-\contentsline {section}{\numberline {6.4}Tutor}{35}{section.6.4}
-\contentsline {section}{\numberline {6.5}Creating an Ingress Network}{35}{section.6.5}
-\contentsline {chapter}{\numberline {7}Performance Testing Open edX Ironwood Release}{36}{chapter.7}
-\contentsline {section}{\numberline {7.1}Tools used for Performance Testing}{36}{section.7.1}
-\contentsline {section}{\numberline {7.2}JMeter Test Scripts}{36}{section.7.2}
-\contentsline {section}{\numberline {7.3}Viewing JMeter Test Results using Listeners}{37}{section.7.3}
-\contentsline {section}{\numberline {7.4}Test Scenario}{38}{section.7.4}
-\contentsline {section}{\numberline {7.5}Testing Open edX Native Installation}{38}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}System Configurations}{38}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Load Generator System Details}{38}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Server Configuration}{39}{subsection.7.5.3}
-\contentsline {subsection}{\numberline {7.5.4}Test Details}{39}{subsection.7.5.4}
-\contentsline {subsection}{\numberline {7.5.5}Test Results}{39}{subsection.7.5.5}
-\contentsline {section}{\numberline {7.6}Testing Open edX Developer Stack (Devstack)}{45}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}System Configurations}{45}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Load Generator System Details}{45}{subsection.7.6.2}
-\contentsline {subsection}{\numberline {7.6.3}Server Configuration}{45}{subsection.7.6.3}
-\contentsline {subsection}{\numberline {7.6.4}Test Details}{45}{subsection.7.6.4}
-\contentsline {subsection}{\numberline {7.6.5}Test Results}{45}{subsection.7.6.5}
-\contentsline {section}{\numberline {7.7}Test Results}{52}{section.7.7}
+\contentsline {chapter}{\numberline {6}Performance Testing Open edX Ironwood Release}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tools used for Performance Testing}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}JMeter Test Scripts}{35}{section.6.2}
+\contentsline {section}{\numberline {6.3}Viewing JMeter Test Results using Listeners}{36}{section.6.3}
+\contentsline {section}{\numberline {6.4}Test Scenario}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Testing Open edX Native Installation}{37}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}System Configurations}{37}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Load Generator System Details}{37}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Server Configuration}{38}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Test Details}{38}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.5}Test Results}{38}{subsection.6.5.5}
+\contentsline {section}{\numberline {6.6}Testing Open edX Developer Stack (Devstack)}{44}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}System Configurations}{44}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Load Generator System Details}{44}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Server Configuration}{44}{subsection.6.6.3}
+\contentsline {subsection}{\numberline {6.6.4}Test Details}{44}{subsection.6.6.4}
+\contentsline {subsection}{\numberline {6.6.5}Test Results}{44}{subsection.6.6.5}
+\contentsline {section}{\numberline {6.7}Test Results}{51}{section.6.7}
+\contentsline {chapter}{\numberline {7}Future works}{52}{chapter.7}
+\contentsline {section}{\numberline {7.1}Creating provision scripts for other deployments}{52}{section.7.1}
+\contentsline {section}{\numberline {7.2}Other conversion methods for docker compose}{52}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Compose on Kubernetes}{52}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Using Minikube instead}{52}{section.7.3}
+\contentsline {section}{\numberline {7.4}Tutor}{52}{section.7.4}
+\contentsline {section}{\numberline {7.5}Creating an Ingress Network}{52}{section.7.5}

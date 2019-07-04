@@ -81,12 +81,12 @@
   Accessed on July 2019}.''
 
 \bibitem{Cont}
-``{List of Docker containers on running Devstack
+``{Devstack Docker containers list
   "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/Docker%20Containers}".
   Accessed on July 2019}.''
 
 \bibitem{Provision}
-``{Provision log for command dev.provision
+``{dev.provision logs
   "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/Provision%20log}".
   Accessed on July 2019}.''
 
@@ -188,7 +188,7 @@
   Accessed on July 2019}.''
 
 \bibitem{Kubeprov}
-``{Provisioning files for mysql and mongodb
+``{Mysql and MongoDB provisioning files
   "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kube-provision}".
   Accessed on July 2019}.''
 
@@ -202,12 +202,12 @@
   "\url{https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/}".
   Accessed on July 2019}.''
 
-\bibitem{Tutor}
-``{Official documentation for Tutor "\url{https://docs.tutor.overhang.io/}".
-  Accessed on July 2019}.''
-
 \bibitem{Performance}
 B.~Erinle, {\em JMeter cookbook}.
 \newblock Packt Publishing., 2014, 1st Edition.
+
+\bibitem{Tutor}
+``{Official documentation for Tutor "\url{https://docs.tutor.overhang.io/}".
+  Accessed on July 2019}.''
 
 \end{thebibliography}
