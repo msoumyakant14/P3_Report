@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Edxarch}
+``{Open edX architecture image
+  "\url{https://edx.readthedocs.io/projects/edx-developer-guide/en/latest/_images/edx-architecture.png}".
+  Accessed on July 2019}.''
+
 \bibitem{Pods}
 ``{Kubernetes Pods images
   "\url{https://2.bp.blogspot.com/-a7tbQ-93uCA/W9tl4zgHlVI/AAAAAAAACGE/762QwS7_iFMOodmtN-BOtdeHy_I2TQjpgCLcBGAs/s1600/Screen%2BShot%2B2018-11-01%2Bat%2B1.45.06%2BPM.png}".
@@ -70,6 +75,11 @@
   "\url{https://www.oreilly.com/library/view/managing-kubernetes/9781492033905/ch04.html}".
   Accessed on July 2019}.''
 
+\bibitem{OpenedXarch}
+``{Official documentation of Open edX architecture
+  "\url{https://edx.readthedocs.io/projects/edx-developer-guide/en/latest/architecture.html}".
+  Accessed on July 2019}.''
+
 \bibitem{Cont}
 ``{List of Docker containers on running Devstack
   "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/Docker%20Containers}".
@@ -96,6 +106,11 @@
 \bibitem{Ansiblevaults}
 ``{Ansible multiple vault passwords
   "\url{https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html#multiple-vault-passwords}".
+  Accessed on July 2019}.''
+
+\bibitem{Ansiplay}
+``{Ansible playbook created by us for Docker and Kubernetes installation
+  "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/ansible_files}".
   Accessed on July 2019}.''
 
 \bibitem{Kubernetes}
@@ -170,6 +185,11 @@
 \bibitem{Hostvolumes}
 ``{github link to host volumes
   "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/host_volumes}".
+  Accessed on July 2019}.''
+
+\bibitem{Kubeprov}
+``{Provisioning files for mysql and mongodb
+  "\url{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/kube-provision}".
   Accessed on July 2019}.''
 
 \bibitem{DNS}
