@@ -96,13 +96,15 @@
 	\begin{multicols}{2}
 		\noindent\rule{5cm}{0.4pt}\\
 		\textbf{\\DR. S. SUDARSHAN} \\
-		Dept. of CSE, IITB \\
+		Professor \\
+		Dept. of CSE, IIT Bombay \\
 		Principle Investigator \\
 		\columnbreak
 		
 		\noindent\rule{5cm}{0.4pt}\\
 		\textbf{\\MR. NAGESH KARMALI} \\
-		Dept. of CSE, IITB \\
+		Sr. Project Manager (Research) \\
+		Dept. of CSE, IIT Bombay \\
 		Project-In-Charge \\
 		\textbf{\\\\}
 	\end{multicols}
@@ -172,6 +174,12 @@ I declare that this written submission represents my ideas in my own words and w
 	IIT BHILAI\\
 	\textbf{\\\\}
 \end{multicols}
+\pagebreak
+%**************************************
+\section{Abstract}
+An Orchestrator tries to reconcile the state of an application service to the one described to it initially in declarative form.
+In this project, we investigate techniques to set-up a distributed and containerized Open edX instance using Kubernetes as the Orchestrator. Furthermore, we conduct tests on Open edX Native and Open edX Devstack to compare them by measuring several performance metrics.
+
 \pagebreak
 \chapter{Introduction}
 \section{Aim of the project}
@@ -294,9 +302,9 @@ The following commands perform the Ironwood-release installation of Devstack:
 \end{enumerate}
 On successfully running dev.provision, you will have 15 docker-containers running. The list of them can be obtained using the command:  docker ps
 \\\\
-The list of docker-containers are: \href{https://drive.google.com/open?id=0B168SrnPp4BpZ1RCQ1VncU81VEZYanl2SUNWN2dtRUg1bGRv}{Docker-containers List}
+The list of docker-containers are: \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/Docker\%20Containers}{Docker-containers List}\cite{Cont}
 \\\\
-The Provision Log for the tasks executed are: \href{https://drive.google.com/open?id=0B168SrnPp4BpclQ3d3gwbDNWLWtrUzduYUt6Vko4S2h6bzBz}{provision.log}\\\\
+The provisioning command runs all the database migration and configuration for Open edX. The Provision Log for the tasks executed are: \href{https://github.com/fresearchgroup/Configurable-and-Scalable-IITBombayX-MOOC-platform-on-Commodity-Servers/tree/master/Provision\%20log}{provision.log}\cite{Provision}\\\\
 \textbf{iii) Errors:}
 \begin{enumerate}
 	\item  ./provision.sh: line 21: /usr/local/bin/docker-compose: Permission denied
@@ -339,6 +347,7 @@ In case there is a TLS handshake timeout error while pulling a Docker image from
 		\caption{TLS handshake timeout error}
 	\end{center}
 \end{figure} 
+\\
 \subsection{Docker Container}
 A \textit{Docker Container} encapsulates a Docker image and when live and running, is considered a container. Each container runs in an isolated environment on the host machine.
 \subsection{Docker Registry}
@@ -385,7 +394,7 @@ Docker Machine is a tool that lets you install Docker Engine on virtual hosts, a
 Docker swarm is used to create a cluster of nodes. Multi-container, multi-machine applications are made possible by joining multiple machines into a “Dockerized” cluster called a swarm. Docker swarm is a group of machines running docker and are connected to each other by means of an overlay network. There can be one or multiple nodes that can manage the swarm, these nodes are called manager nodes. The rest of the nodes only provide capacity to run the containers and are called worker nodes. 
 \subsection{Types of networks in docker}
 \begin{itemize}
-	\item \textbf{Bridge Network : }This is the type of network that allows the docker containers to communicate within a single host system. This type of network is not feasible to communicate between multiple host systems.\\\\
+	\item \textbf{Bridge Network : }This is the type of network that allows the docker containers to communicate within a single host system. This type of network is not feasible for communication between multiple host systems.\\\\
 	A bridge network can be created by :\\
 	\textbf{\$ docker network create -{}-driver bridge mynetwork}\\\\
 	User-defined bridge networks are best when you need multiple containers to communicate on the same Docker host.
@@ -417,7 +426,7 @@ To deploy a stack we create a docker-compose file with an additional feature in 
 \textbf{\$ docker stack deploy -c docker-compose.yml myapp}\\\\
 The -c flag is used to execute the docker compose file and create multiple interdependent services which can communicate with each other via the swarm network.\\\\
 \chapter{Ansible}
-Installing docker, kubernetes, and all the other components in each node in a multi-node cluster, which contains many nodes, can be a tedious task. To overcome this issue, Ansible can be used for configuration management. Furthermore, Ansible can be used to configure the nodes too. By default Ansible uses a native openSSH connection and runs commands simultaneously on multiple nodes. We have created Ansible Playbooks for all the needed configurations.
+Installing docker, kubernetes, and all the other components in each node in a multi-node cluster, which contains many nodes, can be a tedious task. To overcome this issue, Ansible can be used for configuration management. Furthermore, Ansible can be used to configure the nodes too. By default Ansible uses a native openSSH connection and runs commands simultaneously on multiple nodes. We have created Ansible Playbooks for all the needed configurations. To read more about Ansible visit \href{https://docs.ansible.com/ansible/latest/user_guide/}{https://docs.ansible.com/ansible/latest/user\_guide/}\cite{Ansidoc}
 \section{Installing openssh}
 \$ sudo apt-get install openssh-server\\
 \$ sudo apt-get install openssh-client
@@ -568,6 +577,7 @@ address  YOUR\_IP\_ADDRESS
 	\textbf{\$ sudo apt-get install kubelet}
 \end{enumerate}
 \section{Setting up your Kubernetes cluster}
+\label{sec:kubeclustset}
 In order to set up your cluster first, initialise your master with kubeadm:\\\\
 \textbf{\$ kubeadm init  -{}-apiserver-advertise-address=YOUR\_IP\_ADDRESS    -{}-pod-network-cidr=40.196.0.0/16}\\\\
 On successful execution of the command, we get a join command for the worker nodes to join the cluster. Preserve this command to bring nodes into the cluster once the dashboard is created.\\\\
@@ -701,12 +711,12 @@ We have converted the docker-compose.yml and docker-compose-host.yml file in dev
 	\end{center}
 \end{figure}
 \subsection{Compose on Kubernetes}
-We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})\\\\
-In order to deploy services on a stack using Kubernetes as an orchestrator, we can use Compose on Kubernetes. In order to install Compose on Kubernetes on a global Kubernetes engine, follow the link \url{https://github.com/docker/compose-on-kubernetes/blob/master/docs/install-on-gke.md}
+We also have a tool compose-on-kubernetes provided by docker which converts a docker-compose file into Kubernetes compose file. It is an open source tool and can be explored to check its accuracy and efficiency.(\href{https://github.com/docker/compose-on-kubernetes.git}{https://github.com/docker/compose-on-kubernetes.git})\cite{Compose}\\\\
+In order to deploy services on a stack using Kubernetes as an orchestrator, we can use Compose on Kubernetes. In order to install Compose on Kubernetes on a global Kubernetes engine, follow the link \url{https://github.com/docker/compose-on-kubernetes/blob/master/docs/install-on-gke.md}\cite{Compinst}
 \chapter{Our progress}
 In this project, our aim was to deploy an instance of Open edX on a Kubernetes cluster.
 \section{Kubernetes cluster}
-At first, we set up a Kubernetes cluster as mentioned above with one master and three nodes.
+At first, we set up a Kubernetes cluster as mentioned \hyperref[sec:kubeclustset]{above} with one master and three nodes.
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[totalheight=0.4\textheight]{cluster}
@@ -779,6 +789,12 @@ Commands those were to be executed inside a container and required internet acce
 	We can create a ConfigMap containing all the arguments to be passed to the commands that are to be run inside the container. So, whenever a new pod is created, the containers are configured accordingly.\cite{Configmap}
 	\item If we have an already running instance of Open edX devstack version on a machine, then we can use the command \textbf{docker commit} to create a new image that reflects the changes made on the container while provisioning and then use the new image for deployment purpose in our Kubernetes cluster.
 \end{itemize}
+\chapter{Future works}
+\section{Other conversion methods for docker compose file}
+\subsection{Compose on Kubernetes}
+Compose on Kubernetes helps to convert docker compose file into Kubernetes compose files. It may be used as an alternative for Kompose (which was used in this project). More details on Compose on Kubernetes can be found at \url{https://github.com/docker/compose-on-kubernetes.git}\cite{Compose}
+\section{Tutor}
+Tutor is an open source tool to deploy an Open edX instance for production. Tutor supports both single and multinode cluster deployment. Tutor also supports Kubernetes cluster deployment. To read more about tutor visit \url{https://docs.tutor.overhang.io/}\cite{Tutor}. 
 \pagebreak
 \chapter{Performance Testing Open edX Ironwood Release}
 Given a certain load, Performance Testing allows us to determine and examine non-functional parameters like speed and stability of an application.
