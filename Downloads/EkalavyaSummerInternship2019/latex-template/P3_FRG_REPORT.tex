@@ -47,7 +47,7 @@
 			\end{figure}
 			
 			INDIAN INSTITUTE OF TECHNOLOGY, BOMBAY\\
-			EKLAVYA SUMMER INTERNSHIP 2019\\ 
+			EKALAVYA SUMMER INTERNSHIP 2019\\ 
 			\noindent\rule{15cm}{0.4pt}\\
 			\textbf{\huge \\Configurable and Scalable IITBombayX MOOC platform on commodity servers}\\
 			\textbf{}\\
@@ -162,7 +162,7 @@
 	%**************************************
 	\section*{Abstract}
 	An Orchestrator tries to reconcile the state of an application service to the one described to it initially in declarative form.
-	In this project, we investigate techniques to set-up a distributed and containerized Open edX instance using Kubernetes as the Orchestrator. Furthermore, we conduct tests on Open edX Native and Open edX Devstack to compare them by measuring several performance metrics.
+	In this project, we investigate techniques to set-up a distributed and containerized Open edX instance using Kubernetes as the Orchestrator. Furthermore, we conduct tests on Open edX Native and Open edX Devstack using JMeter to compare them by measuring several performance metrics like the number of transactions completed in an hour, response time, CPU utilization, memory utilization and throughput.
 	
 	
 	\listoffigures
@@ -181,7 +181,7 @@
 \chapter{Introduction}
 \section{Aim of the project}
 
-The aim of this project is to deploy an instance of Open edX MOOC platform on a multi-node cluster using Kubernetes as the container orchestrator and Docker as the container runtime environment. \\
+The aim of this project is to deploy an instance of Open edX (IITBombayX) MOOC platform on a multi-node cluster using Kubernetes as the container orchestrator and Docker as the container runtime environment. \\
 
 \textbf{Technologies used:}
 \begin{itemize}
@@ -939,7 +939,7 @@ Here are the details of the hardware and software configuration of the applicati
 	\item Virtual Connections: 10
 \end{itemize}
 \subsection{Test Results}
-The application under test could handle 10 users for the specified server configuration under the current test setup. Furthermore, the test fails for around 15-20 users.
+The application under test could handle 10 users for the specified server configuration under the current test setup. Figure 6.14 presents a summary of the test results. Furthermore, the test fails for around 15-20 users.
 \clearpage
 \begin{figure}[h!]
 	\centering
@@ -990,12 +990,12 @@ The application under test could handle 10 users for the specified server config
 \clearpage
 \section{Test Results} 
 \begin{itemize}
-	\item Under the current test setup and server configurations, it is evident that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of virtual connections that could be handled by Open edX Devstack.
-	\item In $1$ hour, the total number of transation completed by Open edX Native was $8174$, much more than that of Open edX Devstack, which amounted to $1030$.
+	\item Under the current test setup and server configurations, it is evident from Section 6.5.5 and 6.6.5 that Open edX Native can handle around $100$ virtual connections, which is much better than $10$, the number of virtual connections that could be handled by Open edX Devstack.
+	\item Figure 6.13 and 6.14 show that in $1$ hour, the total number of transation completed by Open edX Native was $8174$, much more than that of Open edX Devstack, which amounted to $1030$.
 	\item Furthermore, the average response time of Open edX Native is $24.316$ seconds, which outperforms Open edX Devstack, whose average response time is $33.313$ seconds.
 	\item Along with that, the throughput, which has been measured in requests/sec, for Open edX Native is $4.01$, whereas it is $0.28$ for Open edX Devstack.
-	\item As for the CPU Utilization, Open edX Native consumes around 85-95\% of CPU Resources, which is much more than the CPU Utilization of Open edX Devstack (40-50\%).
-	\item The memory consumption was close to 100\% in both the setups.
+	\item As for the CPU Utilization, Figure 6.1 and 6.7 conclude that Open edX Native consumes around 85-95\% of CPU Resources, which is much more than the CPU Utilization of Open edX Devstack (40-50\%).
+	\item The memory consumption was close to 100\% in both the setups, as inferred by Figure 6.2 and 6.8.
 	\item A closer look at the Summary Reports shows that the response time recorded corresponding to the case where the enrolled course's dashboard is accessed is very high, relative to other requests in a given test plan. Moreover, this response time is exceedingly high for Open edX Devstack.
 \end{itemize}
 
@@ -1005,11 +1005,9 @@ The official Open edX documentation states that nginx and gunicorn have been dis
 \chapter{Future works}
 \section{Creating provision scripts for other deployments}
 The provision scripts for mongo and mysql was creted and similarly the provisioning script for other deployments needs to be created. To create provisioning scripts reference of devstack provisioning scripts should be taken. 
-\section{Other conversion methods for docker compose}
+\section{Other conversion methods for docker compose file}
 \subsection{Compose on Kubernetes}
 Compose on Kubernetes helps to convert docker compose file into Kubernetes compose files. It may be used as an alternative for Kompose (which was used in this project). More details on Compose on Kubernetes can be found at \url{https://github.com/docker/compose-on-kubernetes.git}\cite{Compose}
-\section{Using Minikube instead}
-Minikube is an open source tool used to create a kubenetes cluster for deployment using the virtual box hypervisor. The major disadvantage of minikube is that it runs all the nodes including master in a single machine which is not useful in our case. Nonetheless, it can be used for testing.
 \section{Tutor}
 Tutor is an open source tool to deploy an Open edX instance for production. It supports both local and cluster deployment using kubernetes. To read more about tutor visit \url{https://docs.tutor.overhang.io/}\cite{Tutor}. 
 \section{Creating an Ingress Network}

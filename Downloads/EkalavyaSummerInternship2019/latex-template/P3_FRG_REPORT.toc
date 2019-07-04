@@ -96,8 +96,7 @@
 \contentsline {section}{\numberline {6.7}Test Results}{51}{section.6.7}
 \contentsline {chapter}{\numberline {7}Future works}{52}{chapter.7}
 \contentsline {section}{\numberline {7.1}Creating provision scripts for other deployments}{52}{section.7.1}
-\contentsline {section}{\numberline {7.2}Other conversion methods for docker compose}{52}{section.7.2}
+\contentsline {section}{\numberline {7.2}Other conversion methods for docker compose file}{52}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Compose on Kubernetes}{52}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Using Minikube instead}{52}{section.7.3}
-\contentsline {section}{\numberline {7.4}Tutor}{52}{section.7.4}
-\contentsline {section}{\numberline {7.5}Creating an Ingress Network}{52}{section.7.5}
+\contentsline {section}{\numberline {7.3}Tutor}{52}{section.7.3}
+\contentsline {section}{\numberline {7.4}Creating an Ingress Network}{52}{section.7.4}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  4 JUL 2019 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.22)  4 JUL 2019 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,7 +474,7 @@ LaTeX Info: Redefining \nameref on input line 39.
 \@outlinefile=\write3
 \openout3 = `P3_FRG_REPORT.out'.
 
-<./iitb-black.pdf, id=418, 557.08125pt x 533.995pt>
+<./iitb-black.pdf, id=414, 557.08125pt x 533.995pt>
 File: ./iitb-black.pdf Graphic file (type pdf)
 <use ./iitb-black.pdf>
 Package pdftex.def Info: ./iitb-black.pdf  used on input line 46.
@@ -687,7 +687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-<edx-architecture.png, id=690, 4371.33125pt x 1962.33125pt>
+<edx-architecture.png, id=685, 4371.33125pt x 1962.33125pt>
 File: edx-architecture.png Graphic file (type png)
 <use edx-architecture.png>
 Package pdftex.def Info: edx-architecture.png  used on input line 211.
@@ -892,7 +892,7 @@ erver.ubuntu.com:80
 
 [6]
 Chapter 2.
-<TLS.png, id=763, 1371.1225pt x 770.88pt>
+<TLS.png, id=758, 1371.1225pt x 770.88pt>
 File: TLS.png Graphic file (type png)
 <use TLS.png>
 Package pdftex.def Info: TLS.png  used on input line 350.
@@ -1116,7 +1116,7 @@ rm-on-Commodity-
 
 [13]
 Chapter 4.
-<pods.png, id=829, 1118.1775pt x 590.205pt>
+<pods.png, id=824, 1118.1775pt x 590.205pt>
 File: pods.png Graphic file (type png)
 <use pods.png>
 Package pdftex.def Info: pods.png  used on input line 490.
@@ -1124,7 +1124,7 @@ Package pdftex.def Info: pods.png  used on input line 490.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<deploy.png, id=832, 341.5962pt x 383.5128pt>
+<deploy.png, id=827, 341.5962pt x 383.5128pt>
 File: deploy.png Graphic file (type png)
 <use deploy.png>
 Package pdftex.def Info: deploy.png  used on input line 498.
@@ -1132,7 +1132,7 @@ Package pdftex.def Info: deploy.png  used on input line 498.
 [14
 
 ]
-<service.png, id=847, 406.51875pt x 310.15875pt>
+<service.png, id=842, 406.51875pt x 310.15875pt>
 File: service.png Graphic file (type png)
 <use service.png>
 Package pdftex.def Info: service.png  used on input line 506.
@@ -1150,7 +1150,7 @@ ame identifier (name{figure.4.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.510 \subsection
                  {Ingress network} <./pods.png> <./deploy.png>]
-<ingress.png, id=856, 554.07pt x 430.60875pt>
+<ingress.png, id=851, 554.07pt x 430.60875pt>
 File: ingress.png Graphic file (type png)
 <use ingress.png>
 Package pdftex.def Info: ingress.png  used on input line 514.
@@ -1178,12 +1178,12 @@ ier (name{figure.4.4}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.522 \begin{enumerate}
                         <./service.png> <./ingress.png>]
-<flannel.png, id=864, 1877.0125pt x 1294.8375pt>
+<flannel.png, id=859, 1877.0125pt x 1294.8375pt>
 File: flannel.png Graphic file (type png)
 <use flannel.png>
 Package pdftex.def Info: flannel.png  used on input line 533.
 (pdftex.def)             Requested size: 452.95532pt x 280.20233pt.
-<calico.jpg, id=866, 670.505pt x 600.2425pt>
+<calico.jpg, id=861, 670.505pt x 600.2425pt>
 File: calico.jpg Graphic file (type jpg)
 <use calico.jpg>
 Package pdftex.def Info: calico.jpg  used on input line 541.
@@ -1195,7 +1195,7 @@ Package pdftex.def Info: calico.jpg  used on input line 541.
                                                   \fi \fi 
 l.545 
        <./flannel.png>]
-<weavenet.png, id=877, 963.6pt x 542.025pt>
+<weavenet.png, id=872, 963.6pt x 542.025pt>
 File: weavenet.png Graphic file (type png)
 <use weavenet.png>
 Package pdftex.def Info: weavenet.png  used on input line 550.
@@ -1508,7 +1508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 628--636
 
  []
 
-<kubernetesapiserver.png, id=915, 762.85pt x 521.95pt>
+<kubernetesapiserver.png, id=910, 762.85pt x 521.95pt>
 File: kubernetesapiserver.png Graphic file (type png)
 <use kubernetesapiserver.png>
 Package pdftex.def Info: kubernetesapiserver.png  used on input line 640.
@@ -1563,7 +1563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 656--658
                                                   \fi \fi 
 l.661 \begin{itemize}
                       <./kubernetesapiserver.png>]
-<kubereqman.png, id=927, 198.0198pt x 35.8941pt>
+<kubereqman.png, id=922, 198.0198pt x 35.8941pt>
 File: kubereqman.png Graphic file (type png)
 <use kubereqman.png>
 Package pdftex.def Info: kubereqman.png  used on input line 669.
@@ -1594,12 +1594,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 695--698
 
  []
 
-<kompose.png, id=933, 637.38126pt x 380.42125pt>
+<kompose.png, id=928, 637.38126pt x 380.42125pt>
 File: kompose.png Graphic file (type png)
 <use kompose.png>
 Package pdftex.def Info: kompose.png  used on input line 707.
 (pdftex.def)             Requested size: 446.00822pt x 266.19603pt.
-<persistentvolumes.png, id=935, 1027.84pt x 479.7925pt>
+<persistentvolumes.png, id=930, 1027.84pt x 479.7925pt>
 File: persistentvolumes.png Graphic file (type png)
 <use persistentvolumes.png>
 Package pdftex.def Info: persistentvolumes.png  used on input line 714.
@@ -1688,7 +1688,7 @@ l.721 \chapter
               {Our progress} <./kompose.png> <./persistentvolumes.png>]
 [27]
 Chapter 5.
-<cluster.png, id=961, 1371.1225pt x 770.88pt>
+<cluster.png, id=956, 1371.1225pt x 770.88pt>
 File: cluster.png Graphic file (type png)
 <use cluster.png>
 Package pdftex.def Info: cluster.png  used on input line 727.
@@ -1732,7 +1732,7 @@ Overfull \hbox (31.01042pt too wide) in paragraph at lines 733--737
 ITBombayX-MOOC-platform-
  []
 
-<PersistentVolume.png, id=971, 1371.1225pt x 770.88pt>
+<PersistentVolume.png, id=966, 1371.1225pt x 770.88pt>
 File: PersistentVolume.png Graphic file (type png)
 <use PersistentVolume.png>
 Package pdftex.def Info: PersistentVolume.png  used on input line 746.
@@ -1742,7 +1742,7 @@ Overfull \hbox (32.93668pt too wide) in paragraph at lines 746--747
  [] 
  []
 
-<PersistentVolumeClaim.png, id=972, 1371.1225pt x 770.88pt>
+<PersistentVolumeClaim.png, id=967, 1371.1225pt x 770.88pt>
 File: PersistentVolumeClaim.png Graphic file (type png)
 <use PersistentVolumeClaim.png>
 Package pdftex.def Info: PersistentVolumeClaim.png  used on input line 752.
@@ -1804,12 +1804,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fgcrash.png, id=973, 1371.1225pt x 770.88pt>
+<fgcrash.png, id=968, 1371.1225pt x 770.88pt>
 File: fgcrash.png Graphic file (type png)
 <use fgcrash.png>
 Package pdftex.def Info: fgcrash.png  used on input line 761.
 (pdftex.def)             Requested size: 423.62091pt x 238.16975pt.
-<dep100.png, id=974, 1371.1225pt x 770.88pt>
+<dep100.png, id=969, 1371.1225pt x 770.88pt>
 File: dep100.png Graphic file (type png)
 <use dep100.png>
 Package pdftex.def Info: dep100.png  used on input line 768.
@@ -1849,12 +1849,12 @@ r (name{figure.5.5}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.775 \begin{itemize}
                       <./fgcrash.png> <./dep100.png>]
-<podswithepsy.png, id=996, 1371.1225pt x 770.88pt>
+<podswithepsy.png, id=991, 1371.1225pt x 770.88pt>
 File: podswithepsy.png Graphic file (type png)
 <use podswithepsy.png>
 Package pdftex.def Info: podswithepsy.png  used on input line 779.
 (pdftex.def)             Requested size: 398.70326pt x 224.16733pt.
-<podswithoutepsy.png, id=997, 1371.1225pt x 770.88pt>
+<podswithoutepsy.png, id=992, 1371.1225pt x 770.88pt>
 File: podswithoutepsy.png Graphic file (type png)
 <use podswithoutepsy.png>
 Package pdftex.def Info: podswithoutepsy.png  used on input line 786.
@@ -2010,12 +2010,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 844--846
  []
 
 [37]
-<intro/cpu_mridul.png, id=1061, 1131.22626pt x 639.38875pt>
+<intro/cpu_mridul.png, id=1056, 1131.22626pt x 639.38875pt>
 File: intro/cpu_mridul.png Graphic file (type png)
 <use intro/cpu_mridul.png>
 Package pdftex.def Info: intro/cpu_mridul.png  used on input line 887.
 (pdftex.def)             Requested size: 452.96579pt x 256.02414pt.
-<intro/mem_mridul.png, id=1062, 1131.22626pt x 604.2575pt>
+<intro/mem_mridul.png, id=1057, 1131.22626pt x 604.2575pt>
 File: intro/mem_mridul.png Graphic file (type png)
 <use intro/mem_mridul.png>
 Package pdftex.def Info: intro/mem_mridul.png  used on input line 892.
@@ -2077,7 +2077,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38]
-<intro/S1.png, id=1067, 481.04718pt x 381.67593pt>
+<intro/S1.png, id=1062, 481.04718pt x 381.67593pt>
 File: intro/S1.png Graphic file (type png)
 <use intro/S1.png>
 Package pdftex.def Info: intro/S1.png  used on input line 899.
@@ -2086,7 +2086,7 @@ Package pdftex.def Info: intro/S1.png  used on input line 899.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S2.png, id=1068, 484.81125pt x 431.36156pt>
+<intro/S2.png, id=1063, 484.81125pt x 431.36156pt>
 File: intro/S2.png Graphic file (type png)
 <use intro/S2.png>
 Package pdftex.def Info: intro/S2.png  used on input line 904.
@@ -2094,7 +2094,7 @@ Package pdftex.def Info: intro/S2.png  used on input line 904.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S3.png, id=1069, 505.89pt x 428.35031pt>
+<intro/S3.png, id=1064, 505.89pt x 428.35031pt>
 File: intro/S3.png Graphic file (type png)
 <use intro/S3.png>
 Package pdftex.def Info: intro/S3.png  used on input line 911.
@@ -2102,7 +2102,7 @@ Package pdftex.def Info: intro/S3.png  used on input line 911.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S4.png, id=1070, 491.58656pt x 434.37282pt>
+<intro/S4.png, id=1065, 491.58656pt x 434.37282pt>
 File: intro/S4.png Graphic file (type png)
 <use intro/S4.png>
 Package pdftex.def Info: intro/S4.png  used on input line 917.
@@ -2150,12 +2150,12 @@ l.920 \clearpage
                  <./intro/S4.png>] [44
 
 ]
-<intro/cpu_harshit.png, id=1103, 1131.22626pt x 639.38875pt>
+<intro/cpu_harshit.png, id=1098, 1131.22626pt x 639.38875pt>
 File: intro/cpu_harshit.png Graphic file (type png)
 <use intro/cpu_harshit.png>
 Package pdftex.def Info: intro/cpu_harshit.png  used on input line 946.
 (pdftex.def)             Requested size: 452.96579pt x 256.02414pt.
-<intro/mem_harshit.png, id=1104, 1131.22626pt x 604.2575pt>
+<intro/mem_harshit.png, id=1099, 1131.22626pt x 604.2575pt>
 File: intro/mem_harshit.png Graphic file (type png)
 <use intro/mem_harshit.png>
 Package pdftex.def Info: intro/mem_harshit.png  used on input line 951.
@@ -2175,12 +2175,12 @@ l.955 \newpage
                                                   \fi \fi 
 l.955 \newpage
                <./intro/cpu_harshit.png> <./intro/mem_harshit.png>]
-<intro/S1_harshit.png, id=1112, 609.77812pt x 746.03719pt>
+<intro/S1_harshit.png, id=1107, 609.77812pt x 746.03719pt>
 File: intro/S1_harshit.png Graphic file (type png)
 <use intro/S1_harshit.png>
 Package pdftex.def Info: intro/S1_harshit.png  used on input line 958.
 (pdftex.def)             Requested size: 452.98729pt x 554.21037pt.
-<intro/S2_harshit.png, id=1113, 504.6855pt x 614.295pt>
+<intro/S2_harshit.png, id=1108, 504.6855pt x 614.295pt>
 File: intro/S2_harshit.png Graphic file (type png)
 <use intro/S2_harshit.png>
 Package pdftex.def Info: intro/S2_harshit.png  used on input line 963.
@@ -2189,7 +2189,7 @@ Package pdftex.def Info: intro/S2_harshit.png  used on input line 963.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S3_harshit.png, id=1114, 486.618pt x 612.48825pt>
+<intro/S3_harshit.png, id=1109, 486.618pt x 612.48825pt>
 File: intro/S3_harshit.png Graphic file (type png)
 <use intro/S3_harshit.png>
 Package pdftex.def Info: intro/S3_harshit.png  used on input line 969.
@@ -2197,7 +2197,7 @@ Package pdftex.def Info: intro/S3_harshit.png  used on input line 969.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/S4_harshit.png, id=1115, 508.90125pt x 616.704pt>
+<intro/S4_harshit.png, id=1110, 508.90125pt x 616.704pt>
 File: intro/S4_harshit.png Graphic file (type png)
 <use intro/S4_harshit.png>
 Package pdftex.def Info: intro/S4_harshit.png  used on input line 975.
@@ -2205,7 +2205,7 @@ Package pdftex.def Info: intro/S4_harshit.png  used on input line 975.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/3.png, id=1116, 806.26219pt x 450.9347pt>
+<intro/3.png, id=1111, 806.26219pt x 450.9347pt>
 File: intro/3.png Graphic file (type png)
 <use intro/3.png>
 Package pdftex.def Info: intro/3.png  used on input line 981.
@@ -2213,7 +2213,7 @@ Package pdftex.def Info: intro/3.png  used on input line 981.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<intro/4.png, id=1117, 1046.91125pt x 565.11125pt>
+<intro/4.png, id=1112, 1046.91125pt x 565.11125pt>
 File: intro/4.png Graphic file (type png)
 <use intro/4.png>
 Package pdftex.def Info: intro/4.png  used on input line 987.
@@ -2557,22 +2557,22 @@ OT1/cmr/m/n/12 ". Ac-cessed on July
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1024.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1022.
  [55]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1024.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1022.
  (./P3_FRG_REPORT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1024.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1024.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1022.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1022.
 
 Package rerunfilecheck Info: File `P3_FRG_REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: 81FD91678EE473DE27EC9208F2CA4945;7397.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1024.
+(rerunfilecheck)             Checksum: 0E0FE1079C3EBD4303BA382C3CA42110;7332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1022.
  ) 
 Here is how much of TeX's memory you used:
- 7075 strings out of 494923
- 103944 string characters out of 6180741
- 191984 words of memory out of 5000000
- 9969 multiletter control sequences out of 15000+600000
+ 7073 strings out of 494923
+ 103920 string characters out of 6180741
+ 192984 words of memory out of 5000000
+ 9968 multiletter control sequences out of 15000+600000
  10597 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  28i,12n,43p,844b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2587,10 +2587,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on P3_FRG_REPORT.pdf (65 pages, 3219859 bytes).
+Output written on P3_FRG_REPORT.pdf (65 pages, 3219673 bytes).
 PDF statistics:
- 1373 PDF objects out of 1440 (max. 8388607)
- 1215 compressed objects within 13 object streams
- 314 named destinations out of 1000 (max. 500000)
- 1006 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1368 PDF objects out of 1440 (max. 8388607)
+ 1210 compressed objects within 13 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 998 words of extra memory for PDF output out of 10000 (max. 10000000)
 

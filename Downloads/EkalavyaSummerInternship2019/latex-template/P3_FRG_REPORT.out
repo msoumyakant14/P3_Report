@@ -96,8 +96,7 @@
 \BOOKMARK [1][-]{section.6.7}{Test Results}{chapter.6}% 96
 \BOOKMARK [0][-]{chapter.7}{Future works}{}% 97
 \BOOKMARK [1][-]{section.7.1}{Creating provision scripts for other deployments}{chapter.7}% 98
-\BOOKMARK [1][-]{section.7.2}{Other conversion methods for docker compose}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.2}{Other conversion methods for docker compose file}{chapter.7}% 99
 \BOOKMARK [2][-]{subsection.7.2.1}{Compose on Kubernetes}{section.7.2}% 100
-\BOOKMARK [1][-]{section.7.3}{Using Minikube instead}{chapter.7}% 101
-\BOOKMARK [1][-]{section.7.4}{Tutor}{chapter.7}% 102
-\BOOKMARK [1][-]{section.7.5}{Creating an Ingress Network}{chapter.7}% 103
+\BOOKMARK [1][-]{section.7.3}{Tutor}{chapter.7}% 101
+\BOOKMARK [1][-]{section.7.4}{Creating an Ingress Network}{chapter.7}% 102
